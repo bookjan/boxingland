@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>設備商品 PDF 詳情｜拳擊天地 Boxing Land</title>
+  <style>
+    :root {
+      --ink: #141111;
+      --panel: #201c1b;
+      --panel-2: #2a2524;
+      --line: rgba(255,255,255,.16);
+      --muted: rgba(255,255,255,.68);
+      --white: #fff;
+      --gold: #d6a83f;
+      --red: #df2b22;
+      --red-dark: #b82019;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", Arial, sans-serif;
+      background: var(--ink);
+      color: var(--white);
+    }
+    a { color: inherit; text-decoration: none; }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      min-height: 88px;
+      padding: 18px clamp(18px, 4vw, 56px);
+      border-bottom: 1px solid var(--line);
+      background: rgba(20,17,17,.94);
+      backdrop-filter: blur(14px);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      min-width: 0;
+    }
+    .brand img {
+      width: 150px;
+      height: 56px;
+      object-fit: contain;
+    }
+    .brand span {
+      font-size: clamp(22px, 3vw, 36px);
+      font-weight: 900;
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 18px;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      font-size: 15px;
+      font-weight: 900;
+      transition: transform .18s ease, background .18s ease, border-color .18s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary { background: var(--red); border-color: var(--red); color: var(--white); }
+    .btn-primary:hover { background: var(--red-dark); border-color: var(--red-dark); }
+    .btn-ghost { background: rgba(255,255,255,.06); color: var(--white); }
+    .btn-light { background: var(--white); border-color: var(--white); color: var(--ink); }
+
+    .summary {
+      display: none;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 28px;
+      align-items: end;
+      width: min(1480px, calc(100% - 48px));
+      margin: 0 auto;
+      padding: 36px 0 24px;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      width: max-content;
+      margin-bottom: 18px;
+      color: var(--gold);
+      font-size: 15px;
+      font-weight: 900;
+    }
+    .meta {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 0 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.13);
+      color: rgba(255,255,255,.86);
+      font-size: 14px;
+      font-weight: 900;
+    }
+    h1 {
+      max-width: 980px;
+      margin: 0;
+      font-size: clamp(34px, 5vw, 72px);
+      line-height: .98;
+      letter-spacing: 0;
+    }
+    .desc {
+      max-width: 760px;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: clamp(17px, 2vw, 24px);
+      line-height: 1.55;
+      font-weight: 800;
+    }
+    .summary-note {
+      max-width: 330px;
+      margin: 0;
+      color: rgba(255,255,255,.58);
+      font-size: 15px;
+      line-height: 1.7;
+      font-weight: 800;
+    }
+
+    .pdf-section {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 0 84px;
+    }
+    .pdf-shell {
+      height: calc(100vh - 88px - 84px);
+      min-height: 720px;
+      overflow: hidden;
+      border: 0;
+      border-radius: 0;
+      background: #080707;
+    }
+    .pdf-frame {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      background: #111;
+    }
+    .pdf-fallback {
+      padding: 28px;
+      color: var(--muted);
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .inquiry-dock {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 20;
+      border-top: 1px solid var(--line);
+      background: rgba(20,17,17,.94);
+      backdrop-filter: blur(16px);
+    }
+    .dock-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      width: min(1480px, calc(100% - 48px));
+      min-height: 84px;
+      margin: 0 auto;
+    }
+    .dock-title {
+      min-width: 0;
+      color: rgba(255,255,255,.78);
+      font-size: 15px;
+      font-weight: 900;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .dock-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+
+    .empty {
+      min-height: calc(100vh - 88px);
+      display: grid;
+      place-items: center;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .empty h1 { font-size: clamp(32px, 5vw, 56px); }
+    .empty p {
+      color: var(--muted);
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    @media (max-width: 900px) {
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      .brand img {
+        width: 124px;
+        height: 46px;
+      }
+      .summary {
+        grid-template-columns: 1fr;
+        width: min(100% - 32px, 1480px);
+        padding-top: 28px;
+      }
+      .pdf-section { width: min(100% - 32px, 1480px); }
+      .pdf-section { width: 100%; }
+      .pdf-shell {
+        height: calc(100vh - 178px);
+        min-height: 560px;
+      }
+      .pdf-frame {
+        height: 100%;
+      }
+      .dock-inner {
+        width: min(100% - 32px, 1480px);
+        min-height: auto;
+        padding: 12px 0;
+        align-items: stretch;
+        flex-direction: column;
+      }
+      .dock-title { white-space: normal; }
+      .dock-actions { display: grid; grid-template-columns: 1fr 1fr; }
+      .dock-actions .btn { min-width: 0; padding: 0 12px; }
+      .dock-actions .btn-primary { grid-column: 1 / -1; }
+    }
+
+    @media (max-width: 560px) {
+      .brand span { font-size: 24px; }
+      .nav-actions { width: 100%; display: grid; grid-template-columns: 1fr; }
+      .btn { width: 100%; }
+      .summary { width: min(100% - 24px, 1480px); }
+      .pdf-section {
+        width: 100%;
+        padding-bottom: 180px;
+      }
+      .pdf-shell {
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
+      }
+      .pdf-frame {
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html#equipment" aria-label="回到拳擊天地設備列表">
+      <img src="boxing-land-logo-white.png" alt="拳擊天地">
+      <span>BOXING LAND</span>
+    </a>
+    <nav class="nav-actions" aria-label="商品頁導覽">
+      <a class="btn btn-ghost" href="index.html#equipment">設備列表</a>
+      <a class="btn btn-ghost" href="index.html#coaches">拳擊教練</a>
+      <a class="btn btn-primary" href="index.html#contact">詢問規格</a>
+    </nav>
+  </header>
+
+  <main id="productPage" hidden>
+    <section class="summary">
+      <div>
+        <a class="back-link" href="index.html#equipment">← 返回設備商品</a>
+        <div class="meta">
+          <span class="pill" id="productBrand"></span>
+          <span class="pill" id="productCat"></span>
+        </div>
+        <h1 id="productTitle"></h1>
+        <p class="desc" id="productDesc"></p>
+      </div>
+      <p class="summary-note">商品資料以原始 PDF 單頁呈現，可使用瀏覽器 PDF 工具放大查看文字與規格。</p>
+    </section>
+
+    <section class="pdf-section" aria-label="商品 PDF 詳細資料">
+      <div class="pdf-shell">
+        <iframe class="pdf-frame" id="pdfFrame" title="商品 PDF"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <div class="inquiry-dock" id="inquiryDock" hidden>
+    <div class="dock-inner">
+      <div class="dock-title" id="dockTitle"></div>
+      <div class="dock-actions">
+        <a class="btn btn-light" id="openPdf" href="" target="_blank" rel="noopener">開啟 PDF 原檔</a>
+        <a class="btn btn-ghost" href="index.html#equipment">返回列表</a>
+        <a class="btn btn-primary" href="index.html#contact">詢問規格</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/catalog/products.js"></script>
+  <script>
+    const products = window.catalogProducts || [];
+    const slug = decodeURIComponent(location.hash.replace(/^#/, '')).replace(/^product\//, '');
+    const productNo = Number((slug.match(/^\d+/) || [])[0]);
+    const product = products.find((item) => item.slug === slug) || products[productNo - 1];
+    const productPage = document.getElementById('productPage');
+    const inquiryDock = document.getElementById('inquiryDock');
+
+    if (!product) {
+      location.replace('index.html#equipment');
+    } else {
+      document.title = `${product.title}｜設備商品 PDF 詳情｜拳擊天地 Boxing Land`;
+      document.getElementById('productBrand').textContent = product.brand;
+      document.getElementById('productCat').textContent = product.cat;
+      document.getElementById('productTitle').textContent = product.title;
+      document.getElementById('productDesc').textContent = product.desc;
+      document.getElementById('dockTitle').textContent = product.title;
+      document.getElementById('openPdf').href = product.pdf;
+      document.getElementById('pdfFrame').src = `${product.pdf}#view=Fit&zoom=page-fit&toolbar=1&navpanes=0`;
+      document.getElementById('pdfFrame').title = product.title;
+      productPage.hidden = false;
+      inquiryDock.hidden = false;
+    }
+  </script>
+</body>
+</html>

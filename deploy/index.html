@@ -886,27 +886,6 @@
       </div>
     </section>
 
-    <section class="band product-detail" id="productDetail" hidden>
-      <div class="section">
-        <a class="detail-back" href="#equipment">回設備列表</a>
-        <div class="detail-layout">
-          <figure class="detail-media">
-            <iframe class="detail-pdf" id="detailPdf" src="" title=""></iframe>
-          </figure>
-          <div class="detail-copy">
-            <div class="meta" id="detailMeta"></div>
-            <h2 id="detailTitle"></h2>
-            <p id="detailDesc"></p>
-            <div class="detail-actions">
-              <a class="btn btn-light" id="detailImageLink" href="" target="_blank" rel="noopener">開啟 PDF</a>
-              <a class="btn btn-primary" href="#contact">詢問規格</a>
-              <a class="btn btn-secondary" href="#equipment">返回設備商品</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="band band-dark" id="equipment">
       <div class="section">
         <div class="section-head">
@@ -1088,13 +1067,10 @@
     const categoryFilters = document.getElementById('categoryFilters');
     const productGrid = document.getElementById('productGrid');
     const resultCount = document.getElementById('resultCount');
-    const equipmentSection = document.getElementById('equipment');
-    const productDetail = document.getElementById('productDetail');
-    const detailPdf = document.getElementById('detailPdf');
-    const detailImageLink = document.getElementById('detailImageLink');
-    const detailMeta = document.getElementById('detailMeta');
-    const detailTitle = document.getElementById('detailTitle');
-    const detailDesc = document.getElementById('detailDesc');
+
+    if (location.hash.startsWith('#product/')) {
+      location.replace(`product.html#${location.hash.slice(9)}`);
+    }
 
     function makeButton(label, active, onClick) {
       const btn = document.createElement('button');
@@ -1126,7 +1102,7 @@
       productGrid.replaceChildren(...filtered.map((p) => {
         const card = document.createElement('a');
         card.className = 'product-card';
-        card.href = `#product/${p.slug}`;
+        card.href = `product.html#${p.slug}`;
         card.target = '_blank';
         card.rel = 'noopener';
         card.innerHTML = `
@@ -1135,7 +1111,7 @@
             <div class="meta"><span class="pill">${p.brand}</span><span class="pill">${p.cat}</span></div>
             <h3>${p.title}</h3>
             <p>${p.desc}</p>
-            <span class="product-link">查看商品</span>
+            <span class="product-link">查看 PDF 詳情</span>
           </div>
         `;
         return card;
@@ -1146,28 +1122,7 @@
     function render() {
       drawFilters();
       renderProducts();
-      renderRoute();
     }
-    function renderRoute() {
-      const slug = location.hash.startsWith('#product/') ? location.hash.slice(9) : '';
-      const product = products.find((p) => p.slug === slug);
-      if (!product) {
-        productDetail.hidden = true;
-        equipmentSection.hidden = false;
-        return;
-      }
-      detailPdf.src = product.pdf;
-      detailPdf.title = product.title;
-      detailImageLink.href = product.pdf;
-      detailImageLink.setAttribute('aria-label', `${product.title} 開啟 PDF`);
-      detailMeta.innerHTML = `<span class="pill">${product.brand}</span><span class="pill">${product.cat}</span>`;
-      detailTitle.textContent = product.title;
-      detailDesc.textContent = product.desc;
-      productDetail.hidden = false;
-      equipmentSection.hidden = true;
-      window.scrollTo(0, productDetail.offsetTop - 72);
-    }
-    window.addEventListener('hashchange', renderRoute);
     render();
   </script>
 </body>
