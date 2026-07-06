@@ -1,0 +1,1430 @@
+{
+  "headings": [
+    {
+      "tag": "H2",
+      "text": "EQUIPMENT"
+    },
+    {
+      "tag": "H1",
+      "text": "健身器材"
+    },
+    {
+      "tag": "H3",
+      "text": "器材分類"
+    },
+    {
+      "tag": "H3",
+      "text": "線上商城販售項目"
+    },
+    {
+      "tag": "H3",
+      "text": "聚合式橡膠地墊(片材)"
+    },
+    {
+      "tag": "H3",
+      "text": "E3000系列全產品總覽"
+    },
+    {
+      "tag": "H3",
+      "text": "SM5084 胸推/肩推 訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "SM5001 俯臥屈腿訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "SM5002 腿部伸張訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "SM5003 腿部推蹬機"
+    },
+    {
+      "tag": "H3",
+      "text": "SM5004 蝴蝶訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "SM5005 側肩上舉機"
+    },
+    {
+      "tag": "H3",
+      "text": "SM5006 肩部推舉機"
+    },
+    {
+      "tag": "H3",
+      "text": "SM5007 擴胸/蝴蝶機"
+    },
+    {
+      "tag": "H3",
+      "text": "SM5008 胸部前推機"
+    },
+    {
+      "tag": "H3",
+      "text": "SM5009 單雙槓訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "SM5010 立式小腿訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "Y900ZA系列全產品總覽"
+    },
+    {
+      "tag": "H3",
+      "text": "T900系列全產品總覽"
+    },
+    {
+      "tag": "H3",
+      "text": "A600/D600系列全產品總覽"
+    },
+    {
+      "tag": "H3",
+      "text": "SM5011 臀腿訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "SM2000系列全產品總覽"
+    },
+    {
+      "tag": "H3",
+      "text": "E7000系列全產品總覽"
+    },
+    {
+      "tag": "H3",
+      "text": "Y900系列全產品總覽"
+    },
+    {
+      "tag": "H3",
+      "text": "E6000系列全產品總覽"
+    },
+    {
+      "tag": "H3",
+      "text": "T1000系列全產品總覽"
+    },
+    {
+      "tag": "H3",
+      "text": "SM5012 滑輪下拉訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "SM5014 腹部訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "E7001 俯臥屈腿訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "SM5021 外展訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "SM5022 內縮訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "SM5023 坐式屈腿訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "E7002 腿部伸張訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "SM5028 三頭伸展機"
+    },
+    {
+      "tag": "H3",
+      "text": "E7003 腿部推蹬機"
+    },
+    {
+      "tag": "H3",
+      "text": "SM5030 二頭肌訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "SM5031 背部伸展機"
+    },
+    {
+      "tag": "H3",
+      "text": "SM5034 坐姿划船機"
+    },
+    {
+      "tag": "H3",
+      "text": "U2046 多功能站姿飛鳥機"
+    },
+    {
+      "tag": "H3",
+      "text": "SM5035 高拉背機"
+    },
+    {
+      "tag": "H3",
+      "text": "選購小提醒🔍國中篇"
+    },
+    {
+      "tag": "H3",
+      "text": "選購小提醒🔍高中職篇"
+    },
+    {
+      "tag": "H3",
+      "text": "選購小提醒🔍大專院校篇"
+    },
+    {
+      "tag": "H3",
+      "text": "E7005 側肩上舉機"
+    },
+    {
+      "tag": "H3",
+      "text": "E3001 臥式腿部彎曲機"
+    },
+    {
+      "tag": "H3",
+      "text": "E3002 腿部伸張機"
+    },
+    {
+      "tag": "H3",
+      "text": "E7017雙臂機訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "E3003 腿部推蹬機"
+    },
+    {
+      "tag": "H3",
+      "text": "E3004 蝴蝶訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "E7006 坐式舉肩訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "E3005 側肩上舉機"
+    },
+    {
+      "tag": "H3",
+      "text": "E7007擴胸/蝴蝶機"
+    },
+    {
+      "tag": "H3",
+      "text": "E7008 胸部前推訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "SM3007 可調式訓練椅"
+    },
+    {
+      "tag": "H3",
+      "text": "E3006 肩部推舉機"
+    },
+    {
+      "tag": "H3",
+      "text": "E7009單雙槓訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "E7010 立式小腿訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "U1017F 多功能訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "E7012 滑輪下拉訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "E7018 腰部旋轉機"
+    },
+    {
+      "tag": "H3",
+      "text": "E7021大腿內收/外展訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "E7023坐式屈腿訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "E3007 擴胸/蝴蝶機"
+    },
+    {
+      "tag": "H3",
+      "text": "E7024 後蹬腿訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "E7026三頭下壓訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "E7030 二頭肌訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "E7031 腰部後壓訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "E7033 低拉划船訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "E7034 平行拉背訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "E3008 胸部前推機"
+    },
+    {
+      "tag": "H3",
+      "text": "E7035 滑輪下拉訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "E3009 單雙槓訓練機"
+    },
+    {
+      "tag": "H3",
+      "text": "E6221 半框深蹲架"
+    },
+    {
+      "tag": "H3",
+      "text": "E6222 CROSSFIT 雙邊飛鳥半框架"
+    },
+    {
+      "tag": "H3",
+      "text": "E6223 CROSSFIT 雙邊硬舉八柱架"
+    },
+    {
+      "tag": "H3",
+      "text": "E3016 多功能交叉機"
+    },
+    {
+      "tag": "H3",
+      "text": "EMI-1000 CABLE機"
+    },
+    {
+      "tag": "H3",
+      "text": "E6224 雙邊半框深蹲架"
+    },
+    {
+      "tag": "H3",
+      "text": "Y905Z 坐姿胸推機"
+    },
+    {
+      "tag": "H3",
+      "text": "Y910Z 寬胸推舉機"
+    }
+  ],
+  "imgs": [
+    {
+      "alt": "",
+      "h": 40,
+      "src": "https://www.progym.com.tw/public/loading_type/loading_big.gif",
+      "w": 40
+    },
+    {
+      "alt": "",
+      "h": 50,
+      "src": "https://www.progym.com.tw/public/loading_type/loading_text.png",
+      "w": 206
+    },
+    {
+      "alt": "banner",
+      "h": 600,
+      "src": "https://www.progym.com.tw/upload/banner_ins_list/twL_banner_ins_22G13_jweBU2WGsQ.png",
+      "w": 1920
+    },
+    {
+      "alt": "線上商城販售項目",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_24K04_C7ZARyoB2O.jpg",
+      "w": 480
+    },
+    {
+      "alt": "聚合式橡膠地墊(片材)",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_26C04_SPNgG7B4Mp.png",
+      "w": 480
+    },
+    {
+      "alt": "E3000系列全產品總覽",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_22J21_0pM4wvk0Dd.jpg",
+      "w": 480
+    },
+    {
+      "alt": "SM5084 胸推/肩推 訓練機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_26F12_FlEnSUQsOm.png",
+      "w": 480
+    },
+    {
+      "alt": "SM5001 俯臥屈腿訓練機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_26F08_2hERx9BP73.png",
+      "w": 480
+    },
+    {
+      "alt": "SM5002 腿部伸張訓練機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_26F08_OtcIOn2anI.png",
+      "w": 480
+    },
+    {
+      "alt": "SM5003 腿部推蹬機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_26F08_mf4y1Sgvpx.png",
+      "w": 480
+    },
+    {
+      "alt": "SM5004 蝴蝶訓練機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_26F08_v3gspMUy7y.png",
+      "w": 480
+    },
+    {
+      "alt": "SM5005 側肩上舉機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_26F09_khpflQVXlb.png",
+      "w": 480
+    },
+    {
+      "alt": "SM5006 肩部推舉機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_26F09_96sRbe2SdA.png",
+      "w": 480
+    },
+    {
+      "alt": "SM5007 擴胸/蝴蝶機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_26F09_IZrITZPbpY.png",
+      "w": 480
+    },
+    {
+      "alt": "SM5008 胸部前推機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_26F09_ysmtIxR3O1.png",
+      "w": 480
+    },
+    {
+      "alt": "SM5009 單雙槓訓練機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_26F09_lc9RAIVkk2.png",
+      "w": 480
+    },
+    {
+      "alt": "SM5010 立式小腿訓練機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_26F09_rAcuSrT5rR.png",
+      "w": 480
+    },
+    {
+      "alt": "Y900ZA系列全產品總覽",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_25D10_n7kWOSoESj.jpg",
+      "w": 480
+    },
+    {
+      "alt": "T900系列全產品總覽",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_25D10_ApVAexpfER.jpg",
+      "w": 480
+    },
+    {
+      "alt": "A600/D600系列全產品總覽",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_25D11_q8nD82Bj2R.jpg",
+      "w": 480
+    },
+    {
+      "alt": "SM5011 臀腿訓練機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_26F09_py2e2P7VBS.png",
+      "w": 480
+    },
+    {
+      "alt": "SM2000系列全產品總覽",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_26E28_puSLElScIA.jpg",
+      "w": 480
+    },
+    {
+      "alt": "E7000系列全產品總覽",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_22J21_4pdOo0VQMB.jpg",
+      "w": 480
+    },
+    {
+      "alt": "Y900系列全產品總覽",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_22J24_xsVw4NRPZm.jpg",
+      "w": 480
+    },
+    {
+      "alt": "E6000系列全產品總覽",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_22J24_l3e5WlRew5.jpg",
+      "w": 480
+    },
+    {
+      "alt": "T1000系列全產品總覽",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_22J24_8CA2t1OV5q.jpg",
+      "w": 480
+    },
+    {
+      "alt": "SM5012 滑輪下拉訓練機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_26F09_MRKOE2UXtP.png",
+      "w": 480
+    },
+    {
+      "alt": "SM5014 腹部訓練機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_26F09_38XDmjIRB5.png",
+      "w": 480
+    },
+    {
+      "alt": "E7001 俯臥屈腿訓練機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_22G25_5d9oJpTomc.jpg",
+      "w": 480
+    },
+    {
+      "alt": "SM5021 外展訓練機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_26F09_WUXYGW7Y0S.png",
+      "w": 480
+    },
+    {
+      "alt": "SM5022 內縮訓練機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_26F09_6kdD8VJNAp.png",
+      "w": 480
+    },
+    {
+      "alt": "SM5023 坐式屈腿訓練機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_26F09_sZGUIt2pPX.png",
+      "w": 480
+    },
+    {
+      "alt": "E7002 腿部伸張訓練機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_22G20_Z6GakTh7eA.jpg",
+      "w": 480
+    },
+    {
+      "alt": "SM5028 三頭伸展機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_26F09_W0UbomHT53.png",
+      "w": 480
+    },
+    {
+      "alt": "E7003 腿部推蹬機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_22G20_4q5pPqiegX.jpg",
+      "w": 480
+    },
+    {
+      "alt": "SM5030 二頭肌訓練機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_26F09_SP76WLUl7h.png",
+      "w": 480
+    },
+    {
+      "alt": "SM5031 背部伸展機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_26F09_S7bmp2ixAZ.png",
+      "w": 480
+    },
+    {
+      "alt": "SM5034 坐姿划船機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_26F09_aTolpBRKmU.png",
+      "w": 480
+    },
+    {
+      "alt": "U2046 多功能站姿飛鳥機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_23I03_Mc0oLmxgsP.jpg",
+      "w": 480
+    },
+    {
+      "alt": "SM5035 高拉背機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_26F09_SJTJn7F3Bi.png",
+      "w": 480
+    },
+    {
+      "alt": "選購小提醒🔍國中篇",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_25D08_m94EVbmIUD.png",
+      "w": 480
+    },
+    {
+      "alt": "選購小提醒🔍高中職篇",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_25D08_N7X8wkpkBW.png",
+      "w": 480
+    },
+    {
+      "alt": "選購小提醒🔍大專院校篇",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_25D07_UrK8teyLo8.png",
+      "w": 480
+    },
+    {
+      "alt": "E7005 側肩上舉機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_22H12_UCaoytVRhF.jpg",
+      "w": 480
+    },
+    {
+      "alt": "E3001 臥式腿部彎曲機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_22G20_aIMSwNyFwq.jpg",
+      "w": 480
+    },
+    {
+      "alt": "E3002 腿部伸張機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_22G20_FaUpnXlyNF.jpg",
+      "w": 480
+    },
+    {
+      "alt": "E7017雙臂機訓練機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_22G20_npZLiNorsa.jpg",
+      "w": 480
+    },
+    {
+      "alt": "E3003 腿部推蹬機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_22G20_xfhfNbmHof.jpg",
+      "w": 480
+    },
+    {
+      "alt": "E3004 蝴蝶訓練機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_22G20_OsJGZkXZTZ.jpg",
+      "w": 480
+    },
+    {
+      "alt": "E7006 坐式舉肩訓練機",
+      "h": 480,
+      "src": "https://www.progym.com.tw/upload/catalog_fitness_equipment_list_pic/twL_catalog_fitness_equipment_22G20_RTTVvIO4O1.jpg",
+      "w": 480
+    }
+  ],
+  "links": [
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/",
+      "text": "惠友運動PROGYM"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/about/",
+      "text": "公司簡介"
+    },
+    {
+      "cls": "current",
+      "href": "https://www.progym.com.tw/fitness_equipment/",
+      "text": "所有商品"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/service/",
+      "text": "服務項目"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case/",
+      "text": "實績案例"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/news/",
+      "text": "最新消息"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/contact/",
+      "text": "聯絡我們"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/product/",
+      "text": "線上購物"
+    },
+    {
+      "cls": "openModule orderToggle",
+      "href": "https://www.progym.com.tw/fitness_equipment/#moduleCartList",
+      "text": ""
+    },
+    {
+      "cls": "headerIconBtn openModule cartToggle exclude link",
+      "href": "https://www.progym.com.tw/fitness_equipment/#moduleCart",
+      "text": "0"
+    },
+    {
+      "cls": "loginToggle",
+      "href": "https://www.progym.com.tw/member/login/?refererUrl=https%3A%2F%2Fwww.progym.com.tw%2Ffitness_equipment%2F",
+      "text": ""
+    },
+    {
+      "cls": "marker",
+      "href": "https://www.instagram.com/progymtw/",
+      "text": ""
+    },
+    {
+      "cls": "marker",
+      "href": "https://www.facebook.com/ProGymSports",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/",
+      "text": "首頁"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/",
+      "text": "健身器材"
+    },
+    {
+      "cls": "linkHasItems",
+      "href": "https://www.progym.com.tw/fitness_equipment/113/",
+      "text": "各級學校"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/113/117/",
+      "text": "大專院校"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/113/116/",
+      "text": "高中/職"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/113/115/",
+      "text": "國中"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/114/",
+      "text": "軍警消單位"
+    },
+    {
+      "cls": "linkHasItems",
+      "href": "https://www.progym.com.tw/fitness_equipment/105/",
+      "text": "空間大小劃分（坪數）"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/105/108/",
+      "text": "小型空間(約60平方米)"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/105/109/",
+      "text": "中型空間(約150平方米)"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/105/110/",
+      "text": "大型空間(約300平方米)"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/SportsTechnology/",
+      "text": "運動科技"
+    },
+    {
+      "cls": "linkHasItems",
+      "href": "https://www.progym.com.tw/fitness_equipment/weight_training/",
+      "text": "插銷重訓"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/weight_training/119/",
+      "text": "├ 進階暢銷款 ┤ S-FORCE系列"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/weight_training/67/",
+      "text": "├ 頂級暢銷款 ┤ E7000系列"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/weight_training/66/",
+      "text": "├ 熱門暢銷款 ┤ E3000系列"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/weight_training/65/",
+      "text": "├ 熱門暢銷款 ┤ 雙功能系列"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/weight_training/96/",
+      "text": "○ CABLE滑輪系列"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/weight_training/100/",
+      "text": "○ H3000 GALAXY系列"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/weight_training/101/",
+      "text": "○ U2000 PRESTIGE系列"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/weight_training/102/",
+      "text": "○ U2000C ALIEN系列"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/weight_training/103/",
+      "text": "○ U3000D FUSION系列"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/weight_training/104/",
+      "text": "○ U3000B STYLE系列"
+    },
+    {
+      "cls": "linkHasItems",
+      "href": "https://www.progym.com.tw/fitness_equipment/88/",
+      "text": "掛槓重訓"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/88/92/",
+      "text": "SM悍馬系列"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/88/120/",
+      "text": "TITAN新泰坦系列"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/88/107/",
+      "text": "TITAN金甲系列"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/88/91/",
+      "text": "Y900系列"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/88/89/",
+      "text": "A600/D600系列"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/88/98/",
+      "text": "E3000系列"
+    },
+    {
+      "cls": "linkHasItems",
+      "href": "https://www.progym.com.tw/fitness_equipment/93/",
+      "text": "多功能訓練架"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/93/97/",
+      "text": "訓練椅/架類"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/93/94/",
+      "text": "多功能訓練深蹲架"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/93/95/",
+      "text": "循環訓練站"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/93/99/",
+      "text": "放置架類"
+    },
+    {
+      "cls": "linkHasItems",
+      "href": "https://www.progym.com.tw/fitness_equipment/aerobic_exercise/",
+      "text": "有氧系列"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/aerobic_exercise/59/",
+      "text": "跑步機系列"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/aerobic_exercise/73/",
+      "text": "健身車系列"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/aerobic_exercise/74/",
+      "text": "划船機系列"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/aerobic_exercise/77/",
+      "text": "其他類別"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/fireproof_mat/",
+      "text": "防焰地墊"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/otheritems/",
+      "text": "訓練小品"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/accessories/",
+      "text": "配件零件"
+    },
+    {
+      "cls": "linkHasItems",
+      "href": "https://www.progym.com.tw/fitness_equipment/ball_related/",
+      "text": "球類相關"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/ball_related/85/",
+      "text": "其他"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/ball_related/84/",
+      "text": "計時計分板"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/ball_related/83/",
+      "text": "球柱架"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/ball_related/82/",
+      "text": "籃球架"
+    },
+    {
+      "cls": "current",
+      "href": "https://www.progym.com.tw/fitness_equipment/",
+      "text": "所有器材"
+    },
+    {
+      "cls": "",
+      "href": "",
+      "text": "熱賣商品"
+    },
+    {
+      "cls": "",
+      "href": "",
+      "text": "胸大肌群"
+    },
+    {
+      "cls": "",
+      "href": "",
+      "text": "手臂肌群"
+    },
+    {
+      "cls": "",
+      "href": "",
+      "text": "肩背肌群"
+    },
+    {
+      "cls": "",
+      "href": "",
+      "text": "腰腹肌群"
+    },
+    {
+      "cls": "",
+      "href": "",
+      "text": "臀腿肌群"
+    },
+    {
+      "cls": "",
+      "href": "",
+      "text": "多功能訓練"
+    },
+    {
+      "cls": "",
+      "href": "",
+      "text": "運動地墊"
+    },
+    {
+      "cls": "",
+      "href": "",
+      "text": "掛槓機台"
+    },
+    {
+      "cls": "",
+      "href": "",
+      "text": "單機機台"
+    },
+    {
+      "cls": "",
+      "href": "",
+      "text": "凳架器材"
+    },
+    {
+      "cls": "",
+      "href": "",
+      "text": "Cable 系列"
+    },
+    {
+      "cls": "",
+      "href": "",
+      "text": "戰術體能"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/665/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/665/",
+      "text": "線上商城販售項目"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/338/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/338/",
+      "text": "聚合式橡膠地墊(片材)"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/430/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/430/",
+      "text": "E3000系列全產品總覽"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5084/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5084/",
+      "text": "SM5084 胸推/肩推 訓練機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5001/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5001/",
+      "text": "SM5001 俯臥屈腿訓練機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5002/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5002/",
+      "text": "SM5002 腿部伸張訓練機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5003/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5003/",
+      "text": "SM5003 腿部推蹬機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5004/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5004/",
+      "text": "SM5004 蝴蝶訓練機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5005/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5005/",
+      "text": "SM5005 側肩上舉機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5006/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5006/",
+      "text": "SM5006 肩部推舉機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5007/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5007/",
+      "text": "SM5007 擴胸/蝴蝶機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5008/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5008/",
+      "text": "SM5008 胸部前推機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5009/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5009/",
+      "text": "SM5009 單雙槓訓練機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5010/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5010/",
+      "text": "SM5010 立式小腿訓練機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/428__6/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/428__6/",
+      "text": "Y900ZA系列全產品總覽"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/428__7/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/428__7/",
+      "text": "T900系列全產品總覽"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/428__8/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/428__8/",
+      "text": "A600/D600系列全產品總覽"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5011/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5011/",
+      "text": "SM5011 臀腿訓練機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM2000_all/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM2000_all/",
+      "text": "SM2000系列全產品總覽"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/428/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/428/",
+      "text": "E7000系列全產品總覽"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/428__1/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/428__1/",
+      "text": "Y900系列全產品總覽"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/428__2/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/428__2/",
+      "text": "E6000系列全產品總覽"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/428__3/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/428__3/",
+      "text": "T1000系列全產品總覽"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5012/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5012/",
+      "text": "SM5012 滑輪下拉訓練機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5014/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5014/",
+      "text": "SM5014 腹部訓練機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/41/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/41/",
+      "text": "E7001 俯臥屈腿訓練機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5021/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5021/",
+      "text": "SM5021 外展訓練機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5022/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5022/",
+      "text": "SM5022 內縮訓練機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5023/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5023/",
+      "text": "SM5023 坐式屈腿訓練機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/54/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/54/",
+      "text": "E7002 腿部伸張訓練機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5028/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5028/",
+      "text": "SM5028 三頭伸展機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/55/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/55/",
+      "text": "E7003 腿部推蹬機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5030/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5030/",
+      "text": "SM5030 二頭肌訓練機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5031/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5031/",
+      "text": "SM5031 背部伸展機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5034/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5034/",
+      "text": "SM5034 坐姿划船機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/U2046/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/U2046/",
+      "text": "U2046 多功能站姿飛鳥機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5035/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/SM5035/",
+      "text": "SM5035 高拉背機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/765__2/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/765__2/",
+      "text": "選購小提醒🔍國中篇"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/765__1/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/765__1/",
+      "text": "選購小提醒🔍高中職篇"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/765/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/765/",
+      "text": "選購小提醒🔍大專院校篇"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/416/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/416/",
+      "text": "E7005 側肩上舉機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/59/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/59/",
+      "text": "E3001 臥式腿部彎曲機"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment-detail/62/",
+      "text": ""
+    }
+  ],
+  "title": "健身房器材品牌推薦｜商用健身器材選購、運動器材製造商 - 惠友運動事業",
+  "url": "https://www.progym.com.tw/fitness_equipment/"
+}

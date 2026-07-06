@@ -1,0 +1,1401 @@
+{
+  "buttons": [
+    "送出查詢"
+  ],
+  "headings": [
+    {
+      "tag": "H2",
+      "text": "實績案例"
+    },
+    {
+      "tag": "H3",
+      "text": "�..."
+    },
+    {
+      "tag": "H3",
+      "text": "�..."
+    },
+    {
+      "tag": "H3",
+      "text": "�..."
+    },
+    {
+      "tag": "H3",
+      "text": "林口體能訓練工作室"
+    },
+    {
+      "tag": "H3",
+      "text": "桃園楊梅軍方營區"
+    },
+    {
+      "tag": "H3",
+      "text": "台中個人住家空間"
+    },
+    {
+      "tag": "H3",
+      "text": "新北新店社區公設"
+    },
+    {
+      "tag": "H3",
+      "text": "桃園社區住宅公設"
+    },
+    {
+      "tag": "H3",
+      "text": "宜蘭三星軍方營區"
+    },
+    {
+      "tag": "H3",
+      "text": "南投國立大學多功能球場"
+    },
+    {
+      "tag": "H3",
+      "text": "台南職業球隊訓練室"
+    },
+    {
+      "tag": "H3",
+      "text": "新北市立小學"
+    },
+    {
+      "tag": "H3",
+      "text": "高雄苓雅私人空間"
+    },
+    {
+      "tag": "H3",
+      "text": "桃園消防分隊"
+    },
+    {
+      "tag": "H3",
+      "text": "台北私人空間"
+    },
+    {
+      "tag": "H3",
+      "text": "台北消防分隊"
+    },
+    {
+      "tag": "H3",
+      "text": "嘉義市立國民中學"
+    },
+    {
+      "tag": "H3",
+      "text": "台南安南地方醫院"
+    },
+    {
+      "tag": "H3",
+      "text": "桃園龜山社區公設"
+    },
+    {
+      "tag": "H3",
+      "text": "彰化連鎖健身俱樂部"
+    },
+    {
+      "tag": "H3",
+      "text": "新竹私人住宅"
+    },
+    {
+      "tag": "H3",
+      "text": "高雄旗山私人空間"
+    },
+    {
+      "tag": "H3",
+      "text": "桃園地方體育園區"
+    },
+    {
+      "tag": "H3",
+      "text": "板橋地區運動中心"
+    },
+    {
+      "tag": "H3",
+      "text": "花蓮私人空間"
+    },
+    {
+      "tag": "H3",
+      "text": "台南歸仁訓練空間"
+    },
+    {
+      "tag": "H3",
+      "text": "新北板橋工作室"
+    },
+    {
+      "tag": "H3",
+      "text": "新北永和健身房"
+    },
+    {
+      "tag": "H3",
+      "text": "臺北公立小學"
+    },
+    {
+      "tag": "H3",
+      "text": "新北市立小學"
+    },
+    {
+      "tag": "H3",
+      "text": "嘉縣大專院校"
+    },
+    {
+      "tag": "H3",
+      "text": "臺中私立高級中學"
+    },
+    {
+      "tag": "H3",
+      "text": "基隆地方派出所"
+    },
+    {
+      "tag": "H3",
+      "text": "基隆警方單位"
+    },
+    {
+      "tag": "H3",
+      "text": "臺北私立幼兒園"
+    },
+    {
+      "tag": "H3",
+      "text": "新北樹林個人住宅"
+    },
+    {
+      "tag": "H3",
+      "text": "桃園社區健身房"
+    },
+    {
+      "tag": "H3",
+      "text": "桃園社區公設"
+    },
+    {
+      "tag": "H3",
+      "text": "臺北消防分隊"
+    },
+    {
+      "tag": "H3",
+      "text": "基隆社區體能館"
+    },
+    {
+      "tag": "H3",
+      "text": "北投健身工作室"
+    },
+    {
+      "tag": "H3",
+      "text": "台中私人住宅"
+    },
+    {
+      "tag": "H3",
+      "text": "新北高級社區"
+    },
+    {
+      "tag": "H3",
+      "text": "桃園軍方單位"
+    },
+    {
+      "tag": "H3",
+      "text": "桃園市活動中心(科技體能探索中心)"
+    },
+    {
+      "tag": "H3",
+      "text": "北市警方單位"
+    },
+    {
+      "tag": "H3",
+      "text": "桃園大專院校"
+    },
+    {
+      "tag": "H3",
+      "text": "台北市社區單位"
+    },
+    {
+      "tag": "H3",
+      "text": "宜蘭縣軍方單位"
+    },
+    {
+      "tag": "H3",
+      "text": "商業銀行台北總部"
+    },
+    {
+      "tag": "H3",
+      "text": "新竹竹北運動空間"
+    },
+    {
+      "tag": "H3",
+      "text": "台中市立國中"
+    },
+    {
+      "tag": "H3",
+      "text": "基隆市社區健身中心"
+    },
+    {
+      "tag": "H3",
+      "text": "北市大專院校"
+    },
+    {
+      "tag": "H3",
+      "text": "新北國民運動中心"
+    },
+    {
+      "tag": "H3",
+      "text": "新北林口健身工作室"
+    },
+    {
+      "tag": "H3",
+      "text": "新竹連鎖健身工作室"
+    },
+    {
+      "tag": "H3",
+      "text": "桃園市建設公司"
+    },
+    {
+      "tag": "H3",
+      "text": "板橋私人住宅"
+    },
+    {
+      "tag": "H3",
+      "text": "桃園市健身俱樂部"
+    },
+    {
+      "tag": "H3",
+      "text": "桃園市健身俱樂部"
+    },
+    {
+      "tag": "H3",
+      "text": "彰化縣電器公司"
+    },
+    {
+      "tag": "H3",
+      "text": "桃園市電子公司"
+    },
+    {
+      "tag": "H3",
+      "text": "桃園市學校單位"
+    },
+    {
+      "tag": "H3",
+      "text": "新北市運動工作室"
+    },
+    {
+      "tag": "H3",
+      "text": "新北市溫泉社區"
+    },
+    {
+      "tag": "H3",
+      "text": "苗栗學校單位"
+    },
+    {
+      "tag": "H3",
+      "text": "台北市軍方單位"
+    },
+    {
+      "tag": "H3",
+      "text": "新北市旗艦運動館"
+    },
+    {
+      "tag": "H3",
+      "text": "林口區健身俱樂部"
+    },
+    {
+      "tag": "H3",
+      "text": "台北市高級社區"
+    },
+    {
+      "tag": "H3",
+      "text": "宜蘭南澳學校單位"
+    },
+    {
+      "tag": "H3",
+      "text": "北市工作室(一館與二館)"
+    },
+    {
+      "tag": "H3",
+      "text": "台中連鎖俱樂部"
+    },
+    {
+      "tag": "H3",
+      "text": "桃園雙語學校"
+    },
+    {
+      "tag": "H3",
+      "text": "高雄無人自助式健身房"
+    },
+    {
+      "tag": "H3",
+      "text": "台北連鎖俱樂部(二館)"
+    },
+    {
+      "tag": "H3",
+      "text": "台北連鎖俱樂部(一館)"
+    },
+    {
+      "tag": "H3",
+      "text": "桃園市消防局單位"
+    },
+    {
+      "tag": "H3",
+      "text": "台北市消防單位"
+    },
+    {
+      "tag": "H3",
+      "text": "高雄市消防單位"
+    },
+    {
+      "tag": "H3",
+      "text": "台北市連鎖俱樂部-內湖店"
+    },
+    {
+      "tag": "H3",
+      "text": "台北市連鎖俱樂部-大安店"
+    },
+    {
+      "tag": "H3",
+      "text": "台北市連鎖健身房-信義店"
+    },
+    {
+      "tag": "H3",
+      "text": "台中連鎖健身房-太平店"
+    },
+    {
+      "tag": "H3",
+      "text": "台北市國民運動中心"
+    },
+    {
+      "tag": "H3",
+      "text": "高雄食品公司"
+    },
+    {
+      "tag": "H3",
+      "text": "桃園電子公司"
+    },
+    {
+      "tag": "H3",
+      "text": "高雄連鎖健身房"
+    },
+    {
+      "tag": "H3",
+      "text": "台北市健身房"
+    },
+    {
+      "tag": "H3",
+      "text": "台北大專院校"
+    },
+    {
+      "tag": "H3",
+      "text": "金門大型俱樂部"
+    },
+    {
+      "tag": "H3",
+      "text": "台中-運動工作室"
+    },
+    {
+      "tag": "H3",
+      "text": "大安社區"
+    },
+    {
+      "tag": "H3",
+      "text": "內湖-社區單位"
+    },
+    {
+      "tag": "H3",
+      "text": "士林私人住宅"
+    },
+    {
+      "tag": "H3",
+      "text": "桃園健身工作室"
+    },
+    {
+      "tag": "H3",
+      "text": "內湖大直健身工作室"
+    },
+    {
+      "tag": "H3",
+      "text": "台南-運動工作室"
+    },
+    {
+      "tag": "H3",
+      "text": "洽詢車"
+    },
+    {
+      "tag": "H3",
+      "text": "商品搜尋"
+    }
+  ],
+  "imgs": [
+    {
+      "alt": "",
+      "h": 40,
+      "src": "https://www.progym.com.tw/public/loading_type/loading_big.gif",
+      "w": 40
+    },
+    {
+      "alt": "",
+      "h": 50,
+      "src": "https://www.progym.com.tw/public/loading_type/loading_text.png",
+      "w": 206
+    },
+    {
+      "alt": "banner",
+      "h": 600,
+      "src": "https://www.progym.com.tw/upload/banner_ins_list/twL_banner_ins_22G19_sjotXkH861.png",
+      "w": 1920
+    },
+    {
+      "alt": "📌新北市連鎖俱樂部",
+      "h": 320,
+      "src": "https://www.progym.com.tw/upload/catalog_case_list_pic/twL_catalog_case_25K25_RFJJsCvXu7.png",
+      "w": 480
+    },
+    {
+      "alt": "📌桃園市活動中心",
+      "h": 320,
+      "src": "https://www.progym.com.tw/upload/catalog_case_list_pic/twL_catalog_case_25K26_MgaMIDwnsk.png",
+      "w": 480
+    },
+    {
+      "alt": "📌臺北crossfit場館",
+      "h": 320,
+      "src": "https://www.progym.com.tw/upload/catalog_case_list_pic/twL_catalog_case_25I09_qWxTTK3W0N.png",
+      "w": 480
+    },
+    {
+      "alt": "林口體能訓練工作室",
+      "h": 320,
+      "src": "https://www.progym.com.tw/upload/catalog_case_list_pic/twL_catalog_case_26F30_gAXxKhiB3K.png",
+      "w": 480
+    },
+    {
+      "alt": "桃園楊梅軍方營區",
+      "h": 320,
+      "src": "https://www.progym.com.tw/upload/catalog_case_list_pic/twL_catalog_case_26F29_VBNSvEUe5W.png",
+      "w": 480
+    },
+    {
+      "alt": "台中個人住家空間",
+      "h": 320,
+      "src": "https://www.progym.com.tw/upload/catalog_case_list_pic/twL_catalog_case_26F24_2bqLH7f6XN.png",
+      "w": 480
+    },
+    {
+      "alt": "新北新店社區公設",
+      "h": 320,
+      "src": "https://www.progym.com.tw/upload/catalog_case_list_pic/twL_catalog_case_26F17_3G4Cy6qMBv.png",
+      "w": 480
+    },
+    {
+      "alt": "桃園社區住宅公設",
+      "h": 320,
+      "src": "https://www.progym.com.tw/upload/catalog_case_list_pic/twL_catalog_case_26F12_FRegbsY8XB.png",
+      "w": 480
+    },
+    {
+      "alt": "宜蘭三星軍方營區",
+      "h": 320,
+      "src": "https://www.progym.com.tw/upload/catalog_case_list_pic/twL_catalog_case_26F11_IXmtIvbshQ.png",
+      "w": 480
+    },
+    {
+      "alt": "南投國立大學多功能球場",
+      "h": 320,
+      "src": "https://www.progym.com.tw/upload/catalog_case_list_pic/twL_catalog_case_26F03_53ABfRgoHM.png",
+      "w": 480
+    },
+    {
+      "alt": "台南職業球隊訓練室",
+      "h": 320,
+      "src": "https://www.progym.com.tw/upload/catalog_case_list_pic/twL_catalog_case_26E06_8ZNt20ocMS.png",
+      "w": 480
+    },
+    {
+      "alt": "新北市立小學",
+      "h": 320,
+      "src": "https://www.progym.com.tw/upload/catalog_case_list_pic/twL_catalog_case_26D28_A7dBoblelc.png",
+      "w": 480
+    },
+    {
+      "alt": "高雄苓雅私人空間",
+      "h": 320,
+      "src": "https://www.progym.com.tw/upload/catalog_case_list_pic/twL_catalog_case_26D23_O8ELYzOvaz.png",
+      "w": 480
+    },
+    {
+      "alt": "桃園消防分隊",
+      "h": 320,
+      "src": "https://www.progym.com.tw/upload/catalog_case_list_pic/twL_catalog_case_26D23_df2GHp9Pu2.png",
+      "w": 480
+    },
+    {
+      "alt": "台北私人空間",
+      "h": 320,
+      "src": "https://www.progym.com.tw/upload/catalog_case_list_pic/twL_catalog_case_26D22_YqbwQ0AYdu.png",
+      "w": 480
+    },
+    {
+      "alt": "台北消防分隊",
+      "h": 320,
+      "src": "https://www.progym.com.tw/upload/catalog_case_list_pic/twL_catalog_case_26D17_qqKknelN4q.png",
+      "w": 480
+    },
+    {
+      "alt": "嘉義市立國民中學",
+      "h": 320,
+      "src": "https://www.progym.com.tw/upload/catalog_case_list_pic/twL_catalog_case_26D16_7Zw54P00JX.png",
+      "w": 480
+    },
+    {
+      "alt": "台南安南地方醫院",
+      "h": 320,
+      "src": "https://www.progym.com.tw/upload/catalog_case_list_pic/twL_catalog_case_26D08_ygTEW4QacW.png",
+      "w": 480
+    },
+    {
+      "alt": "桃園龜山社區公設",
+      "h": 320,
+      "src": "https://www.progym.com.tw/upload/catalog_case_list_pic/twL_catalog_case_26D01_FEUbAwxwhy.png",
+      "w": 480
+    },
+    {
+      "alt": "彰化連鎖健身俱樂部",
+      "h": 320,
+      "src": "https://www.progym.com.tw/upload/catalog_case_list_pic/twL_catalog_case_26C26_WUaIFh8EE7.png",
+      "w": 480
+    },
+    {
+      "alt": "新竹私人住宅",
+      "h": 320,
+      "src": "https://www.progym.com.tw/upload/catalog_case_list_pic/twL_catalog_case_26C18_KKDc9Ir1Fk.png",
+      "w": 480
+    },
+    {
+      "alt": "高雄旗山私人空間",
+      "h": 320,
+      "src": "https://www.progym.com.tw/upload/catalog_case_list_pic/twL_catalog_case_26C17_KbgCHrbLPl.png",
+      "w": 480
+    },
+    {
+      "alt": "桃園地方體育園區",
+      "h": 320,
+      "src": "https://www.progym.com.tw/upload/catalog_case_list_pic/twL_catalog_case_26C10_qNTuEIMUp4.png",
+      "w": 480
+    },
+    {
+      "alt": "板橋地區運動中心",
+      "h": 320,
+      "src": "https://www.progym.com.tw/upload/catalog_case_list_pic/twL_catalog_case_26C05_9dVJQZdXG1.png",
+      "w": 480
+    },
+    {
+      "alt": "花蓮私人空間",
+      "h": 320,
+      "src": "https://www.progym.com.tw/upload/catalog_case_list_pic/twL_catalog_case_26C03_p6F2VfudzN.png",
+      "w": 480
+    },
+    {
+      "alt": "台南歸仁訓練空間",
+      "h": 320,
+      "src": "https://www.progym.com.tw/upload/catalog_case_list_pic/twL_catalog_case_26B03_7Qv1Y8mU0Z.png",
+      "w": 480
+    },
+    {
+      "alt": "新北板橋工作室",
+      "h": 320,
+      "src": "https://www.progym.com.tw/upload/catalog_case_list_pic/twL_catalog_case_26A30_iQGQrgOAAP.png",
+      "w": 480
+    }
+  ],
+  "links": [
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/",
+      "text": "惠友運動PROGYM"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/about/",
+      "text": "公司簡介"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/fitness_equipment/",
+      "text": "所有商品"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/service/",
+      "text": "服務項目"
+    },
+    {
+      "cls": "current",
+      "href": "https://www.progym.com.tw/case/",
+      "text": "實績案例"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/news/",
+      "text": "最新消息"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/contact/",
+      "text": "聯絡我們"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/product/",
+      "text": "線上購物"
+    },
+    {
+      "cls": "openModule orderToggle",
+      "href": "https://www.progym.com.tw/case/#moduleCartList",
+      "text": ""
+    },
+    {
+      "cls": "headerIconBtn openModule cartToggle exclude link",
+      "href": "https://www.progym.com.tw/case/#moduleCart",
+      "text": "0"
+    },
+    {
+      "cls": "loginToggle",
+      "href": "https://www.progym.com.tw/member/login/?refererUrl=https%3A%2F%2Fwww.progym.com.tw%2Fcase%2F",
+      "text": ""
+    },
+    {
+      "cls": "marker",
+      "href": "https://www.instagram.com/progymtw/",
+      "text": ""
+    },
+    {
+      "cls": "marker",
+      "href": "https://www.facebook.com/ProGymSports",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/",
+      "text": "首頁"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case/",
+      "text": "實績案例"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case/60/",
+      "text": "軍警消單位"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case/59/",
+      "text": "各級學校"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case/61/",
+      "text": "國民運動中心"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case/gym_studio/",
+      "text": "健身房 / 工作室"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case/hotel_community/",
+      "text": "飯店 / 社區"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case/58/",
+      "text": "其他"
+    },
+    {
+      "cls": "current",
+      "href": "https://www.progym.com.tw/case/",
+      "text": "所有案例"
+    },
+    {
+      "cls": "",
+      "href": "",
+      "text": "運動空間規劃"
+    },
+    {
+      "cls": "",
+      "href": "",
+      "text": "商用健身器材"
+    },
+    {
+      "cls": "",
+      "href": "",
+      "text": "專業防焰地墊"
+    },
+    {
+      "cls": "",
+      "href": "",
+      "text": "運動相關設備"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/gogym98_gymclub/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/gogym98_gymclub/",
+      "text": "�..."
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/TaoYoung/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/TaoYoung/",
+      "text": "�..."
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/WP_ZouHuiCrossFit/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/WP_ZouHuiCrossFit/",
+      "text": "�..."
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/Linkou_FitnessStudio/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/Linkou_FitnessStudio/",
+      "text": "林口體能訓練工作室"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/Taoyuan_Military_Base/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/Taoyuan_Military_Base/",
+      "text": "桃園楊梅軍方營區"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/taichung_private_HomeGym/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/taichung_private_HomeGym/",
+      "text": "台中個人住家空間"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/NewTaipei_apartmentcomplex/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/NewTaipei_apartmentcomplex/",
+      "text": "新北新店社區公設"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/taoyuan_community/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/taoyuan_community/",
+      "text": "桃園社區住宅公設"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/Yilan_Military_Base/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/Yilan_Military_Base/",
+      "text": "宜蘭三星軍方營區"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/NCNU/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/NCNU/",
+      "text": "南投國立大學多功能球場"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/tainan_tsg/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/tainan_tsg/",
+      "text": "台南職業球隊訓練室"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/newtaipei_elementaryschool/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/newtaipei_elementaryschool/",
+      "text": "新北市立小學"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/Kaohsiung_private_space__1/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/Kaohsiung_private_space__1/",
+      "text": "高雄苓雅私人空間"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/taoyuancity_fireapartment/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/taoyuancity_fireapartment/",
+      "text": "桃園消防分隊"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/Taipei_private_residence/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/Taipei_private_residence/",
+      "text": "台北私人空間"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/taipeicity_fireapartment_donghu/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/taipeicity_fireapartment_donghu/",
+      "text": "台北消防分隊"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/NSJH/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/NSJH/",
+      "text": "嘉義市立國民中學"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/tainanhospital/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/tainanhospital/",
+      "text": "台南安南地方醫院"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/taoyuan_apartmentcomplex/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/taoyuan_apartmentcomplex/",
+      "text": "桃園龜山社區公設"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/excellentfitness/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/excellentfitness/",
+      "text": "彰化連鎖健身俱樂部"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/Hsinchu_private_space/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/Hsinchu_private_space/",
+      "text": "新竹私人住宅"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/Kaohsiung_private_space/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/Kaohsiung_private_space/",
+      "text": "高雄旗山私人空間"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/LongTan_Sportspark/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/LongTan_Sportspark/",
+      "text": "桃園地方體育園區"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/BQSports/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/BQSports/",
+      "text": "板橋地區運動中心"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/Hualien_private_space/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/Hualien_private_space/",
+      "text": "花蓮私人空間"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/Winnie_Sports/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/Winnie_Sports/",
+      "text": "台南歸仁訓練空間"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/lesfu_fitness/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/lesfu_fitness/",
+      "text": "新北板橋工作室"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/UM_Mike_fitness/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/UM_Mike_fitness/",
+      "text": "新北永和健身房"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/LNES/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/LNES/",
+      "text": "臺北公立小學"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/XinXingES/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/XinXingES/",
+      "text": "新北市立小學"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/CCU/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/CCU/",
+      "text": "嘉縣大專院校"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/143/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/143/",
+      "text": "臺中私立高級中學"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/141/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/141/",
+      "text": "基隆地方派出所"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/140/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/140/",
+      "text": "基隆警方單位"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/138/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/138/",
+      "text": "臺北私立幼兒園"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/136/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/136/",
+      "text": "新北樹林個人住宅"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/135/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/135/",
+      "text": "桃園社區健身房"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/134/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/134/",
+      "text": "桃園社區公設"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/133/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/133/",
+      "text": "臺北消防分隊"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/132/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/132/",
+      "text": "基隆社區體能館"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/131/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/131/",
+      "text": "北投健身工作室"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/130/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/130/",
+      "text": "台中私人住宅"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/129/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/129/",
+      "text": "新北高級社區"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/gogym98_gymclub__2/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/gogym98_gymclub__2/",
+      "text": "桃園軍方單位"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/127/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/127/",
+      "text": "桃園市活動中心(科技體能探索中心)"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/126/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/126/",
+      "text": "北市警方單位"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/vanung_university/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/vanung_university/",
+      "text": "桃園大專院校"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/119/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/119/",
+      "text": "台北市社區單位"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/118/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/118/",
+      "text": "宜蘭縣軍方單位"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/117/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/117/",
+      "text": "商業銀行台北總部"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/116/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/116/",
+      "text": "新竹竹北運動空間"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/115/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/115/",
+      "text": "台中市立國中"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/114/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/114/",
+      "text": "基隆市社區健身中心"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/68/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/68/",
+      "text": "北市大專院校"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/112/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/112/",
+      "text": "新北國民運動中心"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/111/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/111/",
+      "text": "新北林口健身工作室"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/110/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/110/",
+      "text": "新竹連鎖健身工作室"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/109/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/109/",
+      "text": "桃園市建設公司"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/108/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/108/",
+      "text": "板橋私人住宅"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/107/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/107/",
+      "text": "桃園市健身俱樂部"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/106/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/106/",
+      "text": "桃園市健身俱樂部"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/105/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/105/",
+      "text": "彰化縣電器公司"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/104/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/104/",
+      "text": "桃園市電子公司"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/103/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/103/",
+      "text": "桃園市學校單位"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/101/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/101/",
+      "text": "新北市運動工作室"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/100/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/100/",
+      "text": "新北市溫泉社區"
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/99/",
+      "text": ""
+    },
+    {
+      "cls": "",
+      "href": "https://www.progym.com.tw/case-detail/99/",
+      "text": "苗栗學校單位"
+    }
+  ],
+  "title": "實績案例｜健身房規劃,健身房器材建置 - 惠友運動 PROGYM",
+  "url": "https://www.progym.com.tw/case/"
+}

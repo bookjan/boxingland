@@ -1,0 +1,156 @@
+{
+  "innerHeight": 844,
+  "innerWidth": 390,
+  "visibleLinks": [
+    {
+      "href": "https://www.progym.com.tw/case-detail/gogym98_gymclub/",
+      "rect": {
+        "h": 200,
+        "w": 300,
+        "x": 45,
+        "y": -38.5
+      },
+      "text": ""
+    },
+    {
+      "href": "https://www.progym.com.tw/case-detail/gogym98_gymclub/",
+      "rect": {
+        "h": 33,
+        "w": 300,
+        "x": 45,
+        "y": 206.5
+      },
+      "text": "�..."
+    },
+    {
+      "href": "https://www.progym.com.tw/case-detail/TaoYoung/",
+      "rect": {
+        "h": 200,
+        "w": 300,
+        "x": 45,
+        "y": 415.5
+      },
+      "text": ""
+    },
+    {
+      "href": "https://www.progym.com.tw/case-detail/TaoYoung/",
+      "rect": {
+        "h": 33,
+        "w": 300,
+        "x": 45,
+        "y": 660.5
+      },
+      "text": "�..."
+    },
+    {
+      "href": "",
+      "rect": {
+        "h": 45,
+        "w": 40.0625,
+        "x": 20,
+        "y": 12.5
+      },
+      "text": ""
+    },
+    {
+      "href": "https://www.progym.com.tw/",
+      "rect": {
+        "h": 55,
+        "w": 60,
+        "x": 165,
+        "y": 7.5
+      },
+      "text": ""
+    },
+    {
+      "href": "",
+      "rect": {
+        "h": 60,
+        "w": 60,
+        "x": 310,
+        "y": 5
+      },
+      "text": ""
+    },
+    {
+      "href": "https://www.progym.com.tw/case/#moduleCartList",
+      "rect": {
+        "h": 60,
+        "w": 129.328125,
+        "x": 0,
+        "y": 784
+      },
+      "text": "訂單查詢"
+    },
+    {
+      "href": "https://www.progym.com.tw/case/#moduleCart",
+      "rect": {
+        "h": 60,
+        "w": 129.3359375,
+        "x": 130.328125,
+        "y": 784
+      },
+      "text": "0 購物車"
+    },
+    {
+      "href": "https://www.progym.com.tw/member/login/?refererUrl=https%3A%2F%2Fwww.progym.com.tw%2Fcase%2F",
+      "rect": {
+        "h": 60,
+        "w": 129.3359375,
+        "x": 260.6640625,
+        "y": 784
+      },
+      "text": "會員登入"
+    },
+    {
+      "href": "https://www.progym.com.tw/product/",
+      "rect": {
+        "h": 47,
+        "w": 139,
+        "x": 50,
+        "y": 523.75
+      },
+      "text": "線上購物"
+    },
+    {
+      "href": "https://www.progym.com.tw/pay/",
+      "rect": {
+        "h": 47,
+        "w": 139,
+        "x": 201,
+        "y": 523.75
+      },
+      "text": "前往結帳"
+    },
+    {
+      "href": "https://www.progym.com.tw/product/",
+      "rect": {
+        "h": 48.5,
+        "w": 190,
+        "x": 100,
+        "y": 486.5
+      },
+      "text": "線上購物"
+    },
+    {
+      "href": "https://www.progym.com.tw/inquiry/",
+      "rect": {
+        "h": 48.5,
+        "w": 190,
+        "x": 100,
+        "y": 545
+      },
+      "text": "洽詢表單"
+    },
+    {
+      "href": "",
+      "rect": {
+        "h": 50,
+        "w": 50,
+        "x": 290,
+        "y": 464.75
+      },
+      "text": ""
+    }
+  ]
+}
