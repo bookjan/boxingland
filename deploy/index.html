@@ -191,24 +191,91 @@
     .btn-light { border-color: var(--line); background: var(--white); color: var(--ink); }
     .btn-dark { border-color: rgba(255,255,255,.18); background: var(--ink); color: var(--white); }
 
-    .stats {
+    .service-wall {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      border-top: 1px solid rgba(255,255,255,.18);
-      margin-top: 58px;
-      max-width: 780px;
+      min-height: 520px;
+      background: var(--ink);
     }
-    .stat {
-      padding: 18px 22px 0 0;
-      color: rgba(255,255,255,.68);
-      font-size: 14px;
-    }
-    .stat strong {
-      display: block;
+    .service-panel {
+      position: relative;
+      min-height: 520px;
+      overflow: hidden;
       color: var(--white);
-      font-size: 28px;
-      line-height: 1.1;
-      margin-bottom: 4px;
+      isolation: isolate;
+      border-right: 1px solid rgba(255,255,255,.1);
+    }
+    .service-panel img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(1) brightness(.58);
+      transform: scale(1.02);
+      transition: transform .36s ease, filter .36s ease;
+      z-index: -2;
+    }
+    .service-panel::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,.16), rgba(0,0,0,.62) 72%, rgba(0,0,0,.86));
+      z-index: -1;
+    }
+    .service-panel::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border: 0 solid var(--red);
+      transition: border-width .2s ease;
+      pointer-events: none;
+    }
+    .service-panel:hover img,
+    .service-panel:focus-visible img {
+      filter: grayscale(0) brightness(.86);
+      transform: scale(1.08);
+    }
+    .service-panel:hover::after,
+    .service-panel:focus-visible::after {
+      border-width: 8px;
+    }
+    .service-copy {
+      position: absolute;
+      left: clamp(24px, 3vw, 38px);
+      right: 24px;
+      bottom: clamp(32px, 5vw, 58px);
+    }
+    .service-copy span {
+      color: rgba(255,255,255,.78);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .service-copy h2 {
+      margin: 10px 0 8px;
+      font-size: clamp(28px, 3vw, 42px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+    .service-copy p {
+      margin: 0;
+      color: rgba(255,255,255,.78);
+      font-size: 15px;
+      font-weight: 800;
+    }
+    .service-arrow {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      margin-top: 28px;
+      border: 1px solid rgba(255,255,255,.42);
+      border-radius: 50%;
+      font-size: 26px;
+      line-height: 1;
     }
 
     section { scroll-margin-top: 86px; }
@@ -288,6 +355,24 @@
       gap: 14px;
       align-items: stretch;
     }
+    .coach-system-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(360px, .95fr);
+      gap: 34px;
+      align-items: center;
+      margin-bottom: 54px;
+    }
+    .coach-system-head .section-head {
+      display: block;
+      margin: 0;
+    }
+    .coach-cards,
+    .coach-principles {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 18px;
+    }
     .coach-card {
       border-radius: 8px;
       border: 1px solid var(--line);
@@ -303,6 +388,10 @@
       margin: 0 0 12px;
       font-size: clamp(24px, 3vw, 34px);
       line-height: 1.15;
+    }
+    .coach-card .eyebrow {
+      margin-bottom: 18px;
+      color: var(--gold);
     }
     .coach-card p { margin: 0; color: var(--muted); }
     .coach-card.dark p { color: rgba(255,255,255,.68); }
@@ -732,9 +821,12 @@
       }
       .nav-links.open a { padding: 14px 0; }
       .nav-links.open .nav-cta { padding: 0 16px; margin-top: 8px; }
-      .section-head, .split, .filter-panel, .coach-grid, .detail-layout { grid-template-columns: 1fr; }
+      .section-head, .split, .filter-panel, .coach-grid, .coach-system-head, .detail-layout { grid-template-columns: 1fr; }
+      .coach-cards,
+      .coach-principles { grid-template-columns: 1fr; }
+      .service-wall { grid-template-columns: repeat(2, 1fr); }
+      .service-panel { min-height: 420px; }
       .course-grid, .product-grid, .case-grid, .brand-strip, .faq-grid, .contact-methods { grid-template-columns: 1fr 1fr; }
-      .stats { grid-template-columns: repeat(2, 1fr); }
       .mobile-bar { display: grid; }
     }
 
@@ -748,8 +840,11 @@
       .eyebrow::before { width: 26px; }
       h1 { font-size: 38px; line-height: 1.02; }
       .hero-actions .btn { width: 100%; }
+      .service-wall { grid-template-columns: 1fr; }
+      .service-panel { min-height: 360px; }
+      .service-panel:hover::after,
+      .service-panel:focus-visible::after { border-width: 5px; }
       .course-grid, .product-grid, .case-grid, .brand-strip, .faq-grid, .contact-methods { grid-template-columns: 1fr; }
-      .stats { grid-template-columns: 1fr 1fr; }
       .filter-title { color: rgba(255,255,255,.8); }
       .equipment-consult { align-items: stretch; flex-direction: column; }
       .detail-actions .btn { width: 100%; }
@@ -790,13 +885,46 @@
           <a class="btn btn-primary" href="#contact">預約拳擊體驗</a>
           <a class="btn btn-secondary" href="#equipment">查看設備商品</a>
         </div>
-        <div class="stats" aria-label="服務重點">
-          <div class="stat"><strong>01</strong>拳擊課程</div>
-          <div class="stat"><strong>02</strong>場地諮詢</div>
-          <div class="stat"><strong>03</strong>設備採購</div>
-          <div class="stat"><strong>04</strong>品牌型錄</div>
-        </div>
       </div>
+    </section>
+
+    <section class="service-wall" aria-label="首頁主要服務入口">
+      <a class="service-panel" href="#courses">
+        <img src="assets/heavy-bags.jpg" alt="拳擊課程與沙袋訓練">
+        <div class="service-copy">
+          <span>Boxing Course</span>
+          <h2>拳擊課程</h2>
+          <p>新手入門、拳擊體能、一對一訓練。</p>
+          <div class="service-arrow" aria-hidden="true">→</div>
+        </div>
+      </a>
+      <a class="service-panel" href="#coaches">
+        <img src="assets/boxing-club.jpg" alt="拳擊教練與訓練環境">
+        <div class="service-copy">
+          <span>Coach System</span>
+          <h2>教練系統</h2>
+          <p>前國手教練帶隊，保留正統拳擊核心。</p>
+          <div class="service-arrow" aria-hidden="true">→</div>
+        </div>
+      </a>
+      <a class="service-panel" href="#equipment">
+        <img src="assets/mma-cage-floor.jpg" alt="拳擊與格鬥設備">
+        <div class="service-copy">
+          <span>Equipment</span>
+          <h2>設備商品</h2>
+          <p>拳擊台、地墊、牆墊與商用健身器材。</p>
+          <div class="service-arrow" aria-hidden="true">→</div>
+        </div>
+      </a>
+      <a class="service-panel" href="#cases">
+        <img src="assets/field-layout.jpg" alt="運動空間與場地規劃">
+        <div class="service-copy">
+          <span>Space Planning</span>
+          <h2>場地規劃</h2>
+          <p>學校、工作室與訓練空間配置諮詢。</p>
+          <div class="service-arrow" aria-hidden="true">→</div>
+        </div>
+      </a>
     </section>
 
     <section class="band band-white" id="courses">
@@ -847,23 +975,54 @@
 
     <section class="band band-white" id="coaches">
       <div class="section">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Coach System</p>
-            <h2>前國手教練帶隊，保留拳擊天地原本的教學核心。</h2>
+        <div class="coach-system-head">
+          <div class="section-head">
+            <p class="eyebrow">Coaches & Classes</p>
+            <h2>教練介紹與課程系統</h2>
+            <p>拳擊天地由前國手潘振成教練創辦，累積多年拳擊教學、選手培訓與社會體育推廣經驗。課程從基礎體能、腳步、拳法、手靶到攻防練習，讓初學者也能在安全、有系統的環境中學習正統拳擊。</p>
           </div>
-          <p>拳擊天地由前國手潘振成教練創辦，課程從站姿、腳步、拳法、手靶到攻防練習，讓初學者也能安全進入正統拳擊。</p>
-        </div>
-        <div class="coach-grid">
           <article class="coach-card dark">
-            <h3>潘振成教練</h3>
-            <p>拳擊天地創辦人、前拳擊國手，曾獲三屆台灣區運動會拳擊金牌，並長期投入學校拳擊隊、台北市代表隊訓練與教練培訓。</p>
-            <div class="coach-tags"><span>前拳擊國手</span><span>三屆金牌</span><span>教練培訓</span></div>
+            <p class="eyebrow">Anaerobic System</p>
+            <h3>獨門「無氧系統」30 階段訓練</h3>
+            <p>從「無氧一」到「無氧三十」，依學員狀況逐步提升強度。訓練把擂台上的動作系統化，結合拳法、腳步、防守、攻擊與體能強化。</p>
+            <div class="coach-tags"><span>拳法腳步</span><span>攻防技巧</span><span>體能強化</span></div>
+          </article>
+        </div>
+
+        <div class="coach-cards">
+          <article class="coach-card">
+            <p class="eyebrow">Founder</p>
+            <h3>潘振成 教練</h3>
+            <p>拳擊天地創辦人、前拳擊國手，曾獲三屆台灣區運動會拳擊金牌，並投入學校拳擊隊與台北市代表隊訓練。多年來持續研發無氧系統，培訓教練並推廣拳擊運動。</p>
+            <div class="coach-tags"><span>前拳擊國手</span><span>三屆區運金牌</span><span>無氧系統研發</span></div>
           </article>
           <article class="coach-card">
-            <h3>課程訓練流程</h3>
-            <p>團體課以伸展、跳繩、姿勢腳步、空拳、手靶、沙袋、條件式攻防與核心體能為主；一對一課程依程度調整強度與目標。</p>
-            <div class="coach-tags"><span>手靶</span><span>沙袋</span><span>攻防練習</span><span>核心體能</span></div>
+            <p class="eyebrow">Group Class</p>
+            <h3>顧祐宗 教練</h3>
+            <p>團體課程以姿勢、腳步、空拳、手靶、沙袋、攻防練習與核心體能為主，協助學員穩定建立基礎。</p>
+          </article>
+          <article class="coach-card">
+            <p class="eyebrow">Group Class</p>
+            <h3>梁育維 教練</h3>
+            <p>團體課程包含啞鈴空拳、閃躲、腳步、手靶訓練、無氧循環體能與沙袋衝刺，訓練節奏明確。</p>
+          </article>
+        </div>
+
+        <div class="coach-principles">
+          <article class="coach-card dark">
+            <p class="eyebrow">01</p>
+            <h3>系統化教學</h3>
+            <p>從核心、協調、姿勢與腳步開始，逐步進階到閃躲、防守與攻擊。</p>
+          </article>
+          <article class="coach-card dark">
+            <p class="eyebrow">02</p>
+            <h3>多元化訓練</h3>
+            <p>結合體能、拳法、手靶、沙袋與條件式攻防，讓訓練兼具安全與樂趣。</p>
+          </article>
+          <article class="coach-card dark">
+            <p class="eyebrow">03</p>
+            <h3>單純收費</h3>
+            <p>課程安排彈性，減少額外門檻，讓資源回到教學品質與學員照顧。</p>
           </article>
         </div>
       </div>
