@@ -7,12 +7,12 @@
     { brand: 'CROSSMAX', cat: '地墊牆墊', title: 'Training Turf / 刻度草坪', desc: '衝刺跑道、推雪橇區與功能訓練地材。', img: 'assets/catalog/crossmax-training-turf.jpg', pdf: 'assets/catalog/pdf/split/crossmax/page-060.pdf' },
     { brand: 'GYMXF', cat: '地墊牆墊', title: 'Gym Flooring / Rubber Tiles', desc: '健身房橡膠地墊、拼接地材與訓練區鋪面。', img: 'assets/catalog/gymxf-flooring.jpg', pdf: 'assets/catalog/pdf/split/gymxf/page-041.pdf' },
     { brand: 'GYMPAC', cat: '地墊牆墊', title: 'Flooring / Turf / Rubber Mat', desc: 'GYMPAC 地墊、人工草坪與訓練鋪面類商品。', img: 'assets/catalog/gympac-flooring.jpg', pdf: 'assets/catalog/pdf/split/gympac/page-039.pdf' },
-    { brand: 'Dollamur', cat: '地墊牆墊', title: 'Dollamur 格鬥地墊', desc: '柔道、摔跤、格鬥訓練空間用地墊，可依場域詢問。', img: 'assets/catalog/dollamur-mats.jpg', pdf: 'assets/catalog/pdf/dollamur-mats.pdf' },
-    { brand: 'CROSSMAX', cat: '商用健身', title: 'Commercial Rack System / 商用訓練架', desc: '商用健身房與體能區使用的 Rack / Rig 組合。', img: 'assets/catalog/crossmax-commercial-racks.jpg', pdf: 'assets/catalog/pdf/split/crossmax/page-006.pdf' },
+    { brand: 'Dollamur', cat: '地墊牆墊', title: 'Dollamur 格鬥地墊', desc: '柔道、摔跤、格鬥訓練空間用地墊，可依場地需求詢問。', img: 'assets/catalog/dollamur-mats.jpg', pdf: 'assets/catalog/pdf/dollamur-mats.pdf' },
+    { brand: 'CROSSMAX', cat: '商用健身', title: 'Commercial Rack System / 商用訓練架', desc: '商用健身房與體能區使用的訓練架與 RIG 組合。', img: 'assets/catalog/crossmax-commercial-racks.jpg', pdf: 'assets/catalog/pdf/split/crossmax/page-006.pdf' },
     { brand: 'CROSSMAX', cat: '商用健身', title: 'Weightlifting Platform / 舉重平台', desc: '重訓區、舉重區與工作室可配置的平台系統。', img: 'assets/catalog/crossmax-platform.jpg', pdf: 'assets/catalog/pdf/split/crossmax/page-011.pdf' },
     { brand: 'GYMXF', cat: '商用健身', title: 'Rig Combination Series 1', desc: '模組化 RIG 系統，適合商用健身房與功能訓練區。', img: 'assets/catalog/gymxf-rig.jpg', pdf: 'assets/catalog/pdf/split/gymxf/page-004.pdf' },
     { brand: 'GYMXF', cat: '商用健身', title: 'Weightlifting Platform Series', desc: '舉重平台與重訓地面區域配置。', img: 'assets/catalog/gymxf-platform.jpg', pdf: 'assets/catalog/pdf/split/gymxf/page-008.pdf' },
-    { brand: 'GYMXF', cat: '商用健身', title: 'Functional Trainer / Cable Machine', desc: '多功能滑輪訓練機與商用 cable 系列。', img: 'assets/catalog/gymxf-functional-trainer.jpg', pdf: 'assets/catalog/pdf/split/gymxf/page-012.pdf' },
+    { brand: 'GYMXF', cat: '商用健身', title: 'Functional Trainer / Cable Machine', desc: '多功能滑輪訓練機與商用繩索訓練設備。', img: 'assets/catalog/gymxf-functional-trainer.jpg', pdf: 'assets/catalog/pdf/split/gymxf/page-012.pdf' },
     { brand: 'GYMXF', cat: '商用健身', title: 'Strength Machine / 訓練機台', desc: '商用肌力訓練機台與單站式器材。', img: 'assets/catalog/gymxf-strength-machine.jpg', pdf: 'assets/catalog/pdf/split/gymxf/page-015.pdf' },
     { brand: 'GYMPAC', cat: '商用健身', title: 'Bench Series / 訓練椅系列', desc: '平椅、可調椅、臥推椅與商用訓練椅。', img: 'assets/catalog/gympac-bench.jpg', pdf: 'assets/catalog/pdf/split/gympac/page-003.pdf' },
     { brand: 'GYMPAC', cat: '商用健身', title: 'Racks / Training Racks', desc: '商用深蹲架、半框架與訓練架。', img: 'assets/catalog/gympac-racks.jpg', pdf: 'assets/catalog/pdf/split/gympac/page-009.pdf' },
@@ -32,7 +32,7 @@
     { brand: '飛樂克斯', cat: '兒童學校', title: '飛樂克斯體操墊 / 啦啦操墊', desc: '體操、啦啦操、學校與兒童運動空間用墊。', img: 'assets/catalog/flex-cheer-mat.jpg', pdf: 'assets/catalog/pdf/flex-cheer-mat.pdf' },
     { brand: 'CROSSMAX', cat: '場地規劃', title: 'Commercial Gym Case / 商用場地案例', desc: '商用健身房、工作室與多功能訓練空間配置參考。', img: 'assets/catalog/crossmax-gym-case.jpg', pdf: 'assets/catalog/pdf/split/crossmax/page-063.pdf' },
     { brand: 'CROSSMAX', cat: '場地規劃', title: 'Turf Sprint Lane / 跑道草坪配置', desc: '推雪橇、衝刺跑道與體能訓練區地面配置。', img: 'assets/catalog/crossmax-training-turf.jpg', pdf: 'assets/catalog/pdf/split/crossmax/page-060.pdf' },
-    { brand: 'GYMXF', cat: '場地規劃', title: 'Modular Rig Space / RIG 空間規劃', desc: '用模組化 RIG 建立團課、功能訓練與重訓複合區。', img: 'assets/catalog/gymxf-rig.jpg', pdf: 'assets/catalog/pdf/split/gymxf/page-004.pdf' },
+    { brand: 'GYMXF', cat: '場地規劃', title: 'Modular Rig Space / RIG 空間規劃', desc: '以模組化 RIG 建立團課、功能訓練與重訓複合區。', img: 'assets/catalog/gymxf-rig.jpg', pdf: 'assets/catalog/pdf/split/gymxf/page-004.pdf' },
     { brand: 'GYMPAC', cat: '場地規劃', title: 'RIG IT UP 場地組合', desc: '大型訓練架、配件與團體訓練區整體配置。', img: 'assets/catalog/gympac-rig.jpg', pdf: 'assets/catalog/pdf/split/gympac/page-018.pdf' }
   ];
 

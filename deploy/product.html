@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>設備商品 PDF 詳情｜拳擊天地 Boxing Land</title>
+  <title>設備型錄 PDF｜拳擊天地 Boxing Land</title>
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -218,7 +218,7 @@
       <span>BOXING LAND</span>
     </a>
     <nav class="nav-actions" aria-label="商品頁導覽">
-      <a class="btn btn-ghost" href="index.html#equipment">設備列表</a>
+      <a class="btn btn-ghost" href="index.html#equipment">設備型錄</a>
       <a class="btn btn-ghost" href="index.html#coaches">拳擊教練</a>
       <a class="btn btn-line" href="https://line.me/R/ti/p/@jpe7785z" target="_blank" rel="noopener">LINE 詢問</a>
     </nav>
@@ -236,8 +236,8 @@
     <div class="dock-inner">
       <div class="dock-title" id="dockTitle"></div>
       <div class="dock-actions">
-        <a class="btn btn-light" id="openPdf" href="" target="_blank" rel="noopener">開啟 PDF 原檔</a>
-        <a class="btn btn-ghost" href="index.html#equipment">返回列表</a>
+        <a class="btn btn-light" id="openPdf" href="" target="_blank" rel="noopener">另開 PDF</a>
+        <a class="btn btn-ghost" href="index.html#equipment">返回設備型錄</a>
         <a class="btn btn-line" href="https://line.me/R/ti/p/@jpe7785z" target="_blank" rel="noopener">LINE 詢問</a>
       </div>
     </div>
@@ -255,7 +255,7 @@
     if (!product) {
       location.replace('index.html#equipment');
     } else {
-      document.title = `${product.title}｜設備商品 PDF 詳情｜拳擊天地 Boxing Land`;
+      document.title = `${product.title}｜設備型錄 PDF｜拳擊天地 Boxing Land`;
       document.getElementById('dockTitle').textContent = product.title;
       document.getElementById('openPdf').href = product.pdf;
       document.getElementById('pdfFrame').src = `${product.pdf}#view=Fit&zoom=page-fit&toolbar=1&navpanes=0`;
