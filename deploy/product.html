@@ -4,6 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>設備型錄 PDF｜拳擊天地 Boxing Land</title>
+  <meta name="description" content="拳擊天地設備型錄 PDF，包含拳擊、格鬥、地墊、牆墊、擂台、籠架與訓練設備資訊。">
+  <link rel="canonical" href="https://boxingland.pages.dev/product.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:title" content="設備型錄 PDF｜拳擊天地 Boxing Land">
+  <meta property="og:description" content="查看拳擊天地設備型錄 PDF，或透過 LINE 詢問設備與場地規劃。">
+  <meta property="og:url" content="https://boxingland.pages.dev/product.html">
+  <meta property="og:image" content="https://boxingland.pages.dev/assets/boxing-ring-floor.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="設備型錄 PDF｜拳擊天地 Boxing Land">
+  <meta name="twitter:description" content="查看拳擊天地設備型錄 PDF，或透過 LINE 詢問設備與場地規劃。">
+  <meta name="twitter:image" content="https://boxingland.pages.dev/assets/boxing-ring-floor.jpg">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -18,6 +30,7 @@
       --gold: #d6a83f;
       --red: #df2b22;
       --red-dark: #b82019;
+      --line-green: #067a3a;
     }
 
     * { box-sizing: border-box; }
@@ -29,6 +42,18 @@
       color: var(--white);
     }
     a { color: inherit; text-decoration: none; }
+    button, a { touch-action: manipulation; }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
 
     .topbar {
       display: flex;
@@ -81,7 +106,7 @@
     .btn:hover { transform: translateY(-1px); }
     .btn-primary { background: var(--red); border-color: var(--red); color: var(--white); }
     .btn-primary:hover { background: var(--red-dark); border-color: var(--red-dark); }
-    .btn-line { background: #06c755; border-color: #06c755; color: var(--white); }
+    .btn-line { background: var(--line-green); border-color: var(--line-green); color: var(--white); }
     .btn-ghost { background: rgba(255,255,255,.06); color: var(--white); }
     .btn-light { background: var(--white); border-color: var(--white); color: var(--ink); }
 
@@ -110,6 +135,28 @@
       color: var(--muted);
       font-size: 18px;
       font-weight: 800;
+    }
+    .pdf-mobile {
+      display: none;
+      min-height: calc(100vh - 88px);
+      padding: 34px 18px;
+      background: #080707;
+    }
+    .pdf-mobile-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px;
+      background: var(--panel);
+    }
+    .pdf-mobile-card h1 {
+      margin: 0 0 12px;
+      font-size: 28px;
+      line-height: 1.2;
+    }
+    .pdf-mobile-card p {
+      margin: 0 0 22px;
+      color: var(--muted);
+      line-height: 1.7;
     }
 
     .inquiry-dock {
@@ -170,15 +217,10 @@
         width: 124px;
         height: 46px;
       }
-      .pdf-section { width: min(100% - 32px, 1480px); }
       .pdf-section { width: 100%; }
-      .pdf-shell {
-        height: calc(100vh - 178px);
-        min-height: 560px;
-      }
-      .pdf-frame {
-        height: 100%;
-      }
+      .pdf-shell { display: none; }
+      .pdf-mobile { display: block; min-height: calc(100vh - 178px); }
+      .inquiry-dock { position: static; }
       .dock-inner {
         width: min(100% - 32px, 1480px);
         min-height: auto;
@@ -194,19 +236,25 @@
 
     @media (max-width: 560px) {
       .brand span { font-size: 24px; }
-      .nav-actions { width: 100%; display: grid; grid-template-columns: 1fr; }
-      .btn { width: 100%; }
+      .nav-actions { width: 100%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+      .btn { width: 100%; min-height: 44px; padding: 0 8px; font-size: 13px; }
       .pdf-section {
         width: 100%;
-        padding-bottom: 180px;
+        padding-bottom: 0;
       }
-      .pdf-shell {
-        border-left: 0;
-        border-right: 0;
-        border-radius: 0;
-      }
-      .pdf-frame {
-        height: 100%;
+      .dock-actions { grid-template-columns: 1fr; }
+      .dock-actions .btn-line { grid-column: auto; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *,
+      *::before,
+      *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
       }
     }
   </style>
@@ -225,9 +273,17 @@
   </header>
 
   <main id="productPage" hidden>
+    <h1 class="sr-only" id="productTitle">設備型錄 PDF</h1>
     <section class="pdf-section" aria-label="商品 PDF 詳細資料">
       <div class="pdf-shell">
         <iframe class="pdf-frame" id="pdfFrame" title="商品 PDF"></iframe>
+      </div>
+      <div class="pdf-mobile">
+        <div class="pdf-mobile-card">
+          <h1 id="mobilePdfTitle">設備型錄 PDF</h1>
+          <p>手機瀏覽器不穩定支援內嵌 PDF。請直接開啟 PDF 檔，可用系統瀏覽器或閱讀器縮放與分享。</p>
+          <a class="btn btn-primary" id="mobilePdfLink" href="" target="_blank" rel="noopener">開啟 PDF</a>
+        </div>
       </div>
     </section>
   </main>
@@ -256,10 +312,17 @@
       location.replace('index.html#equipment');
     } else {
       document.title = `${product.title}｜設備型錄 PDF｜拳擊天地 Boxing Land`;
+      document.getElementById('productTitle').textContent = product.title;
       document.getElementById('dockTitle').textContent = product.title;
       document.getElementById('openPdf').href = product.pdf;
-      document.getElementById('pdfFrame').src = `${product.pdf}#view=Fit&zoom=page-fit&toolbar=1&navpanes=0`;
-      document.getElementById('pdfFrame').title = product.title;
+      document.getElementById('mobilePdfTitle').textContent = product.title;
+      document.getElementById('mobilePdfLink').href = product.pdf;
+      const mobilePdf = matchMedia('(max-width: 900px)').matches;
+      const pdfFrame = document.getElementById('pdfFrame');
+      if (!mobilePdf) {
+        pdfFrame.src = `${product.pdf}#view=Fit&zoom=page-fit&toolbar=1&navpanes=0`;
+      }
+      pdfFrame.title = product.title;
       productPage.hidden = false;
       inquiryDock.hidden = false;
     }

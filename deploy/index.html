@@ -5,6 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BOXING LAND 拳擊天地｜拳擊課程與設備諮詢</title>
   <meta name="description" content="拳擊課程、拳擊體能訓練、拳擊設備、地墊牆墊、擂台籠架與場地規劃諮詢。">
+  <link rel="canonical" href="https://boxingland.pages.dev/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:title" content="BOXING LAND 拳擊天地｜拳擊課程與設備諮詢">
+  <meta property="og:description" content="拳擊課程、拳擊體能訓練、拳擊設備、地墊牆墊、擂台籠架與場地規劃諮詢。">
+  <meta property="og:url" content="https://boxingland.pages.dev/">
+  <meta property="og:image" content="https://boxingland.pages.dev/assets/boxing-ring-floor.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BOXING LAND 拳擊天地｜拳擊課程與設備諮詢">
+  <meta name="twitter:description" content="拳擊課程、拳擊體能訓練、拳擊設備、地墊牆墊、擂台籠架與場地規劃諮詢。">
+  <meta name="twitter:image" content="https://boxingland.pages.dev/assets/boxing-ring-floor.jpg">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SportsActivityLocation",
+          "name": "拳擊天地南京館",
+          "url": "https://boxingland.pages.dev/",
+          "telephone": "+886-2-2505-6000",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "臺北市中山區",
+            "addressRegion": "臺北市",
+            "addressCountry": "TW"
+          },
+          "hasMap": "https://share.google/qe0LII2zmNg87Iu7p"
+        },
+        {
+          "@type": "SportsActivityLocation",
+          "name": "拳擊天地永和館",
+          "url": "https://boxingland.pages.dev/",
+          "telephone": "+886-2-2233-1822",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "得和路211號",
+            "addressLocality": "永和區",
+            "addressRegion": "新北市",
+            "addressCountry": "TW"
+          },
+          "hasMap": "https://share.google/ybDhw2cm2wa5Iqg0F"
+        }
+      ]
+    }
+  </script>
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -17,6 +62,8 @@
       --red: #d72820;
       --red-dark: #a91d18;
       --gold: #c69a43;
+      --gold-readable: #8f6418;
+      --line-green: #067a3a;
       --blue: #255f85;
       --white: #fff;
       --black: #070707;
@@ -35,6 +82,7 @@
     img { display: block; max-width: 100%; }
     a { color: inherit; }
     button, input, textarea { font: inherit; }
+    button, a { touch-action: manipulation; }
     a:focus-visible,
     button:focus-visible {
       outline: 3px solid var(--gold);
@@ -196,7 +244,7 @@
     .btn-primary { background: var(--red); color: var(--white); }
     .btn-primary:hover { background: var(--red-dark); }
     .btn-secondary { border-color: rgba(255,255,255,.38); color: var(--white); background: rgba(255,255,255,.06); }
-    .btn-line { background: #06c755; color: var(--white); }
+    .btn-line { background: var(--line-green); color: var(--white); }
     .btn-light { border-color: var(--line); background: var(--white); color: var(--ink); }
     .btn-dark { border-color: rgba(255,255,255,.18); background: var(--ink); color: var(--white); }
 
@@ -294,6 +342,7 @@
     .band { padding: clamp(72px, 9vw, 112px) 0; }
     .band-dark { background: var(--ink); color: var(--white); }
     .band-white { background: var(--white); }
+    .band-white .eyebrow { color: var(--gold-readable); }
     .section-head {
       display: grid;
       grid-template-columns: minmax(0, 1fr) minmax(260px, 430px);
@@ -359,6 +408,66 @@
       border-radius: 999px;
       font-size: 12px;
       color: #4d453d;
+    }
+    .course-info-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 14px;
+    }
+    .course-info-card {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbf7ef;
+    }
+    .course-info-card > span {
+      display: block;
+      color: var(--red);
+      font-size: 12px;
+      font-weight: 950;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .course-info-card h3 {
+      margin: 0 0 14px;
+      font-size: 24px;
+      line-height: 1.2;
+    }
+    .course-info-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .course-list {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .course-list li {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--line);
+      color: var(--muted);
+    }
+    .course-list li:last-child { border-bottom: 0; padding-bottom: 0; }
+    .course-list strong { color: var(--ink); }
+    .course-info-card .product-link {
+      display: inline-flex;
+      margin-top: 18px;
+      color: var(--red);
+      font-weight: 900;
+      text-decoration: none;
+    }
+    .course-note {
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 14px;
     }
 
     .coach-grid {
@@ -478,7 +587,7 @@
       margin-bottom: 14px;
     }
     .filter-btn {
-      min-height: 38px;
+      min-height: 44px;
       border: 1px solid rgba(255,255,255,.24);
       background: rgba(255,255,255,.06);
       color: rgba(255,255,255,.82);
@@ -493,6 +602,7 @@
       border-color: var(--gold);
       font-weight: 900;
     }
+    .filter-btn[hidden] { display: none; }
     .catalog-note {
       margin-top: 16px;
       color: rgba(255,255,255,.6);
@@ -561,6 +671,19 @@
       text-decoration: none;
       font-weight: 900;
       font-size: 14px;
+    }
+    .product-empty {
+      grid-column: 1 / -1;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 8px;
+      padding: 28px;
+      background: rgba(255,255,255,.05);
+      color: rgba(255,255,255,.72);
+      font-weight: 800;
+    }
+    .product-toggle {
+      width: 100%;
+      margin-top: 14px;
     }
 
     .case-card img {
@@ -688,6 +811,33 @@
       font-size: 17px;
     }
     .contact .hero-actions { margin-top: 0; }
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 30px;
+    }
+    .location-card {
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 8px;
+      padding: 18px;
+      background: rgba(255,255,255,.06);
+    }
+    .location-card h3 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      line-height: 1.2;
+    }
+    .location-card p {
+      margin: 0 0 12px;
+      color: rgba(255,255,255,.72);
+      font-size: 15px;
+    }
+    .location-card a {
+      color: var(--white);
+      font-weight: 900;
+      text-decoration: none;
+    }
     .contact-methods {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -722,7 +872,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #06c755;
+      background: var(--line-green);
       color: var(--white);
       font-size: 15px;
       font-weight: 950;
@@ -799,7 +949,7 @@
       .coach-principles { grid-template-columns: 1fr; }
       .service-wall { grid-template-columns: repeat(2, 1fr); }
       .service-panel { min-height: 420px; }
-      .course-grid, .product-grid, .case-grid, .brand-strip, .faq-grid, .contact-methods { grid-template-columns: 1fr 1fr; }
+      .course-grid, .course-info-grid, .product-grid, .case-grid, .brand-strip, .faq-grid, .contact-methods, .location-grid { grid-template-columns: 1fr 1fr; }
       .line-float { display: none; }
       .contact { padding-bottom: 132px; }
       .mobile-bar { display: grid; }
@@ -813,13 +963,13 @@
       .hero-inner, .section { padding-left: 18px; padding-right: 18px; }
       .eyebrow { font-size: 11px; letter-spacing: .12em; gap: 8px; }
       .eyebrow::before { width: 26px; }
-      h1 { font-size: 38px; line-height: 1.02; }
+      h1 { font-size: clamp(32px, 9.4vw, 38px); line-height: 1.02; }
       .hero-actions .btn { width: 100%; }
       .service-wall { grid-template-columns: 1fr; }
       .service-panel { min-height: 360px; }
       .service-panel:hover::after,
       .service-panel:focus-visible::after { border-width: 5px; }
-      .course-grid, .product-grid, .case-grid, .brand-strip, .faq-grid, .contact-methods { grid-template-columns: 1fr; }
+      .course-grid, .course-info-grid, .product-grid, .case-grid, .brand-strip, .faq-grid, .contact-methods, .location-grid { grid-template-columns: 1fr; }
       .filter-title { color: rgba(255,255,255,.8); }
       .equipment-consult { align-items: stretch; flex-direction: column; }
       footer { padding-bottom: 92px; }
@@ -831,6 +981,7 @@
         transition-duration: .01ms !important;
         animation-duration: .01ms !important;
         animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
       }
     }
   </style>
@@ -950,6 +1101,34 @@
             <ul><li>客製</li><li>小班</li><li>彈性</li></ul>
           </article>
         </div>
+        <div class="course-info-grid" aria-label="課程收費與課表資訊">
+          <article class="course-info-card">
+            <span>Fee</span>
+            <h3>團體課收費</h3>
+            <ul class="course-list">
+              <li><strong>單次</strong><span>450 元</span></li>
+              <li><strong>10 + 1 堂</strong><span>4500 元</span></li>
+              <li><strong>課卡效期</strong><span>開始使用後 3 個月內用完</span></li>
+            </ul>
+          </article>
+          <article class="course-info-card">
+            <span>Private</span>
+            <h3>私人教練課程</h3>
+            <ul class="course-list">
+              <li><strong>1 對 1</strong><span>1500 元 / 優惠 1300 元</span></li>
+              <li><strong>1 對 2</strong><span>2000 元</span></li>
+              <li><strong>1 對 3</strong><span>2400 元</span></li>
+              <li><strong>1 對多</strong><span>600 元 / 人</span></li>
+            </ul>
+          </article>
+          <article class="course-info-card">
+            <span>Schedule</span>
+            <h3>南京館 / 永和館課表</h3>
+            <p>兩館每月課表會依教練與班別調整，平日早晚、週末皆有團課時段；實際可預約時段請以 LINE 公告與回覆為準。</p>
+            <a class="product-link" href="https://line.me/R/ti/p/@jpe7785z" target="_blank" rel="noopener">加入 LINE 確認課表</a>
+          </article>
+        </div>
+        <p class="course-note">課卡可與親友共同使用；首次預約私人教練課程需 2 天前預約並完成繳費，包班需收訂金 50% 或全額。跳繩、繃帶、拳套可於拳館購買。</p>
       </div>
     </section>
 
@@ -1002,7 +1181,7 @@
           <article class="coach-card dark">
             <p class="eyebrow">03</p>
             <h3>收費清楚</h3>
-            <p>課程安排彈性，減少額外門檻，讓資源回到教學品質與學員照顧。</p>
+            <p>團課單次 450 元，10 + 1 堂 4500 元；私人教練與包班可依人數安排。</p>
           </article>
         </div>
       </div>
@@ -1041,10 +1220,12 @@
             <div class="filter-group" id="brandFilters"></div>
             <div class="filter-title">分類</div>
             <div class="filter-group" id="categoryFilters"></div>
-            <p class="catalog-note" id="resultCount">載入商品分類中</p>
+            <button class="filter-btn" id="clearFilters" type="button" hidden>清除篩選</button>
+            <p class="catalog-note" id="resultCount" aria-live="polite">載入商品分類中</p>
           </aside>
           <div>
             <div class="product-grid" id="productGrid"></div>
+            <button class="btn btn-secondary product-toggle" id="productToggle" type="button" hidden>查看全部設備</button>
             <div class="brand-strip" aria-label="合作品牌">
               <div class="brand-badge">CROSSMAX / 科邁斯</div>
               <div class="brand-badge">GYMXF</div>
@@ -1116,11 +1297,25 @@
           <p>想上課請告訴我們預約體驗、偏好時段與人數；設備或場地需求可傳照片、尺寸與用途，我們會先協助判斷下一步。</p>
           <div class="hero-actions">
             <a class="btn btn-line" href="https://line.me/R/ti/p/@jpe7785z" target="_blank" rel="noopener">LINE 加好友</a>
-            <a class="btn btn-primary" href="tel:0225031182">電話諮詢</a>
+            <a class="btn btn-primary" href="tel:+886225031182">電話諮詢</a>
             <a class="btn btn-secondary" href="mailto:knp@ms3.hinet.net">Email 詢問</a>
           </div>
+          <div class="location-grid" aria-label="拳擊天地館別">
+            <article class="location-card">
+              <h3>南京館</h3>
+              <p>臺北市中山區復華里</p>
+              <p><a href="tel:+886225056000">02 2505 6000</a></p>
+              <a href="https://share.google/qe0LII2zmNg87Iu7p" target="_blank" rel="noopener">查看 Google 地圖</a>
+            </article>
+            <article class="location-card">
+              <h3>永和館</h3>
+              <p>新北市永和區得和路211號</p>
+              <p><a href="tel:+886222331822">02 2233 1822</a></p>
+              <a href="https://share.google/ybDhw2cm2wa5Iqg0F" target="_blank" rel="noopener">查看 Google 地圖</a>
+            </article>
+          </div>
           <div class="contact-methods">
-            <div class="method"><span>PHONE</span><strong><a href="tel:0225031182">02-25031182</a></strong></div>
+            <div class="method"><span>PHONE</span><strong><a href="tel:+886225031182">02-25031182</a></strong></div>
             <div class="method"><span>FAX</span><strong>02-25061500</strong></div>
             <div class="method"><span>LINE</span><strong><a href="https://line.me/R/ti/p/@jpe7785z" target="_blank" rel="noopener">@jpe7785z</a></strong></div>
             <div class="method"><span>EMAIL</span><strong>knp@ms3.hinet.net</strong></div>
@@ -1173,30 +1368,43 @@
     const categoryFilters = document.getElementById('categoryFilters');
     const productGrid = document.getElementById('productGrid');
     const resultCount = document.getElementById('resultCount');
+    const clearFilters = document.getElementById('clearFilters');
+    const productToggle = document.getElementById('productToggle');
+    const homeProductLimit = 9;
+    let showAllProducts = false;
 
     if (location.hash.startsWith('#product/')) {
       location.replace(`product.html#${location.hash.slice(9)}`);
     }
 
-    function makeButton(label, active, onClick) {
+    function makeButton(label, value, group) {
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'filter-btn';
       btn.textContent = label;
-      btn.setAttribute('aria-pressed', String(active));
-      btn.addEventListener('click', onClick);
+      btn.dataset.value = value;
+      btn.addEventListener('click', () => {
+        if (group === 'brand') brandFilter = value;
+        if (group === 'cat') catFilter = value;
+        showAllProducts = false;
+        render();
+      });
       return btn;
     }
 
     function drawFilters() {
-      brandFilters.replaceChildren(...brands.map((b) => makeButton(b, b === brandFilter, () => {
-        brandFilter = brandFilter === b ? '' : b;
-        render();
-      })));
-      categoryFilters.replaceChildren(...cats.map((c) => makeButton(c, c === catFilter, () => {
-        catFilter = catFilter === c ? '' : c;
-        render();
-      })));
+      brandFilters.replaceChildren(makeButton('全部品牌', '', 'brand'), ...brands.map((b) => makeButton(b, b, 'brand')));
+      categoryFilters.replaceChildren(makeButton('全部分類', '', 'cat'), ...cats.map((c) => makeButton(c, c, 'cat')));
+    }
+
+    function updateFilters() {
+      brandFilters.querySelectorAll('button').forEach((btn) => {
+        btn.setAttribute('aria-pressed', String(btn.dataset.value === brandFilter));
+      });
+      categoryFilters.querySelectorAll('button').forEach((btn) => {
+        btn.setAttribute('aria-pressed', String(btn.dataset.value === catFilter));
+      });
+      clearFilters.hidden = !brandFilter && !catFilter;
     }
 
     function renderProducts() {
@@ -1205,30 +1413,51 @@
         const catOk = !catFilter || p.cat === catFilter;
         return brandOk && catOk;
       });
-      productGrid.replaceChildren(...filtered.map((p) => {
-        const card = document.createElement('a');
-        card.className = 'product-card';
-        card.href = `product.html#${p.slug}`;
-        card.target = '_blank';
-        card.rel = 'noopener';
-        card.innerHTML = `
-          <figure><img src="${p.img}" alt="${p.title}"></figure>
-          <div class="product-body">
-            <div class="meta"><span class="pill">${p.brand}</span><span class="pill">${p.cat}</span></div>
-            <h3>${p.title}</h3>
-            <p>${p.desc}</p>
-            <span class="product-link">查看型錄 PDF</span>
-          </div>
-        `;
-        return card;
-      }));
-      resultCount.textContent = `目前顯示 ${filtered.length} 項設備。`;
+      const limited = !brandFilter && !catFilter && !showAllProducts && filtered.length > homeProductLimit;
+      const visibleProducts = limited ? filtered.slice(0, homeProductLimit) : filtered;
+      if (!filtered.length) {
+        const empty = document.createElement('div');
+        empty.className = 'product-empty';
+        empty.textContent = '目前沒有符合條件的設備，請清除篩選或改選其他品牌與分類。';
+        productGrid.replaceChildren(empty);
+      } else {
+        productGrid.replaceChildren(...visibleProducts.map((p) => {
+          const card = document.createElement('a');
+          card.className = 'product-card';
+          card.href = `product.html#${p.slug}`;
+          card.innerHTML = `
+            <figure><img src="${p.img}" alt="${p.title}" loading="lazy" decoding="async" width="600" height="400"></figure>
+            <div class="product-body">
+              <div class="meta"><span class="pill">${p.brand}</span><span class="pill">${p.cat}</span></div>
+              <h3>${p.title}</h3>
+              <p>${p.desc}</p>
+              <span class="product-link">查看型錄 PDF</span>
+            </div>
+          `;
+          return card;
+        }));
+      }
+      productToggle.hidden = !limited;
+      resultCount.textContent = limited
+        ? `精選顯示 ${visibleProducts.length} / ${filtered.length} 項設備。`
+        : `目前顯示 ${visibleProducts.length} 項設備。`;
     }
 
     function render() {
-      drawFilters();
+      updateFilters();
       renderProducts();
     }
+    clearFilters.addEventListener('click', () => {
+      brandFilter = '';
+      catFilter = '';
+      showAllProducts = false;
+      render();
+    });
+    productToggle.addEventListener('click', () => {
+      showAllProducts = true;
+      render();
+    });
+    drawFilters();
     render();
   </script>
 </body>
