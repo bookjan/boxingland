@@ -35,6 +35,11 @@
     img { display: block; max-width: 100%; }
     a { color: inherit; }
     button, input, textarea { font: inherit; }
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 3px;
+    }
 
     .site-header {
       position: sticky;
@@ -200,6 +205,7 @@
       grid-template-columns: repeat(4, 1fr);
       min-height: 520px;
       background: var(--ink);
+      border-top: 6px solid var(--red);
     }
     .service-panel {
       position: relative;
@@ -269,17 +275,19 @@
       font-size: 15px;
       font-weight: 800;
     }
-    .service-arrow {
+    .service-action {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 50px;
-      height: 50px;
+      min-height: 46px;
+      padding: 0 18px;
       margin-top: 28px;
       border: 1px solid rgba(255,255,255,.42);
-      border-radius: 50%;
-      font-size: 26px;
+      border-radius: 999px;
+      font-size: 15px;
+      font-weight: 900;
       line-height: 1;
+      gap: 10px;
     }
 
     section { scroll-margin-top: 86px; }
@@ -679,6 +687,7 @@
       color: rgba(255,255,255,.74);
       font-size: 17px;
     }
+    .contact .hero-actions { margin-top: 0; }
     .contact-methods {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -745,7 +754,7 @@
       right: 0;
       bottom: 0;
       z-index: 60;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr;
       background: var(--black);
       border-top: 1px solid rgba(255,255,255,.12);
     }
@@ -764,6 +773,7 @@
 
     @media (max-width: 980px) {
       .nav-links { display: none; }
+      body.menu-open { overflow: hidden; }
       .menu-toggle { display: inline-flex; align-items: center; justify-content: center; }
       .nav-links.open {
         display: flex;
@@ -771,21 +781,27 @@
         left: 0;
         right: 0;
         top: 72px;
+        min-height: calc(100dvh - 72px);
         flex-direction: column;
         align-items: stretch;
         gap: 0;
-        background: rgba(7,7,7,.98);
+        background: var(--black);
         border-bottom: 1px solid rgba(255,255,255,.1);
-        padding: 8px 24px 18px;
+        padding: 22px 24px 96px;
+        overflow: auto;
       }
       .nav-links.open a { padding: 14px 0; }
       .nav-links.open .nav-cta { padding: 0 16px; margin-top: 8px; }
+      body.menu-open .mobile-bar,
+      body.menu-open .line-float { display: none; }
       .section-head, .split, .filter-panel, .coach-grid, .coach-system-head { grid-template-columns: 1fr; }
       .coach-cards,
       .coach-principles { grid-template-columns: 1fr; }
       .service-wall { grid-template-columns: repeat(2, 1fr); }
       .service-panel { min-height: 420px; }
       .course-grid, .product-grid, .case-grid, .brand-strip, .faq-grid, .contact-methods { grid-template-columns: 1fr 1fr; }
+      .line-float { display: none; }
+      .contact { padding-bottom: 132px; }
       .mobile-bar { display: grid; }
     }
 
@@ -806,8 +822,16 @@
       .course-grid, .product-grid, .case-grid, .brand-strip, .faq-grid, .contact-methods { grid-template-columns: 1fr; }
       .filter-title { color: rgba(255,255,255,.8); }
       .equipment-consult { align-items: stretch; flex-direction: column; }
-      .line-float { bottom: 74px; right: 14px; width: 56px; height: 56px; font-size: 13px; }
       footer { padding-bottom: 92px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+      }
     }
   </style>
 </head>
@@ -818,7 +842,7 @@
         <img src="boxing-land-logo-white.png" alt="拳擊天地">
         <span>BOXING LAND</span>
       </a>
-      <button class="menu-toggle" type="button" aria-label="開啟選單" aria-expanded="false">☰</button>
+      <button class="menu-toggle" type="button" aria-label="開啟選單" aria-controls="navLinks" aria-expanded="false">☰</button>
       <div class="nav-links" id="navLinks">
         <a href="#courses">拳擊課程</a>
         <a href="#coaches">教練介紹</a>
@@ -826,7 +850,7 @@
         <a href="#cases">實績案例</a>
         <a href="#faq">常見問題</a>
         <a href="#contact">聯絡諮詢</a>
-        <a class="nav-cta" href="#contact">預約體驗</a>
+        <a class="nav-cta" href="#contact">聯絡預約體驗</a>
       </div>
     </nav>
   </header>
@@ -838,7 +862,7 @@
         <h1 id="hero-title">拳擊課程為核心，<br>設備與場地規劃<br>一起到位。</h1>
         <p>從新手拳擊、拳擊體能到一對一訓練；也協助拳擊台、地墊、牆墊、搏擊設備與商用健身器材採購諮詢。</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact">預約拳擊體驗</a>
+          <a class="btn btn-primary" href="#contact">聯絡預約體驗</a>
           <a class="btn btn-secondary" href="#equipment">查看設備商品</a>
         </div>
       </div>
@@ -851,7 +875,7 @@
           <span>Boxing Course</span>
           <h2>拳擊課程</h2>
           <p>新手入門、拳擊體能、一對一訓練。</p>
-          <div class="service-arrow" aria-hidden="true">→</div>
+          <div class="service-action">查看課程 <span aria-hidden="true">→</span></div>
         </div>
       </a>
       <a class="service-panel" href="#coaches">
@@ -860,7 +884,7 @@
           <span>Coach System</span>
           <h2>教練團隊</h2>
           <p>前國手教練帶隊，保留正統拳擊核心。</p>
-          <div class="service-arrow" aria-hidden="true">→</div>
+          <div class="service-action">認識教練 <span aria-hidden="true">→</span></div>
         </div>
       </a>
       <a class="service-panel" href="#equipment">
@@ -869,7 +893,7 @@
           <span>Equipment</span>
           <h2>設備商品</h2>
           <p>拳擊台、地墊、牆墊與商用健身器材。</p>
-          <div class="service-arrow" aria-hidden="true">→</div>
+          <div class="service-action">看設備 <span aria-hidden="true">→</span></div>
         </div>
       </a>
       <a class="service-panel" href="#cases">
@@ -878,7 +902,7 @@
           <span>Space Planning</span>
           <h2>場地規劃</h2>
           <p>學校、工作室與訓練空間配置諮詢。</p>
-          <div class="service-arrow" aria-hidden="true">→</div>
+          <div class="service-action">看案例 <span aria-hidden="true">→</span></div>
         </div>
       </a>
     </section>
@@ -1088,8 +1112,8 @@
       <div class="section">
         <div class="contact-panel">
           <p class="eyebrow">Contact</p>
-          <h2>想上拳擊課，或想配置設備，都從諮詢開始。</h2>
-          <p>傳你的訓練目標、場地照片、尺寸或設備需求。我們會先協助判斷適合預約體驗、設備詢價，還是場地配置討論。</p>
+          <h2>先聯絡，我們協助安排體驗或設備諮詢。</h2>
+          <p>想上課請告訴我們預約體驗、偏好時段與人數；設備或場地需求可傳照片、尺寸與用途，我們會先協助判斷下一步。</p>
           <div class="hero-actions">
             <a class="btn btn-line" href="https://line.me/R/ti/p/@jpe7785z" target="_blank" rel="noopener">LINE 加好友</a>
             <a class="btn btn-primary" href="tel:0225031182">電話諮詢</a>
@@ -1114,9 +1138,7 @@
   </footer>
 
   <div class="mobile-bar" aria-label="快速聯絡">
-    <a href="#contact">預約體驗</a>
-    <a href="#equipment">設備詢問</a>
-    <a href="https://line.me/R/ti/p/@jpe7785z" target="_blank" rel="noopener">LINE</a>
+    <a href="#contact">聯絡預約體驗</a>
   </div>
 
   <a class="line-float" href="https://line.me/R/ti/p/@jpe7785z" target="_blank" rel="noopener" aria-label="加入拳擊天地 LINE">LINE</a>
@@ -1128,13 +1150,17 @@
     menuToggle.addEventListener('click', () => {
       const open = navLinks.classList.toggle('open');
       menuToggle.setAttribute('aria-expanded', String(open));
+      menuToggle.setAttribute('aria-label', open ? '關閉選單' : '開啟選單');
       menuToggle.textContent = open ? '×' : '☰';
+      document.body.classList.toggle('menu-open', open);
     });
     navLinks.querySelectorAll('a').forEach((link) => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('open');
         menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-label', '開啟選單');
         menuToggle.textContent = '☰';
+        document.body.classList.remove('menu-open');
       });
     });
 
