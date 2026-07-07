@@ -188,6 +188,7 @@
     .btn-primary { background: var(--red); color: var(--white); }
     .btn-primary:hover { background: var(--red-dark); }
     .btn-secondary { border-color: rgba(255,255,255,.38); color: var(--white); background: rgba(255,255,255,.06); }
+    .btn-line { background: #06c755; color: var(--white); }
     .btn-light { border-color: var(--line); background: var(--white); color: var(--ink); }
     .btn-dark { border-color: rgba(255,255,255,.18); background: var(--ink); color: var(--white); }
 
@@ -761,6 +762,26 @@
       margin-bottom: 6px;
     }
     .method strong { font-size: 18px; }
+    .method a { color: inherit; text-decoration: none; }
+
+    .line-float {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 62;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #06c755;
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 950;
+      text-decoration: none;
+      box-shadow: 0 14px 34px rgba(0,0,0,.28);
+    }
 
     footer {
       background: var(--black);
@@ -851,6 +872,7 @@
       .detail-copy { text-align: left; }
       .detail-copy .meta,
       .detail-actions { justify-content: flex-start; }
+      .line-float { bottom: 74px; right: 14px; width: 56px; height: 56px; font-size: 13px; }
       footer { padding-bottom: 92px; }
     }
   </style>
@@ -1135,12 +1157,15 @@
           <h2>想上拳擊課，或想配置設備，都從諮詢開始。</h2>
           <p>傳你的訓練目標、場地照片、尺寸或設備需求。我們先判斷是適合預約體驗、設備詢價，還是場地配置討論。</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="tel:0200000000">電話諮詢</a>
+            <a class="btn btn-line" href="https://line.me/R/ti/p/@jpe7785z" target="_blank" rel="noopener">LINE 加好友</a>
+            <a class="btn btn-primary" href="tel:0225031182">電話諮詢</a>
             <a class="btn btn-secondary" href="mailto:service@boxingland.com.tw">Email 詢問</a>
           </div>
           <div class="contact-methods">
-            <div class="method"><span>PHONE</span><strong>02-0000-0000</strong></div>
-            <div class="method"><span>LINE</span><strong>@boxingland</strong></div>
+            <div class="method"><span>聯絡人</span><strong>賴玉芬</strong></div>
+            <div class="method"><span>PHONE</span><strong><a href="tel:0225031182">02-25031182</a></strong></div>
+            <div class="method"><span>FAX</span><strong>02-25061500</strong></div>
+            <div class="method"><span>LINE</span><strong><a href="https://line.me/R/ti/p/@jpe7785z" target="_blank" rel="noopener">@jpe7785z</a></strong></div>
             <div class="method"><span>EMAIL</span><strong>service@boxingland.com.tw</strong></div>
           </div>
         </div>
@@ -1158,8 +1183,10 @@
   <div class="mobile-bar" aria-label="快速聯絡">
     <a href="#contact">預約體驗</a>
     <a href="#equipment">設備詢問</a>
-    <a href="tel:0200000000">電話</a>
+    <a href="https://line.me/R/ti/p/@jpe7785z" target="_blank" rel="noopener">LINE</a>
   </div>
+
+  <a class="line-float" href="https://line.me/R/ti/p/@jpe7785z" target="_blank" rel="noopener" aria-label="加入拳擊天地 LINE">LINE</a>
 
   <script>
     const navLinks = document.getElementById('navLinks');
