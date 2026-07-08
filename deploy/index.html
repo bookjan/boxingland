@@ -920,10 +920,15 @@
       .service-panel:focus-visible::after { border-width: 5px; }
       .course-grid, .course-info-grid, .product-grid, .case-grid, .faq-grid, .contact-methods, .location-grid { grid-template-columns: 1fr; }
       .filter-panel > div { min-width: 0; }
+      .split > * { min-width: 0; }
       .service-wall,
       .course-grid,
+      .course-info-grid,
       .coach-cards,
+      .coach-principles,
+      .feature-list,
       .case-grid,
+      .faq-grid,
       .product-grid {
         display: flex;
         width: 100%;
@@ -932,15 +937,21 @@
         overscroll-behavior-x: contain;
         scroll-snap-type: x mandatory;
         scroll-padding-inline: 0;
+        align-items: flex-start;
         padding-bottom: 12px;
         -webkit-overflow-scrolling: touch;
       }
       .service-panel,
       .course-card,
+      .course-info-card,
       .coach-cards > .coach-card,
+      .coach-principles > .coach-card,
+      .feature,
       .case-card,
+      .faq-item,
       .product-card {
         flex: 0 0 min(84vw, 340px);
+        min-width: 0;
         scroll-snap-align: start;
       }
       .product-empty {
@@ -976,6 +987,15 @@
       .method:nth-child(5) { grid-column: 1 / -1; }
       .method:nth-child(6),
       .method:nth-child(7) { grid-column: span 3; }
+      .course-info-card .coach-tags {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      .course-info-card .coach-tags span {
+        flex: 0 0 auto;
+        white-space: nowrap;
+      }
       .equipment-consult { align-items: stretch; flex-direction: column; }
     }
 
