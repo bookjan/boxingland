@@ -1112,6 +1112,33 @@
       border-color: rgba(214,166,68,.78);
       background: rgba(214,166,68,.12);
     }
+    .method.has-icon {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .method-icon {
+      width: 44px;
+      height: 44px;
+      flex: 0 0 44px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 13px;
+      font-weight: 950;
+      letter-spacing: 0;
+      line-height: 1;
+    }
+    .method-icon-line { background: #06c755; font-size: 9px; }
+    .method-icon-instagram { background: linear-gradient(135deg, #f9ce34, #ee2a7b 48%, #6228d7); }
+    .method-icon-facebook { background: #1877f2; font-family: Arial, sans-serif; font-size: 28px; align-items: flex-end; padding-bottom: 4px; }
+    .method-copy { min-width: 0; }
+    .method.has-icon strong {
+      display: block;
+      overflow-wrap: anywhere;
+    }
     .method span {
       display: block;
       color: var(--gold);
@@ -1767,11 +1794,11 @@
           <div class="contact-methods">
             <a class="method" href="tel:+886225031182"><span>PHONE</span><strong>02-25031182</strong></a>
             <div class="method"><span>FAX</span><strong>02-25061500</strong></div>
-            <a class="method" href="https://line.me/R/ti/p/@jpe7785z" target="_blank" rel="noopener"><span>LINE</span><strong>@jpe7785z</strong></a>
+            <a class="method has-icon" href="https://line.me/R/ti/p/@jpe7785z" target="_blank" rel="noopener"><b class="method-icon method-icon-line" aria-hidden="true">LINE</b><div class="method-copy"><span>LINE</span><strong>@jpe7785z</strong></div></a>
             <a class="method" href="mailto:knp@ms3.hinet.net"><span>EMAIL</span><strong>knp@ms3.hinet.net</strong></a>
-            <a class="method" href="https://www.instagram.com/boxinglandtw?igsh=Zzk2M3hnejZ1d3l3" target="_blank" rel="noopener"><span>INSTAGRAM</span><strong>boxinglandtw</strong></a>
-            <a class="method" href="https://www.facebook.com/share/1HQaLsMhJc/?mibextid=wwXIfr" target="_blank" rel="noopener"><span>FACEBOOK</span><strong>南京館</strong></a>
-            <a class="method" href="https://www.facebook.com/share/1AjgoH6jQH/?mibextid=wwXIfr" target="_blank" rel="noopener"><span>FACEBOOK</span><strong>永和館</strong></a>
+            <a class="method has-icon" href="https://www.instagram.com/boxinglandtw?igsh=Zzk2M3hnejZ1d3l3" target="_blank" rel="noopener"><b class="method-icon method-icon-instagram" aria-hidden="true">IG</b><div class="method-copy"><span>INSTAGRAM</span><strong>boxinglandtw</strong></div></a>
+            <a class="method has-icon" href="https://www.facebook.com/share/1HQaLsMhJc/?mibextid=wwXIfr" target="_blank" rel="noopener"><b class="method-icon method-icon-facebook" aria-hidden="true">f</b><div class="method-copy"><span>FACEBOOK</span><strong>南京館</strong></div></a>
+            <a class="method has-icon" href="https://www.facebook.com/share/1AjgoH6jQH/?mibextid=wwXIfr" target="_blank" rel="noopener"><b class="method-icon method-icon-facebook" aria-hidden="true">f</b><div class="method-copy"><span>FACEBOOK</span><strong>永和館</strong></div></a>
           </div>
         </div>
       </div>
