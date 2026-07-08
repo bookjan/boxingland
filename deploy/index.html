@@ -673,11 +673,6 @@
       color: rgba(255,255,255,.72);
       font-weight: 800;
     }
-    .product-toggle {
-      width: 100%;
-      margin-top: 14px;
-    }
-
     .case-card img {
       transition: transform .45s ease;
     }
@@ -1265,7 +1260,6 @@
           <div>
             <p class="catalog-note" id="resultCount" aria-live="polite">載入商品分類中</p>
             <div class="product-grid" id="productGrid"></div>
-            <button class="btn btn-secondary product-toggle" id="productToggle" type="button" hidden>查看全部設備</button>
             <div class="equipment-consult">
               <div>
                 <strong>需要規格、尺寸或整場配置？</strong>
@@ -1464,17 +1458,14 @@
     const products = window.catalogProducts || [];
     const productGrid = document.getElementById('productGrid');
     const resultCount = document.getElementById('resultCount');
-    const productToggle = document.getElementById('productToggle');
     const homeProductLimit = 9;
-    let showAllProducts = false;
 
     if (location.hash.startsWith('#product/')) {
       location.replace(`product.html#${location.hash.slice(9)}`);
     }
 
     function renderProducts() {
-      const limited = !showAllProducts && products.length > homeProductLimit;
-      const visibleProducts = limited ? products.slice(0, homeProductLimit) : products;
+      const visibleProducts = products.slice(0, homeProductLimit);
       if (!products.length) {
         const empty = document.createElement('div');
         empty.className = 'product-empty';
@@ -1497,16 +1488,9 @@
           return card;
         }));
       }
-      productToggle.hidden = !limited;
-      resultCount.textContent = limited
-        ? `精選顯示 ${visibleProducts.length} / ${products.length} 項設備。`
-        : `目前顯示 ${visibleProducts.length} 項設備。`;
+      resultCount.textContent = `精選顯示 ${visibleProducts.length} 項設備，完整規格可直接諮詢。`;
     }
 
-    productToggle.addEventListener('click', () => {
-      showAllProducts = true;
-      renderProducts();
-    });
     renderProducts();
   </script>
 </body>
