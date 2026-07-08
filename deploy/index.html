@@ -592,41 +592,11 @@
 
     .filter-panel {
       display: grid;
-      grid-template-columns: 210px 1fr;
-      gap: 26px;
+      grid-template-columns: 1fr;
       align-items: start;
     }
-    .filter-title {
-      font-weight: 950;
-      font-size: 20px;
-      margin-bottom: 14px;
-      color: var(--white);
-    }
-    .filter-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 14px;
-    }
-    .filter-btn {
-      min-height: 44px;
-      border: 1px solid rgba(255,255,255,.24);
-      background: rgba(255,255,255,.06);
-      color: rgba(255,255,255,.82);
-      border-radius: 4px;
-      padding: 0 13px;
-      cursor: pointer;
-      font-size: 14px;
-    }
-    .filter-btn[aria-pressed="true"] {
-      background: var(--gold);
-      color: var(--ink);
-      border-color: var(--gold);
-      font-weight: 900;
-    }
-    .filter-btn[hidden] { display: none; }
     .catalog-note {
-      margin-top: 16px;
+      margin: 0 0 16px;
       color: rgba(255,255,255,.6);
       font-size: 14px;
     }
@@ -977,7 +947,6 @@
         grid-column: auto;
         flex: 1 0 calc(100vw - 36px);
       }
-      .filter-title { color: rgba(255,255,255,.8); }
       .equipment-consult { align-items: stretch; flex-direction: column; }
     }
 
@@ -1244,15 +1213,8 @@
         </div>
 
         <div class="filter-panel">
-          <aside aria-label="設備篩選">
-            <div class="filter-title">品牌</div>
-            <div class="filter-group" id="brandFilters"></div>
-            <div class="filter-title">分類</div>
-            <div class="filter-group" id="categoryFilters"></div>
-            <button class="filter-btn" id="clearFilters" type="button" hidden>清除篩選</button>
-            <p class="catalog-note" id="resultCount" aria-live="polite">載入商品分類中</p>
-          </aside>
           <div>
+            <p class="catalog-note" id="resultCount" aria-live="polite">載入商品分類中</p>
             <div class="product-grid" id="productGrid"></div>
             <button class="btn btn-secondary product-toggle" id="productToggle" type="button" hidden>查看全部設備</button>
             <div class="equipment-consult">
@@ -1451,15 +1413,8 @@
     });
 
     const products = window.catalogProducts || [];
-    const brands = [...new Set(products.map((p) => p.brand))];
-    const cats = [...new Set(products.map((p) => p.cat))];
-    let brandFilter = '';
-    let catFilter = '';
-    const brandFilters = document.getElementById('brandFilters');
-    const categoryFilters = document.getElementById('categoryFilters');
     const productGrid = document.getElementById('productGrid');
     const resultCount = document.getElementById('resultCount');
-    const clearFilters = document.getElementById('clearFilters');
     const productToggle = document.getElementById('productToggle');
     const homeProductLimit = 9;
     let showAllProducts = false;
@@ -1468,48 +1423,13 @@
       location.replace(`product.html#${location.hash.slice(9)}`);
     }
 
-    function makeButton(label, value, group) {
-      const btn = document.createElement('button');
-      btn.type = 'button';
-      btn.className = 'filter-btn';
-      btn.textContent = label;
-      btn.dataset.value = value;
-      btn.addEventListener('click', () => {
-        if (group === 'brand') brandFilter = value;
-        if (group === 'cat') catFilter = value;
-        showAllProducts = false;
-        render();
-      });
-      return btn;
-    }
-
-    function drawFilters() {
-      brandFilters.replaceChildren(makeButton('全部品牌', '', 'brand'), ...brands.map((b) => makeButton(b, b, 'brand')));
-      categoryFilters.replaceChildren(makeButton('全部分類', '', 'cat'), ...cats.map((c) => makeButton(c, c, 'cat')));
-    }
-
-    function updateFilters() {
-      brandFilters.querySelectorAll('button').forEach((btn) => {
-        btn.setAttribute('aria-pressed', String(btn.dataset.value === brandFilter));
-      });
-      categoryFilters.querySelectorAll('button').forEach((btn) => {
-        btn.setAttribute('aria-pressed', String(btn.dataset.value === catFilter));
-      });
-      clearFilters.hidden = !brandFilter && !catFilter;
-    }
-
     function renderProducts() {
-      const filtered = products.filter((p) => {
-        const brandOk = !brandFilter || p.brand === brandFilter;
-        const catOk = !catFilter || p.cat === catFilter;
-        return brandOk && catOk;
-      });
-      const limited = !brandFilter && !catFilter && !showAllProducts && filtered.length > homeProductLimit;
-      const visibleProducts = limited ? filtered.slice(0, homeProductLimit) : filtered;
-      if (!filtered.length) {
+      const limited = !showAllProducts && products.length > homeProductLimit;
+      const visibleProducts = limited ? products.slice(0, homeProductLimit) : products;
+      if (!products.length) {
         const empty = document.createElement('div');
         empty.className = 'product-empty';
-        empty.textContent = '目前沒有符合條件的設備，請清除篩選或改選其他品牌與分類。';
+        empty.textContent = '目前沒有可顯示的設備。';
         productGrid.replaceChildren(empty);
       } else {
         productGrid.replaceChildren(...visibleProducts.map((p) => {
@@ -1530,26 +1450,15 @@
       }
       productToggle.hidden = !limited;
       resultCount.textContent = limited
-        ? `精選顯示 ${visibleProducts.length} / ${filtered.length} 項設備。`
+        ? `精選顯示 ${visibleProducts.length} / ${products.length} 項設備。`
         : `目前顯示 ${visibleProducts.length} 項設備。`;
     }
 
-    function render() {
-      updateFilters();
-      renderProducts();
-    }
-    clearFilters.addEventListener('click', () => {
-      brandFilter = '';
-      catFilter = '';
-      showAllProducts = false;
-      render();
-    });
     productToggle.addEventListener('click', () => {
       showAllProducts = true;
-      render();
+      renderProducts();
     });
-    drawFilters();
-    render();
+    renderProducts();
   </script>
 </body>
 </html>
