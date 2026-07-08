@@ -799,6 +799,23 @@
       height: 100%;
       object-fit: cover;
     }
+    .coach-photo-placeholder {
+      display: grid;
+      place-items: center;
+      background:
+        linear-gradient(135deg, rgba(0,0,0,.78), rgba(0,0,0,.52)),
+        url("boxing-land-logo-white.png") center / 42% auto no-repeat,
+        var(--ink);
+    }
+    .coach-photo-placeholder span {
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 999px;
+      padding: 10px 14px;
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 950;
+      background: rgba(0,0,0,.44);
+    }
     .coach-photo-pan img { object-position: 50% 8%; }
     .coach-photo-kuan img { object-position: 50% 10%; }
     .coach-photo-lin img { object-position: 50% 16%; }
@@ -1586,10 +1603,13 @@
               <div class="coach-tags"><span>前拳擊國手</span><span>三屆區運金牌</span><span>無氧系統研發</span></div>
             </div>
           </article>
-          <article class="coach-card">
-            <p class="eyebrow">教練</p>
-            <h3>顧祐宗 教練</h3>
-            <p>團體課程以姿勢、腳步、空拳、手靶、沙袋、攻防練習與核心體能為主，協助學員穩定建立基礎。</p>
+          <article class="coach-card photo-card">
+            <div class="coach-photo coach-photo-placeholder" aria-hidden="true"><span>教練</span></div>
+            <div class="coach-body">
+              <p class="eyebrow">教練</p>
+              <h3>顧祐宗 教練</h3>
+              <p>團體課程以姿勢、腳步、空拳、手靶、沙袋、攻防練習與核心體能為主，協助學員穩定建立基礎。</p>
+            </div>
           </article>
           <article class="coach-card photo-card">
             <figure class="coach-photo coach-photo-kuan">
