@@ -967,6 +967,10 @@
       .service-panel:focus-visible::after { border-width: 5px; }
       .course-grid, .course-info-grid, .product-grid, .case-grid, .brand-strip, .faq-grid, .contact-methods, .location-grid { grid-template-columns: 1fr; }
       .filter-panel > div { min-width: 0; }
+      .service-wall,
+      .course-grid,
+      .coach-cards,
+      .case-grid,
       .product-grid {
         display: flex;
         width: 100%;
@@ -978,6 +982,10 @@
         padding-bottom: 12px;
         -webkit-overflow-scrolling: touch;
       }
+      .service-panel,
+      .course-card,
+      .coach-cards > .coach-card,
+      .case-card,
       .product-card {
         flex: 0 0 min(84vw, 340px);
         scroll-snap-align: start;
