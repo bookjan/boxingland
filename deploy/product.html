@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>設備型錄 PDF｜拳擊天地 Boxing Land</title>
-  <meta name="description" content="拳擊天地設備型錄 PDF，包含拳擊、格鬥、地墊、牆墊、擂台、籠架與訓練設備資訊。">
-  <link rel="canonical" href="https://boxingland.pages.dev/product.html">
+  <title>設備型錄 PDF｜台北・永和拳擊天地 Boxing Land</title>
+  <meta name="description" content="查看拳擊天地台北・永和設備型錄 PDF，包含拳擊、格鬥、地墊、牆墊、擂台、籠架與訓練設備資訊。">
+  <link rel="canonical" href="https://boxingland.pages.dev/product">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_TW">
-  <meta property="og:title" content="設備型錄 PDF｜拳擊天地 Boxing Land">
-  <meta property="og:description" content="查看拳擊天地設備型錄 PDF，或透過 LINE 詢問設備與場地規劃。">
-  <meta property="og:url" content="https://boxingland.pages.dev/product.html">
-  <meta property="og:image" content="https://boxingland.pages.dev/assets/boxing-ring-floor.jpg">
+  <meta property="og:title" content="設備型錄 PDF｜台北・永和拳擊天地 Boxing Land">
+  <meta property="og:description" content="查看拳擊天地台北・永和設備型錄 PDF，或透過 LINE 詢問設備與場地規劃。">
+  <meta property="og:url" content="https://boxingland.pages.dev/product">
+  <meta property="og:image" content="https://boxingland.pages.dev/assets/og-boxingland.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="設備型錄 PDF｜拳擊天地 Boxing Land">
-  <meta name="twitter:description" content="查看拳擊天地設備型錄 PDF，或透過 LINE 詢問設備與場地規劃。">
-  <meta name="twitter:image" content="https://boxingland.pages.dev/assets/boxing-ring-floor.jpg">
+  <meta name="twitter:title" content="設備型錄 PDF｜台北・永和拳擊天地 Boxing Land">
+  <meta name="twitter:description" content="查看拳擊天地台北・永和設備型錄 PDF，或透過 LINE 詢問設備與場地規劃。">
+  <meta name="twitter:image" content="https://boxingland.pages.dev/assets/og-boxingland.jpg">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -148,7 +148,7 @@
       padding: 22px;
       background: var(--panel);
     }
-    .pdf-mobile-card h1 {
+    .pdf-mobile-card h2 {
       margin: 0 0 12px;
       font-size: 28px;
       line-height: 1.2;
@@ -219,7 +219,7 @@
       }
       .pdf-section { width: 100%; }
       .pdf-shell { display: none; }
-      .pdf-mobile { display: block; min-height: calc(100vh - 178px); }
+      .pdf-mobile { display: block; min-height: auto; }
       .inquiry-dock { position: static; }
       .dock-inner {
         width: min(100% - 32px, 1480px);
@@ -280,7 +280,7 @@
       </div>
       <div class="pdf-mobile">
         <div class="pdf-mobile-card">
-          <h1 id="mobilePdfTitle">設備型錄 PDF</h1>
+          <h2 id="mobilePdfTitle">設備型錄 PDF</h2>
           <p>手機瀏覽器不穩定支援內嵌 PDF。請直接開啟 PDF 檔，可用系統瀏覽器或閱讀器縮放與分享。</p>
           <a class="btn btn-primary" id="mobilePdfLink" href="" target="_blank" rel="noopener">開啟 PDF</a>
         </div>
@@ -311,16 +311,23 @@
     if (!product) {
       location.replace('index.html#equipment');
     } else {
-      document.title = `${product.title}｜設備型錄 PDF｜拳擊天地 Boxing Land`;
+      document.title = `${product.title}｜設備型錄 PDF｜台北・永和拳擊天地 Boxing Land`;
       document.getElementById('productTitle').textContent = product.title;
       document.getElementById('dockTitle').textContent = product.title;
       document.getElementById('openPdf').href = product.pdf;
       document.getElementById('mobilePdfTitle').textContent = product.title;
       document.getElementById('mobilePdfLink').href = product.pdf;
-      const mobilePdf = matchMedia('(max-width: 900px)').matches;
       const pdfFrame = document.getElementById('pdfFrame');
-      if (!mobilePdf) {
-        pdfFrame.src = `${product.pdf}#view=Fit&zoom=page-fit&toolbar=1&navpanes=0`;
+      const pdfSrc = `${product.pdf}#view=Fit&zoom=page-fit&toolbar=1&navpanes=0`;
+      const pdfMedia = matchMedia('(max-width: 900px)');
+      const syncPdfFrame = () => {
+        if (!pdfMedia.matches && !pdfFrame.getAttribute('src')) pdfFrame.src = pdfSrc;
+      };
+      syncPdfFrame();
+      if (pdfMedia.addEventListener) {
+        pdfMedia.addEventListener('change', syncPdfFrame);
+      } else {
+        pdfMedia.addListener(syncPdfFrame);
       }
       pdfFrame.title = product.title;
       productPage.hidden = false;

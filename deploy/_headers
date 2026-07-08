@@ -8,5 +8,8 @@
 /
   Cache-Control: public, max-age=0, must-revalidate
 
+/product
+  Cache-Control: public, max-age=0, must-revalidate
+
 /*.html
   Cache-Control: public, max-age=0, must-revalidate

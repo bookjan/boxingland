@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BOXING LAND 拳擊天地｜拳擊課程與設備諮詢</title>
-  <meta name="description" content="拳擊課程、拳擊體能訓練、拳擊設備、國際品牌代理、地墊牆墊、擂台籠架與場地規劃諮詢。">
+  <title>BOXING LAND 拳擊天地｜台北・永和拳擊課程與設備諮詢</title>
+  <meta name="description" content="拳擊天地提供台北中山區南京館、新北永和館拳擊課程，並協助拳擊設備、地墊牆墊、國際品牌代理與場地規劃諮詢。">
   <link rel="canonical" href="https://boxingland.pages.dev/">
-  <link rel="preload" as="image" href="assets/boxing-ring-floor.jpg">
+  <link rel="preload" as="image" href="assets/heavy-bags.jpg">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_TW">
-  <meta property="og:title" content="BOXING LAND 拳擊天地｜拳擊課程與設備諮詢">
-  <meta property="og:description" content="拳擊課程、拳擊體能訓練、拳擊設備、國際品牌代理、地墊牆墊、擂台籠架與場地規劃諮詢。">
+  <meta property="og:title" content="BOXING LAND 拳擊天地｜台北・永和拳擊課程與設備諮詢">
+  <meta property="og:description" content="拳擊天地提供台北中山區南京館、新北永和館拳擊課程，並協助拳擊設備、地墊牆墊、國際品牌代理與場地規劃諮詢。">
   <meta property="og:url" content="https://boxingland.pages.dev/">
-  <meta property="og:image" content="https://boxingland.pages.dev/assets/boxing-ring-floor.jpg">
+  <meta property="og:image" content="https://boxingland.pages.dev/assets/og-boxingland.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="BOXING LAND 拳擊天地｜拳擊課程與設備諮詢">
-  <meta name="twitter:description" content="拳擊課程、拳擊體能訓練、拳擊設備、國際品牌代理、地墊牆墊、擂台籠架與場地規劃諮詢。">
-  <meta name="twitter:image" content="https://boxingland.pages.dev/assets/boxing-ring-floor.jpg">
+  <meta name="twitter:title" content="BOXING LAND 拳擊天地｜台北・永和拳擊課程與設備諮詢">
+  <meta name="twitter:description" content="拳擊天地提供台北中山區南京館、新北永和館拳擊課程，並協助拳擊設備、地墊牆墊、國際品牌代理與場地規劃諮詢。">
+  <meta name="twitter:image" content="https://boxingland.pages.dev/assets/og-boxingland.jpg">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -34,7 +34,15 @@
             "postalCode": "10491",
             "addressCountry": "TW"
           },
-          "hasMap": "https://share.google/qe0LII2zmNg87Iu7p"
+          "hasMap": "https://share.google/qe0LII2zmNg87Iu7p",
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+              "opens": "09:00",
+              "closes": "22:00"
+            }
+          ]
         },
         {
           "@type": "SportsActivityLocation",
@@ -49,7 +57,15 @@
             "postalCode": "234",
             "addressCountry": "TW"
           },
-          "hasMap": "https://share.google/ybDhw2cm2wa5Iqg0F"
+          "hasMap": "https://share.google/ybDhw2cm2wa5Iqg0F",
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+              "opens": "09:00",
+              "closes": "22:00"
+            }
+          ]
         }
       ]
     }
@@ -61,7 +77,7 @@
     :root {
       --ink: #14110f;
       --paper: #f6f1e7;
-      --muted: #81766b;
+      --muted: #6d6359;
       --line: rgba(20, 17, 15, .14);
       --red: #d72820;
       --red-dark: #a91d18;
@@ -89,7 +105,7 @@
     button, a { touch-action: manipulation; }
     a:focus-visible,
     button:focus-visible {
-      outline: 3px solid var(--gold);
+      outline: 3px solid currentColor;
       outline-offset: 3px;
     }
 
@@ -179,10 +195,10 @@
     }
 
     .hero {
-      min-height: 82vh;
+      min-height: 82svh;
       background:
         linear-gradient(90deg, rgba(0,0,0,.82) 0%, rgba(0,0,0,.58) 44%, rgba(0,0,0,.28) 100%),
-        url("assets/boxing-ring-floor.jpg") center / cover no-repeat;
+        url("assets/heavy-bags.jpg") center / cover no-repeat;
       color: var(--white);
       display: flex;
       align-items: center;
@@ -536,6 +552,7 @@
       margin-bottom: 18px;
       color: var(--gold);
     }
+    .coach-card:not(.dark) .eyebrow { color: var(--gold-readable); }
     .coach-card p { margin: 0; color: var(--muted); }
     .coach-card.dark p { color: rgba(255,255,255,.68); }
     .coach-tags {
@@ -903,7 +920,7 @@
       .nav { padding: 0 18px; }
       .brand span { display: none; }
       .brand img { width: 64px; }
-      .hero { min-height: 82vh; }
+      .hero { min-height: 82svh; }
       .hero-inner, .section { padding-left: 18px; padding-right: 18px; }
       .eyebrow { font-size: 11px; letter-spacing: .12em; gap: 8px; }
       .eyebrow::before { width: 26px; }
@@ -1068,7 +1085,7 @@
         </div>
       </a>
       <a class="service-panel" href="#cases">
-        <img src="assets/field-layout.jpg" alt="運動空間與場地規劃" width="7086" height="5115" loading="lazy" decoding="async">
+        <img src="assets/field-layout.jpg" alt="運動空間與場地規劃" width="1600" height="1155" loading="lazy" decoding="async">
         <div class="service-copy">
           <span>Space Planning</span>
           <h2>場地規劃</h2>
@@ -1121,7 +1138,7 @@
             <ul><li>客製</li><li>小班</li><li>彈性</li></ul>
           </article>
         </div>
-        <div class="course-info-grid" aria-label="課程收費與課表資訊">
+        <div class="course-info-grid">
           <article class="course-info-card">
             <span>Fee</span>
             <h3>團體課收費</h3>
@@ -1281,7 +1298,7 @@
           </div>
           <p>依照拳館、學校、賽事與商用訓練空間需求，提供品牌器材諮詢、規格確認與採購配置建議。</p>
         </div>
-        <div class="course-info-grid" aria-label="國際品牌代理">
+        <div class="course-info-grid">
           <article class="course-info-card">
             <span>Ringside</span>
             <h3>Ringside</h3>
@@ -1293,7 +1310,7 @@
             <h3>Budoland / TOP TEN</h3>
             <p><strong>國際協會官方認可器材</strong></p>
             <p>以賽事規格、防護安全與專業訓練需求為核心，協助確認適用項目與採購規格。</p>
-            <div class="coach-tags" aria-label="官方認可協會">
+            <div class="coach-tags">
               <span>World Boxing</span>
               <span>WAKO</span>
               <span>IFMA</span>
@@ -1313,7 +1330,7 @@
             <a class="product-link" href="https://www.tedisport.eu" target="_blank" rel="noopener">前往原廠網站</a>
           </article>
         </div>
-        <div class="case-grid agency-gallery" aria-label="Tedi Sport 產品照片">
+        <div class="case-grid agency-gallery">
           <article class="case-card">
             <figure><img src="assets/agency/tedi-sport-brand-detail.jpg" alt="Tedi Sport 紅白競技船艇品牌細節" width="1280" height="960" loading="lazy" decoding="async"></figure>
             <div><span>Tedi Sport</span><h3>品牌與船體細節</h3><p>提供原廠船艇照片作為採購洽詢、規格確認與產品討論參考。</p></div>
@@ -1361,7 +1378,7 @@
             <div><span>拳擊設備</span><h3>沙袋、手靶與搏擊訓練設備</h3><p>依訓練內容、使用人數與牆面條件，搭配沙袋、手靶與基礎器材。</p></div>
           </article>
           <article class="case-card">
-            <figure><img src="assets/wall-padding-gym.jpg" alt="牆墊柱墊與安全防護" width="2592" height="1944" loading="lazy" decoding="async"></figure>
+            <figure><img src="assets/wall-padding-gym.jpg" alt="牆墊柱墊與安全防護" width="1600" height="1200" loading="lazy" decoding="async"></figure>
             <div><span>場地規劃</span><h3>牆墊、柱墊與安全防護</h3><p>學校、工作室與企業訓練區，可先從牆墊、柱墊與角落防護盤點。</p></div>
           </article>
         </div>
@@ -1391,13 +1408,13 @@
         <div class="contact-panel">
           <p class="eyebrow">Contact</p>
           <h2>先聯絡，我們協助安排體驗或設備諮詢。</h2>
-          <p>想上課請告訴我們預約體驗、偏好時段與人數；設備或場地需求可傳照片、尺寸與用途，我們會先協助判斷下一步。</p>
+          <p>想上課請告訴我們預約體驗、偏好時段與人數；設備或場地需求可傳照片、尺寸與用途，我們會先協助判斷下一步。營業與可預約時段為每日 09:00-22:00，實際課表以 LINE 回覆為準。</p>
           <div class="hero-actions">
             <a class="btn btn-line" href="https://line.me/R/ti/p/@jpe7785z" target="_blank" rel="noopener">LINE 加好友</a>
             <a class="btn btn-primary" href="tel:+886225031182">電話諮詢</a>
             <a class="btn btn-secondary" href="mailto:knp@ms3.hinet.net">Email 詢問</a>
           </div>
-          <div class="location-grid" aria-label="拳擊天地館別">
+          <div class="location-grid">
             <article class="location-card">
               <h3>南京館</h3>
               <p>10491 臺北市中山區復華里南京東路三段91-2號</p>
