@@ -833,10 +833,19 @@
       margin-top: 34px;
     }
     .method {
+      display: block;
       border: 1px solid rgba(255,255,255,.16);
       border-radius: 8px;
       padding: 16px;
       background: rgba(255,255,255,.06);
+      color: inherit;
+      text-decoration: none;
+      transition: border-color .2s ease, background .2s ease;
+    }
+    a.method:hover,
+    a.method:focus-visible {
+      border-color: rgba(214,166,68,.78);
+      background: rgba(214,166,68,.12);
     }
     .method span {
       display: block;
@@ -847,7 +856,6 @@
       margin-bottom: 6px;
     }
     .method strong { font-size: 18px; }
-    .method a { color: inherit; text-decoration: none; }
 
     .line-float {
       position: fixed;
@@ -1429,13 +1437,13 @@
             </article>
           </div>
           <div class="contact-methods">
-            <div class="method"><span>PHONE</span><strong><a href="tel:+886225031182">02-25031182</a></strong></div>
+            <a class="method" href="tel:+886225031182"><span>PHONE</span><strong>02-25031182</strong></a>
             <div class="method"><span>FAX</span><strong>02-25061500</strong></div>
-            <div class="method"><span>LINE</span><strong><a href="https://line.me/R/ti/p/@jpe7785z" target="_blank" rel="noopener">@jpe7785z</a></strong></div>
-            <div class="method"><span>EMAIL</span><strong><a href="mailto:knp@ms3.hinet.net">knp@ms3.hinet.net</a></strong></div>
-            <div class="method"><span>INSTAGRAM</span><strong><a href="https://www.instagram.com/boxinglandtw?igsh=Zzk2M3hnejZ1d3l3" target="_blank" rel="noopener">boxinglandtw</a></strong></div>
-            <div class="method"><span>FACEBOOK</span><strong><a href="https://www.facebook.com/share/1HQaLsMhJc/?mibextid=wwXIfr" target="_blank" rel="noopener">南京館</a></strong></div>
-            <div class="method"><span>FACEBOOK</span><strong><a href="https://www.facebook.com/share/1AjgoH6jQH/?mibextid=wwXIfr" target="_blank" rel="noopener">永和館</a></strong></div>
+            <a class="method" href="https://line.me/R/ti/p/@jpe7785z" target="_blank" rel="noopener"><span>LINE</span><strong>@jpe7785z</strong></a>
+            <a class="method" href="mailto:knp@ms3.hinet.net"><span>EMAIL</span><strong>knp@ms3.hinet.net</strong></a>
+            <a class="method" href="https://www.instagram.com/boxinglandtw?igsh=Zzk2M3hnejZ1d3l3" target="_blank" rel="noopener"><span>INSTAGRAM</span><strong>boxinglandtw</strong></a>
+            <a class="method" href="https://www.facebook.com/share/1HQaLsMhJc/?mibextid=wwXIfr" target="_blank" rel="noopener"><span>FACEBOOK</span><strong>南京館</strong></a>
+            <a class="method" href="https://www.facebook.com/share/1AjgoH6jQH/?mibextid=wwXIfr" target="_blank" rel="noopener"><span>FACEBOOK</span><strong>永和館</strong></a>
           </div>
         </div>
       </div>
