@@ -724,23 +724,6 @@
       }
     }
 
-    .brand-strip {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 10px;
-      margin-top: 26px;
-    }
-    .brand-badge {
-      border-radius: 8px;
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.05);
-      padding: 16px;
-      color: rgba(255,255,255,.78);
-      font-weight: 900;
-      min-height: 76px;
-      display: flex;
-      align-items: center;
-    }
     .equipment-consult {
       margin-top: 18px;
       border: 1px solid rgba(255,255,255,.12);
@@ -947,7 +930,7 @@
       .coach-principles { grid-template-columns: 1fr; }
       .service-wall { grid-template-columns: repeat(2, 1fr); }
       .service-panel { min-height: 420px; }
-      .course-grid, .course-info-grid, .product-grid, .case-grid, .brand-strip, .faq-grid, .contact-methods, .location-grid { grid-template-columns: 1fr 1fr; }
+      .course-grid, .course-info-grid, .product-grid, .case-grid, .faq-grid, .contact-methods, .location-grid { grid-template-columns: 1fr 1fr; }
       .line-float { display: none; }
     }
 
@@ -965,7 +948,7 @@
       .service-panel { min-height: 360px; }
       .service-panel:hover::after,
       .service-panel:focus-visible::after { border-width: 5px; }
-      .course-grid, .course-info-grid, .product-grid, .case-grid, .brand-strip, .faq-grid, .contact-methods, .location-grid { grid-template-columns: 1fr; }
+      .course-grid, .course-info-grid, .product-grid, .case-grid, .faq-grid, .contact-methods, .location-grid { grid-template-columns: 1fr; }
       .filter-panel > div { min-width: 0; }
       .service-wall,
       .course-grid,
@@ -1272,13 +1255,6 @@
           <div>
             <div class="product-grid" id="productGrid"></div>
             <button class="btn btn-secondary product-toggle" id="productToggle" type="button" hidden>查看全部設備</button>
-            <div class="brand-strip" aria-label="合作品牌">
-              <div class="brand-badge">CROSSMAX / 科邁斯</div>
-              <div class="brand-badge">GYMXF</div>
-              <div class="brand-badge">GYMPAC</div>
-              <div class="brand-badge">Dollamur</div>
-              <div class="brand-badge">飛樂克斯</div>
-            </div>
             <div class="equipment-consult">
               <div>
                 <strong>需要規格、尺寸或整場配置？</strong>
