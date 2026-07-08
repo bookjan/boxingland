@@ -625,6 +625,14 @@
 
     section { scroll-margin-top: 86px; }
     .band { padding: clamp(72px, 9vw, 112px) 0; }
+    .band-white:has(+ .band-white),
+    .band-dark:has(+ .band-dark) {
+      padding-bottom: clamp(42px, 5vw, 64px);
+    }
+    .band-white + .band-white,
+    .band-dark + .band-dark {
+      padding-top: clamp(42px, 5vw, 64px);
+    }
     .band-dark { background: var(--ink); color: var(--white); }
     .band-white { background: var(--white); }
     .band-white .eyebrow { color: var(--gold-readable); }
