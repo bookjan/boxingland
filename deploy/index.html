@@ -504,6 +504,24 @@
       background: #fbf7ef;
       padding: clamp(24px, 3vw, 34px);
     }
+    .coach-card.photo-card {
+      overflow: hidden;
+      padding: 0;
+    }
+    .coach-photo {
+      margin: 0;
+      aspect-ratio: 3 / 4;
+      background: #ddd;
+    }
+    .coach-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .coach-body {
+      padding: clamp(24px, 3vw, 34px);
+    }
+    .photo-card h3 { font-size: clamp(24px, 2.2vw, 28px); }
     .coach-card.dark {
       background: var(--ink);
       color: var(--white);
@@ -1142,6 +1160,28 @@
             <p class="eyebrow">Group Class</p>
             <h3>梁育維 教練</h3>
             <p>團體課程包含啞鈴空拳、閃躲、腳步、手靶訓練、無氧循環體能與沙袋衝刺，訓練節奏明確。</p>
+          </article>
+          <article class="coach-card photo-card">
+            <figure class="coach-photo">
+              <img src="assets/coaches/kuan.jpg" alt="小關教練" width="900" height="1200" loading="lazy" decoding="async">
+            </figure>
+            <div class="coach-body">
+              <p class="eyebrow">Boxing Coach</p>
+              <h3>小關 教練</h3>
+              <p>以拳擊基本動作、步伐與出拳節奏為核心，協助學員建立安全穩定的訓練基礎，適合入門學員與想精進拳擊技術的學員。</p>
+              <div class="coach-tags"><span>拳擊</span><span>團課</span><span>私人教練課</span></div>
+            </div>
+          </article>
+          <article class="coach-card photo-card">
+            <figure class="coach-photo">
+              <img src="assets/coaches/lin-kun-liang.jpg" alt="林昆良（棍子）教練" width="900" height="1200" loading="lazy" decoding="async">
+            </figure>
+            <div class="coach-body">
+              <p class="eyebrow">Group Class</p>
+              <h3>林昆良（棍子）</h3>
+              <p>課程重視團體訓練節奏與動作執行品質，帶領學員在拳擊體能、基礎拳法與協調訓練中逐步累積穩定度。</p>
+              <div class="coach-tags"><span>團課</span><span>拳擊體能</span><span>基礎拳法</span></div>
+            </div>
           </article>
         </div>
 
