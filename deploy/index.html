@@ -904,6 +904,44 @@
       color: rgba(255,255,255,.6);
       font-size: 14px;
     }
+    .catalog-filters {
+      display: grid;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .filter-group {
+      display: grid;
+      gap: 8px;
+    }
+    .filter-label {
+      color: rgba(255,255,255,.58);
+      font-size: 12px;
+      font-weight: 950;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .filter-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .filter-btn {
+      min-height: 40px;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 999px;
+      padding: 0 14px;
+      background: rgba(255,255,255,.06);
+      color: rgba(255,255,255,.78);
+      font: inherit;
+      font-size: 14px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+    .filter-btn[aria-pressed="true"] {
+      border-color: var(--gold);
+      background: var(--gold);
+      color: var(--ink);
+    }
     .product-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -1313,6 +1351,16 @@
       .course-grid, .course-info-grid, .product-grid, .case-grid, .faq-grid, .contact-methods, .location-grid { grid-template-columns: 1fr; }
       .filter-panel > div { min-width: 0; }
       .split > * { min-width: 0; }
+      .filter-buttons {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 2px;
+        -webkit-overflow-scrolling: touch;
+      }
+      .filter-btn {
+        flex: 0 0 auto;
+        white-space: nowrap;
+      }
       .service-wall,
       .course-grid,
       .course-info-grid,
@@ -1717,6 +1765,16 @@
         <div class="filter-panel">
           <div>
             <p class="catalog-note" id="resultCount" aria-live="polite">載入商品分類中</p>
+            <div class="catalog-filters" aria-label="設備篩選">
+              <div class="filter-group">
+                <span class="filter-label">廠牌</span>
+                <div class="filter-buttons" id="brandFilters"></div>
+              </div>
+              <div class="filter-group">
+                <span class="filter-label">分類</span>
+                <div class="filter-buttons" id="categoryFilters"></div>
+              </div>
+            </div>
             <div class="product-grid" id="productGrid"></div>
             <div class="equipment-consult">
               <div>
@@ -1916,18 +1974,50 @@
     const products = window.catalogProducts || [];
     const productGrid = document.getElementById('productGrid');
     const resultCount = document.getElementById('resultCount');
-    const homeProductLimit = 9;
+    const brandFilters = document.getElementById('brandFilters');
+    const categoryFilters = document.getElementById('categoryFilters');
+    const brands = [...new Set(products.map((p) => p.brand))];
+    const categories = [...new Set(products.map((p) => p.cat))];
+    let activeFilter = products.length
+      ? { type: 'cat', value: categories.includes('拳擊設備') ? '拳擊設備' : categories[0] }
+      : null;
 
     if (location.hash.startsWith('#product/')) {
       location.replace(`product.html#${location.hash.slice(9)}`);
     }
 
+    function makeFilterButton(type, value) {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'filter-btn';
+      button.textContent = value;
+      button.setAttribute('aria-pressed', String(activeFilter?.type === type && activeFilter.value === value));
+      button.addEventListener('click', () => {
+        activeFilter = { type, value };
+        renderFilterButtons();
+        renderProducts();
+      });
+      return button;
+    }
+
+    function renderFilterButtons() {
+      brandFilters.replaceChildren(...brands.map((brand) => makeFilterButton('brand', brand)));
+      categoryFilters.replaceChildren(...categories.map((cat) => makeFilterButton('cat', cat)));
+    }
+
     function renderProducts() {
-      const visibleProducts = products.slice(0, homeProductLimit);
+      const visibleProducts = activeFilter
+        ? products.filter((p) => p[activeFilter.type] === activeFilter.value)
+        : [];
       if (!products.length) {
         const empty = document.createElement('div');
         empty.className = 'product-empty';
         empty.textContent = '目前沒有可顯示的設備。';
+        productGrid.replaceChildren(empty);
+      } else if (!visibleProducts.length) {
+        const empty = document.createElement('div');
+        empty.className = 'product-empty';
+        empty.textContent = '此篩選目前沒有可顯示的設備。';
         productGrid.replaceChildren(empty);
       } else {
         productGrid.replaceChildren(...visibleProducts.map((p) => {
@@ -1946,9 +2036,12 @@
           return card;
         }));
       }
-      resultCount.textContent = `精選顯示 ${visibleProducts.length} 項設備，完整規格可直接諮詢。`;
+      resultCount.textContent = activeFilter
+        ? `目前顯示「${activeFilter.value}」${visibleProducts.length} 項設備，可用廠牌或分類切換。`
+        : '請選擇廠牌或分類查看設備。';
     }
 
+    renderFilterButtons();
     renderProducts();
   </script>
 </body>
