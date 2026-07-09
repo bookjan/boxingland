@@ -815,6 +815,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: 50% 0%;
     }
     .coach-photo-placeholder {
       display: grid;
@@ -824,16 +825,7 @@
         url("boxing-land-logo-white.png") center / 42% auto no-repeat,
         var(--ink);
     }
-    .coach-photo-pan img { object-position: 50% 8%; }
-    .coach-photo-kuan img { object-position: 50% 10%; }
-    .coach-photo-lin img { object-position: 50% 16%; }
-    .coach-photo-huang img { object-position: 64% 18%; }
-    .coach-photo-yang img { object-position: 50% 8%; }
-    .coach-photo-zhang img { object-position: 50% 18%; }
-    .coach-photo-cai img { object-position: 50% 10%; }
-    .coach-photo-zheng img { object-position: 50% 10%; }
-    .coach-photo-xu img { object-position: 50% 10%; }
-    .coach-photo-yong-chen img { object-position: 50% 10%; }
+    .coach-photo-huang img { object-position: 64% 0%; }
     .coach-body {
       padding: clamp(24px, 3vw, 34px);
     }
@@ -881,6 +873,86 @@
       background: rgba(255,255,255,.1);
       color: rgba(255,255,255,.86);
     }
+    .coach-mobile-list { display: none; }
+    .coach-mobile-item {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbf7ef;
+      overflow: hidden;
+    }
+    .coach-mobile-summary {
+      display: grid;
+      grid-template-columns: 74px minmax(0, 1fr) 18px;
+      gap: 12px;
+      align-items: center;
+      padding: 12px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .coach-mobile-summary::-webkit-details-marker { display: none; }
+    .coach-mobile-avatar {
+      width: 74px;
+      height: 74px;
+      margin: 0;
+      border-radius: 50%;
+      overflow: hidden;
+      background: #ddd;
+    }
+    .coach-mobile-avatar.coach-photo,
+    .coach-mobile-avatar.coach-photo-placeholder { aspect-ratio: auto; }
+    .coach-mobile-avatar img,
+    .coach-mobile-avatar .coach-photo-placeholder {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .coach-mobile-avatar.coach-photo-placeholder,
+    .coach-mobile-avatar .coach-photo-placeholder { background-size: 58% auto; }
+    .coach-mobile-label {
+      margin: 0 0 2px;
+      color: var(--gold-readable);
+      font-size: 11px;
+      font-weight: 950;
+    }
+    .coach-mobile-name {
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.15;
+      font-weight: 950;
+    }
+    .coach-mobile-excerpt {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .coach-mobile-arrow {
+      color: var(--gold-readable);
+      font-weight: 950;
+      transition: transform .18s ease;
+    }
+    .coach-mobile-item[open] .coach-mobile-arrow { transform: rotate(45deg); }
+    .coach-mobile-detail {
+      display: grid;
+      gap: 12px;
+      padding: 0 14px 16px;
+    }
+    .coach-mobile-detail .coach-description {
+      gap: 8px;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+    .coach-mobile-detail > p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+    .coach-mobile-detail .coach-tags { margin-top: 0; }
 
     .split {
       display: grid;
@@ -1366,7 +1438,7 @@
       .hero-actions .btn { width: 100%; }
       .service-wall { grid-template-columns: 1fr; min-height: 0; }
       .service-panel { min-height: 360px; }
-      .coach-photo { aspect-ratio: 4 / 3; }
+      .coach-photo { aspect-ratio: 3 / 4; }
       .service-panel:hover::after,
       .service-panel:focus-visible::after { border-width: 5px; }
       .course-grid, .course-info-grid, .product-grid, .case-grid, .faq-grid, .contact-methods, .location-grid { grid-template-columns: 1fr; }
@@ -1414,6 +1486,12 @@
         flex: 0 0 min(84vw, 340px);
         min-width: 0;
         scroll-snap-align: start;
+      }
+      #coaches.has-mobile-coach-list .coach-cards { display: none; }
+      #coaches .coach-mobile-list {
+        display: grid;
+        gap: 10px;
+        margin-top: 18px;
       }
       .product-empty {
         grid-column: auto;
@@ -1662,6 +1740,8 @@
           </article>
         </div>
 
+        <div class="coach-mobile-list" id="coachMobileList"></div>
+
         <div class="coach-cards">
           <article class="coach-card photo-card">
             <figure class="coach-photo coach-photo-pan">
@@ -1809,6 +1889,28 @@
               <h3>詠宸</h3>
               <p>團課與私教皆以基礎拳法、步伐節奏與拳擊體能為核心，協助學員建立穩定出拳、核心控制與安全訓練習慣，並依程度調整強度與動作細節。</p>
               <div class="coach-tags"><span>團課</span><span>私教</span><span>拳擊體能</span></div>
+            </div>
+          </article>
+          <article class="coach-card photo-card">
+            <figure class="coach-photo coach-photo-pei-shan">
+              <img src="assets/coaches/pei-shan.jpg" alt="佩珊教練" width="900" height="1200" loading="lazy" decoding="async">
+            </figure>
+            <div class="coach-body">
+              <p class="eyebrow">教練</p>
+              <h3>佩珊</h3>
+              <p>課程以兒童拳擊、基礎體能與團體訓練為主，透過安全節奏、動作協調與互動引導，協助學員建立運動習慣、專注力與拳擊基本動作。</p>
+              <div class="coach-tags"><span>兒童拳擊</span><span>體能訓練</span><span>團課</span></div>
+            </div>
+          </article>
+          <article class="coach-card photo-card">
+            <figure class="coach-photo coach-photo-wan-ru">
+              <img src="assets/coaches/wan-ru.jpg" alt="婉茹教練" width="900" height="1200" loading="lazy" decoding="async">
+            </figure>
+            <div class="coach-body">
+              <p class="eyebrow">教練</p>
+              <h3>婉茹</h3>
+              <p>團課與私教皆以基礎拳法、拳擊體能與動作協調為主，依學員程度調整訓練節奏，協助建立穩定出拳、核心控制與安全運動習慣。</p>
+              <div class="coach-tags"><span>團課</span><span>私教</span><span>體能訓練</span></div>
             </div>
           </article>
         </div>
@@ -2068,6 +2170,62 @@
         document.body.classList.remove('menu-open');
       });
     });
+
+    const coachMobileList = document.getElementById('coachMobileList');
+    if (coachMobileList) {
+      const mobileCoachItems = [...document.querySelectorAll('.coach-cards > .coach-card')].map((card) => {
+        const item = document.createElement('details');
+        item.className = 'coach-mobile-item';
+
+        const summary = document.createElement('summary');
+        summary.className = 'coach-mobile-summary';
+
+        const photo = card.querySelector('.coach-photo')?.cloneNode(true);
+        if (photo) {
+          photo.classList.add('coach-mobile-avatar');
+        }
+
+        const meta = document.createElement('div');
+        const label = document.createElement('p');
+        label.className = 'coach-mobile-label';
+        label.textContent = card.querySelector('.eyebrow')?.textContent || '教練';
+
+        const name = document.createElement('h3');
+        name.className = 'coach-mobile-name';
+        name.textContent = card.querySelector('h3')?.textContent || '';
+
+        const detail = document.createElement('div');
+        detail.className = 'coach-mobile-detail';
+        const description = card.querySelector('.coach-description');
+        if (description) {
+          detail.append(description.cloneNode(true));
+        } else {
+          card.querySelectorAll('.coach-body > p:not(.eyebrow)').forEach((paragraph) => {
+            detail.append(paragraph.cloneNode(true));
+          });
+        }
+
+        const excerpt = document.createElement('p');
+        excerpt.className = 'coach-mobile-excerpt';
+        excerpt.textContent = detail.textContent.trim();
+
+        const tags = card.querySelector('.coach-tags')?.cloneNode(true);
+        if (tags) detail.append(tags);
+
+        const arrow = document.createElement('span');
+        arrow.className = 'coach-mobile-arrow';
+        arrow.setAttribute('aria-hidden', 'true');
+        arrow.textContent = '+';
+
+        meta.append(label, name, excerpt);
+        summary.append(photo || document.createElement('span'), meta, arrow);
+        item.append(summary, detail);
+        return item;
+      });
+
+      coachMobileList.replaceChildren(...mobileCoachItems);
+      document.getElementById('coaches')?.classList.add('has-mobile-coach-list');
+    }
 
     const products = window.catalogProducts || [];
     const productGrid = document.getElementById('productGrid');
