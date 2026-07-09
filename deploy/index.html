@@ -219,6 +219,16 @@
         linear-gradient(90deg, rgba(0,0,0,.94), rgba(0,0,0,.5), rgba(0,0,0,.94)),
         url("assets/boxing-class-hero.jpg") center / cover no-repeat;
     }
+    .hero-video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      z-index: -3;
+      filter: saturate(1.05) contrast(1.05);
+    }
     .hero::before {
       content: "";
       position: absolute;
@@ -226,8 +236,7 @@
       z-index: -2;
       background:
         linear-gradient(72deg, transparent 0 34%, rgba(255,226,160,.2) 43%, transparent 52% 100%),
-        linear-gradient(108deg, transparent 0 38%, rgba(215,173,84,.14) 48%, transparent 58% 100%),
-        url("assets/boxing-class-hero.jpg") center / cover no-repeat;
+        linear-gradient(108deg, transparent 0 38%, rgba(215,173,84,.14) 48%, transparent 58% 100%);
       transform: scale(1.08);
       animation: heroSlowZoom 10s ease-in-out infinite alternate;
     }
@@ -1457,6 +1466,7 @@
 
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
+      .hero-video { display: none; }
       *, *::before, *::after {
         transition-duration: .01ms !important;
         animation-duration: .01ms !important;
@@ -1490,6 +1500,9 @@
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
       <h1 id="hero-title" class="sr-only">BOXING LAND 拳擊天地｜台北・永和拳擊課程與設備諮詢</h1>
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/boxing-class-hero.jpg" aria-hidden="true">
+        <source src="assets/boxing-hero-video.mp4" type="video/mp4">
+      </video>
       <div class="hero-punch-ring" aria-hidden="true"></div>
       <i class="hero-spark" aria-hidden="true"></i>
       <i class="hero-spark" aria-hidden="true"></i>
