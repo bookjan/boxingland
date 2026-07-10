@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>設備型錄 PDF｜台北・永和拳擊天地 Boxing Land</title>
   <meta name="description" content="查看拳擊天地台北・永和設備型錄 PDF，包含拳擊、格鬥、地墊、牆墊、擂台、籠架與訓練設備資訊。">
-  <link rel="canonical" href="https://boxingland.pages.dev/product">
+  <meta name="robots" content="noindex,follow">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_TW">
   <meta property="og:title" content="設備型錄 PDF｜台北・永和拳擊天地 Boxing Land">
@@ -260,6 +260,9 @@
   </style>
 </head>
 <body>
+  <noscript>
+    <p class="pdf-fallback"><a href="index.html#equipment">瀏覽器未啟用 JavaScript，返回設備型錄</a></p>
+  </noscript>
   <header class="topbar">
     <a class="brand" href="index.html#equipment" aria-label="回到拳擊天地設備列表">
       <img src="boxing-land-logo-white.png" alt="拳擊天地" width="900" height="506">
@@ -282,7 +285,7 @@
         <div class="pdf-mobile-card">
           <h2 id="mobilePdfTitle">設備型錄 PDF</h2>
           <p>手機瀏覽器不穩定支援內嵌 PDF。請直接開啟 PDF 檔，可用系統瀏覽器或閱讀器縮放與分享。</p>
-          <a class="btn btn-primary" id="mobilePdfLink" href="" target="_blank" rel="noopener">開啟 PDF</a>
+          <a class="btn btn-primary" id="mobilePdfLink" href="index.html#equipment" target="_blank" rel="noopener">開啟 PDF</a>
         </div>
       </div>
     </section>
@@ -292,7 +295,7 @@
     <div class="dock-inner">
       <div class="dock-title" id="dockTitle"></div>
       <div class="dock-actions">
-        <a class="btn btn-light" id="openPdf" href="" target="_blank" rel="noopener">另開 PDF</a>
+        <a class="btn btn-light" id="openPdf" href="index.html#equipment" target="_blank" rel="noopener">另開 PDF</a>
         <a class="btn btn-ghost" href="index.html#equipment">返回設備型錄</a>
         <a class="btn btn-line" href="https://line.me/R/ti/p/@jpe7785z" target="_blank" rel="noopener">LINE 詢問</a>
       </div>
@@ -302,9 +305,9 @@
   <script src="assets/catalog/products.js"></script>
   <script>
     const products = window.catalogProducts || [];
-    const slug = decodeURIComponent(location.hash.replace(/^#/, '')).replace(/^product\//, '');
-    const productNo = Number((slug.match(/^\d+/) || [])[0]);
-    const product = products.find((item) => item.slug === slug) || products[productNo - 1];
+    const slug = location.hash.replace(/^#/, '').replace(/^product\//, '');
+    const productId = Number((slug.match(/^(\d+)(?:-|$)/) || [])[1]);
+    const product = products.find((item) => item.slug === slug) || products.find((item) => item.id === productId);
     const productPage = document.getElementById('productPage');
     const inquiryDock = document.getElementById('inquiryDock');
 

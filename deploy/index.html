@@ -6,7 +6,7 @@
   <title>BOXING LAND 拳擊天地｜台北・永和拳擊課程與設備諮詢</title>
   <meta name="description" content="拳擊天地提供台北中山區南京館、新北永和館拳擊課程，並協助拳擊設備、地墊牆墊、國際品牌代理與場地規劃諮詢。">
   <link rel="canonical" href="https://boxingland.pages.dev/">
-  <link rel="preload" as="image" href="assets/boxing-class-hero.jpg">
+  <link rel="preload" as="image" href="assets/boxing-class-hero.webp">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_TW">
   <meta property="og:title" content="BOXING LAND 拳擊天地｜台北・永和拳擊課程與設備諮詢">
@@ -217,7 +217,7 @@
       background:
         radial-gradient(circle at 50% 44%, rgba(255, 215, 128, .22), transparent 24%),
         linear-gradient(90deg, rgba(0,0,0,.94), rgba(0,0,0,.5), rgba(0,0,0,.94)),
-        url("assets/boxing-class-hero.jpg") center / cover no-repeat;
+        url("assets/boxing-class-hero.webp") center / cover no-repeat;
     }
     .hero-video {
       position: absolute;
@@ -873,6 +873,69 @@
       background: rgba(255,255,255,.1);
       color: rgba(255,255,255,.86);
     }
+    .coach-card-summary,
+    .coach-card-action { display: none; }
+    .coach-dialog {
+      width: min(520px, calc(100vw - 32px));
+      max-height: calc(100dvh - 32px);
+      margin: auto 0 auto auto;
+      padding: 0;
+      border: 0;
+      border-radius: 8px 0 0 8px;
+      background: #fbf7ef;
+      color: var(--ink);
+      box-shadow: -18px 0 60px rgba(0,0,0,.28);
+      overflow: auto;
+    }
+    .coach-dialog::backdrop { background: rgba(0,0,0,.52); }
+    .coach-dialog-close {
+      position: sticky;
+      top: 10px;
+      left: calc(100% - 54px);
+      z-index: 2;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,.86);
+      color: var(--ink);
+      font-size: 26px;
+      line-height: 1;
+      cursor: pointer;
+    }
+    .coach-dialog-media .coach-photo {
+      aspect-ratio: 16 / 10;
+      border-bottom: 1px solid var(--line);
+    }
+    .coach-dialog-body {
+      display: grid;
+      gap: 16px;
+      padding: 28px;
+    }
+    .coach-dialog-body h3 {
+      margin: 0;
+      font-size: clamp(30px, 4vw, 42px);
+      line-height: 1.08;
+    }
+    .coach-dialog-body .eyebrow { color: var(--gold-readable); }
+    .coach-dialog-detail {
+      display: grid;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.75;
+    }
+    .coach-dialog-detail p,
+    .coach-dialog-detail ol { margin: 0; }
+    .coach-dialog-detail ol { padding-left: 1.25em; }
+    .coach-dialog .coach-tags { margin-top: 0; }
+    .coach-dialog-cta {
+      justify-self: start;
+      margin-top: 4px;
+      color: var(--red);
+      font-weight: 900;
+      text-decoration: none;
+    }
     .coach-mobile-list { display: none; }
     .coach-mobile-item {
       border: 1px solid var(--line);
@@ -1341,6 +1404,52 @@
       flex-wrap: wrap;
     }
 
+    @media (min-width: 641px) {
+      .coach-card.photo-card {
+        display: flex;
+        flex-direction: column;
+      }
+      .coach-card.photo-card .coach-photo {
+        position: relative;
+        aspect-ratio: 4 / 3;
+        overflow: hidden;
+      }
+      .coach-card.photo-card .coach-photo img {
+        position: absolute;
+        inset: 0;
+      }
+      .coach-card.photo-card .coach-body {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+      }
+      .coach-card.photo-card .coach-body > p:not(.eyebrow):not(.coach-card-summary),
+      .coach-card.photo-card .coach-description {
+        display: none;
+      }
+      .coach-card-summary {
+        display: -webkit-box;
+        color: var(--muted);
+        overflow: hidden;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+      .coach-card-action {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        margin-top: auto;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: transparent;
+        color: var(--red);
+        font-weight: 900;
+        cursor: pointer;
+      }
+      .coach-card-action:hover { border-color: var(--red); }
+    }
+
     @media (max-width: 980px) {
       .nav-links { display: none; }
       body.menu-open { overflow: hidden; }
@@ -1362,7 +1471,6 @@
       }
       .nav-links.open a { padding: 14px 0; }
       .nav-links.open .nav-cta { padding: 0 16px; margin-top: 8px; }
-      body.menu-open .line-float { display: none; }
       .section-head, .split, .filter-panel, .coach-grid, .coach-system-head { grid-template-columns: 1fr; }
       .coach-cards,
       .coach-principles { grid-template-columns: 1fr; }
@@ -1589,8 +1697,8 @@
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
       <h1 id="hero-title" class="sr-only">BOXING LAND 拳擊天地｜台北・永和拳擊課程與設備諮詢</h1>
-      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/boxing-class-hero.jpg" aria-hidden="true">
-        <source src="assets/boxing-hero-video.mp4" type="video/mp4">
+      <video class="hero-video" autoplay muted loop playsinline preload="none" poster="assets/boxing-class-hero.webp" aria-hidden="true">
+        <source data-src="assets/boxing-hero-video.mp4" type="video/mp4">
       </video>
       <div class="hero-punch-ring" aria-hidden="true"></div>
       <i class="hero-spark" aria-hidden="true"></i>
@@ -1745,7 +1853,7 @@
         <div class="coach-cards">
           <article class="coach-card photo-card">
             <figure class="coach-photo coach-photo-pan">
-              <img src="assets/coaches/pan-chen-cheng.jpg" alt="潘振成教練" width="900" height="1200" loading="lazy" decoding="async">
+              <img src="assets/coaches/pan-chen-cheng.jpg" srcset="assets/coaches/pan-chen-cheng-320.webp 320w, assets/coaches/pan-chen-cheng-720.webp 720w" sizes="(max-width: 640px) 74px, (max-width: 980px) calc(100vw - 48px), 380px" alt="潘振成教練" width="900" height="1200" loading="lazy" decoding="async">
             </figure>
             <div class="coach-body">
               <p class="eyebrow">總教練</p>
@@ -1764,7 +1872,7 @@
           </article>
           <article class="coach-card photo-card">
             <figure class="coach-photo coach-photo-kuan">
-              <img src="assets/coaches/kuan.jpg" alt="小闕教練" width="900" height="1200" loading="lazy" decoding="async">
+              <img src="assets/coaches/kuan.jpg" srcset="assets/coaches/kuan-320.webp 320w, assets/coaches/kuan-720.webp 720w" sizes="(max-width: 640px) 74px, (max-width: 980px) calc(100vw - 48px), 380px" alt="小闕教練" width="900" height="1200" loading="lazy" decoding="async">
             </figure>
             <div class="coach-body">
               <p class="eyebrow">教練</p>
@@ -1775,7 +1883,7 @@
           </article>
           <article class="coach-card photo-card">
             <figure class="coach-photo coach-photo-lin">
-              <img src="assets/coaches/lin-kun-liang.jpg" alt="林昆良（棍子）教練" width="900" height="1200" loading="lazy" decoding="async">
+              <img src="assets/coaches/lin-kun-liang.jpg" srcset="assets/coaches/lin-kun-liang-320.webp 320w, assets/coaches/lin-kun-liang-720.webp 720w" sizes="(max-width: 640px) 74px, (max-width: 980px) calc(100vw - 48px), 380px" alt="林昆良（棍子）教練" width="900" height="1200" loading="lazy" decoding="async">
             </figure>
             <div class="coach-body">
               <p class="eyebrow">教練</p>
@@ -1786,7 +1894,7 @@
           </article>
           <article class="coach-card photo-card">
             <figure class="coach-photo coach-photo-huang">
-              <img src="assets/coaches/huang-cong-shi.jpg" alt="黃琮詩（Kivin）教練" width="900" height="1200" loading="lazy" decoding="async">
+              <img src="assets/coaches/huang-cong-shi.jpg" srcset="assets/coaches/huang-cong-shi-320.webp 320w, assets/coaches/huang-cong-shi-720.webp 720w" sizes="(max-width: 640px) 74px, (max-width: 980px) calc(100vw - 48px), 380px" alt="黃琮詩（Kivin）教練" width="900" height="1200" loading="lazy" decoding="async">
             </figure>
             <div class="coach-body">
               <p class="eyebrow">教練</p>
@@ -1797,7 +1905,7 @@
           </article>
           <article class="coach-card photo-card">
             <figure class="coach-photo coach-photo-yang">
-              <img src="assets/coaches/yang-ben-sheng.jpg" alt="楊本聖教練" width="900" height="1200" loading="lazy" decoding="async">
+              <img src="assets/coaches/yang-ben-sheng.jpg" srcset="assets/coaches/yang-ben-sheng-320.webp 320w, assets/coaches/yang-ben-sheng-720.webp 720w" sizes="(max-width: 640px) 74px, (max-width: 980px) calc(100vw - 48px), 380px" alt="楊本聖教練" width="900" height="1200" loading="lazy" decoding="async">
             </figure>
             <div class="coach-body">
               <p class="eyebrow">教練</p>
@@ -1832,7 +1940,7 @@
           </article>
           <article class="coach-card photo-card">
             <figure class="coach-photo coach-photo-zhang">
-              <img src="assets/coaches/zhang-yu-tong.jpg" alt="張語彤教練" width="900" height="1200" loading="lazy" decoding="async">
+              <img src="assets/coaches/zhang-yu-tong.jpg" srcset="assets/coaches/zhang-yu-tong-320.webp 320w, assets/coaches/zhang-yu-tong-720.webp 720w" sizes="(max-width: 640px) 74px, (max-width: 980px) calc(100vw - 48px), 380px" alt="張語彤教練" width="900" height="1200" loading="lazy" decoding="async">
             </figure>
             <div class="coach-body">
               <p class="eyebrow">教練</p>
@@ -1849,7 +1957,7 @@
           </article>
           <article class="coach-card photo-card">
             <figure class="coach-photo coach-photo-zheng">
-              <img src="assets/coaches/zheng-mei-ling.jpg" alt="鄭美靈（草妹）教練" width="900" height="1200" loading="lazy" decoding="async">
+              <img src="assets/coaches/zheng-mei-ling.jpg" srcset="assets/coaches/zheng-mei-ling-320.webp 320w, assets/coaches/zheng-mei-ling-720.webp 720w" sizes="(max-width: 640px) 74px, (max-width: 980px) calc(100vw - 48px), 380px" alt="鄭美靈（草妹）教練" width="900" height="1200" loading="lazy" decoding="async">
             </figure>
             <div class="coach-body">
               <p class="eyebrow">教練</p>
@@ -1860,7 +1968,7 @@
           </article>
           <article class="coach-card photo-card">
             <figure class="coach-photo coach-photo-cai">
-              <img src="assets/coaches/cai-xiao-bo.jpg" alt="蔡小波教練" width="900" height="1200" loading="lazy" decoding="async">
+              <img src="assets/coaches/cai-xiao-bo.jpg" srcset="assets/coaches/cai-xiao-bo-320.webp 320w, assets/coaches/cai-xiao-bo-720.webp 720w" sizes="(max-width: 640px) 74px, (max-width: 980px) calc(100vw - 48px), 380px" alt="蔡小波教練" width="900" height="1200" loading="lazy" decoding="async">
             </figure>
             <div class="coach-body">
               <p class="eyebrow">教練</p>
@@ -1871,7 +1979,7 @@
           </article>
           <article class="coach-card photo-card">
             <figure class="coach-photo coach-photo-xu">
-              <img src="assets/coaches/xu-hong-ze.jpg" alt="許弘澤（阿澤）教練" width="900" height="1200" loading="lazy" decoding="async">
+              <img src="assets/coaches/xu-hong-ze.jpg" srcset="assets/coaches/xu-hong-ze-320.webp 320w, assets/coaches/xu-hong-ze-720.webp 720w" sizes="(max-width: 640px) 74px, (max-width: 980px) calc(100vw - 48px), 380px" alt="許弘澤（阿澤）教練" width="900" height="1200" loading="lazy" decoding="async">
             </figure>
             <div class="coach-body">
               <p class="eyebrow">教練</p>
@@ -1882,7 +1990,7 @@
           </article>
           <article class="coach-card photo-card">
             <figure class="coach-photo coach-photo-yong-chen">
-              <img src="assets/coaches/yong-chen.jpg" alt="詠宸教練" width="900" height="1200" loading="lazy" decoding="async">
+              <img src="assets/coaches/yong-chen.jpg" srcset="assets/coaches/yong-chen-320.webp 320w, assets/coaches/yong-chen-720.webp 720w" sizes="(max-width: 640px) 74px, (max-width: 980px) calc(100vw - 48px), 380px" alt="詠宸教練" width="900" height="1200" loading="lazy" decoding="async">
             </figure>
             <div class="coach-body">
               <p class="eyebrow">教練</p>
@@ -1893,7 +2001,7 @@
           </article>
           <article class="coach-card photo-card">
             <figure class="coach-photo coach-photo-pei-shan">
-              <img src="assets/coaches/pei-shan.jpg" alt="佩珊教練" width="900" height="1200" loading="lazy" decoding="async">
+              <img src="assets/coaches/pei-shan.jpg" srcset="assets/coaches/pei-shan-320.webp 320w, assets/coaches/pei-shan-720.webp 720w" sizes="(max-width: 640px) 74px, (max-width: 980px) calc(100vw - 48px), 380px" alt="佩珊教練" width="900" height="1200" loading="lazy" decoding="async">
             </figure>
             <div class="coach-body">
               <p class="eyebrow">教練</p>
@@ -1904,7 +2012,7 @@
           </article>
           <article class="coach-card photo-card">
             <figure class="coach-photo coach-photo-wan-ru">
-              <img src="assets/coaches/wan-ru.jpg" alt="婉茹教練" width="900" height="1200" loading="lazy" decoding="async">
+              <img src="assets/coaches/wan-ru.jpg" srcset="assets/coaches/wan-ru-320.webp 320w, assets/coaches/wan-ru-720.webp 720w" sizes="(max-width: 640px) 74px, (max-width: 980px) calc(100vw - 48px), 380px" alt="婉茹教練" width="900" height="1200" loading="lazy" decoding="async">
             </figure>
             <div class="coach-body">
               <p class="eyebrow">教練</p>
@@ -1932,6 +2040,17 @@
             <p>團課單次 450 元，10 + 1 堂 4500 元；私人教練與包班可依人數安排。</p>
           </article>
         </div>
+        <dialog class="coach-dialog" id="coachDialog" aria-labelledby="coachDialogTitle">
+          <button class="coach-dialog-close" type="button" aria-label="關閉教練介紹">×</button>
+          <div class="coach-dialog-media" id="coachDialogMedia"></div>
+          <div class="coach-dialog-body">
+            <p class="eyebrow" id="coachDialogLabel"></p>
+            <h3 id="coachDialogTitle"></h3>
+            <div class="coach-dialog-detail" id="coachDialogDetail"></div>
+            <div class="coach-tags" id="coachDialogTags"></div>
+            <a class="coach-dialog-cta" href="https://line.me/R/ti/p/@jpe7785z" target="_blank" rel="noopener">LINE 諮詢課程</a>
+          </div>
+        </dialog>
       </div>
     </section>
 
@@ -2154,26 +2273,75 @@
   <script>
     const navLinks = document.getElementById('navLinks');
     const menuToggle = document.querySelector('.menu-toggle');
-    menuToggle.addEventListener('click', () => {
-      const open = navLinks.classList.toggle('open');
+    const menuBackground = [
+      document.querySelector('main'),
+      document.querySelector('footer'),
+      document.querySelector('.line-float')
+    ].filter(Boolean);
+
+    function setMenuOpen(open, restoreFocus = false) {
+      navLinks.classList.toggle('open', open);
       menuToggle.setAttribute('aria-expanded', String(open));
       menuToggle.setAttribute('aria-label', open ? '關閉選單' : '開啟選單');
       menuToggle.textContent = open ? '×' : '☰';
       document.body.classList.toggle('menu-open', open);
+      menuBackground.forEach((element) => { element.inert = open; });
+
+      if (open) {
+        navLinks.querySelector('a')?.focus();
+      } else if (restoreFocus) {
+        menuToggle.focus();
+      }
+    }
+
+    menuToggle.addEventListener('click', () => {
+      const open = !navLinks.classList.contains('open');
+      setMenuOpen(open, !open);
     });
     navLinks.querySelectorAll('a').forEach((link) => {
       link.addEventListener('click', () => {
-        navLinks.classList.remove('open');
-        menuToggle.setAttribute('aria-expanded', 'false');
-        menuToggle.setAttribute('aria-label', '開啟選單');
-        menuToggle.textContent = '☰';
-        document.body.classList.remove('menu-open');
+        if (navLinks.classList.contains('open')) setMenuOpen(false, true);
       });
     });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && navLinks.classList.contains('open')) {
+        event.preventDefault();
+        setMenuOpen(false, true);
+      }
+    });
+    window.matchMedia('(min-width: 981px)').addEventListener('change', (event) => {
+      if (event.matches && navLinks.classList.contains('open')) setMenuOpen(false);
+    });
+
+    const heroVideo = document.querySelector('.hero-video');
+    if (heroVideo && !navigator.connection?.saveData && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      window.addEventListener('load', () => {
+        const source = heroVideo.querySelector('source[data-src]');
+        if (!source) return;
+        source.src = source.dataset.src;
+        source.removeAttribute('data-src');
+        heroVideo.load();
+        heroVideo.play().catch(() => {});
+      }, { once: true });
+    }
+
+    const coachCards = [...document.querySelectorAll('.coach-cards > .coach-card')];
+    const buildCoachDetail = (card) => {
+      const detail = document.createElement('div');
+      const description = card.querySelector('.coach-description');
+      if (description) {
+        detail.append(description.cloneNode(true));
+      } else {
+        card.querySelectorAll('.coach-body > p:not(.eyebrow):not(.coach-card-summary)').forEach((paragraph) => {
+          detail.append(paragraph.cloneNode(true));
+        });
+      }
+      return detail;
+    };
 
     const coachMobileList = document.getElementById('coachMobileList');
     if (coachMobileList) {
-      const mobileCoachItems = [...document.querySelectorAll('.coach-cards > .coach-card')].map((card) => {
+      const mobileCoachItems = coachCards.map((card) => {
         const item = document.createElement('details');
         item.className = 'coach-mobile-item';
 
@@ -2194,16 +2362,8 @@
         name.className = 'coach-mobile-name';
         name.textContent = card.querySelector('h3')?.textContent || '';
 
-        const detail = document.createElement('div');
+        const detail = buildCoachDetail(card);
         detail.className = 'coach-mobile-detail';
-        const description = card.querySelector('.coach-description');
-        if (description) {
-          detail.append(description.cloneNode(true));
-        } else {
-          card.querySelectorAll('.coach-body > p:not(.eyebrow)').forEach((paragraph) => {
-            detail.append(paragraph.cloneNode(true));
-          });
-        }
 
         const excerpt = document.createElement('p');
         excerpt.className = 'coach-mobile-excerpt';
@@ -2225,6 +2385,48 @@
 
       coachMobileList.replaceChildren(...mobileCoachItems);
       document.getElementById('coaches')?.classList.add('has-mobile-coach-list');
+    }
+
+    const coachDialog = document.getElementById('coachDialog');
+    if (coachDialog) {
+      const dialogMedia = document.getElementById('coachDialogMedia');
+      const dialogLabel = document.getElementById('coachDialogLabel');
+      const dialogTitle = document.getElementById('coachDialogTitle');
+      const dialogDetail = document.getElementById('coachDialogDetail');
+      const dialogTags = document.getElementById('coachDialogTags');
+      const closeDialog = () => coachDialog.close();
+
+      coachDialog.querySelector('.coach-dialog-close')?.addEventListener('click', closeDialog);
+      coachDialog.addEventListener('click', (event) => {
+        const bounds = coachDialog.getBoundingClientRect();
+        const outside = event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom;
+        if (outside) closeDialog();
+      });
+
+      coachCards.forEach((card) => {
+        const body = card.querySelector('.coach-body');
+        const detail = buildCoachDetail(card);
+        const summary = document.createElement('p');
+        summary.className = 'coach-card-summary';
+        summary.textContent = detail.textContent.trim().replace(/\s+/g, ' ');
+
+        const button = document.createElement('button');
+        button.className = 'coach-card-action';
+        button.type = 'button';
+        button.textContent = '查看完整介紹';
+
+        button.addEventListener('click', () => {
+          dialogMedia.replaceChildren(card.querySelector('.coach-photo')?.cloneNode(true) || document.createElement('div'));
+          dialogLabel.textContent = card.querySelector('.eyebrow')?.textContent || '教練';
+          dialogTitle.textContent = card.querySelector('h3')?.textContent || '';
+          dialogDetail.replaceChildren(...buildCoachDetail(card).childNodes);
+          dialogTags.replaceChildren(...(card.querySelector('.coach-tags')?.cloneNode(true).childNodes || []));
+          coachDialog.showModal();
+        });
+
+        body?.insertBefore(summary, body.querySelector('.coach-tags'));
+        body?.append(button);
+      });
     }
 
     const products = window.catalogProducts || [];
@@ -2250,13 +2452,15 @@
       button.setAttribute('aria-pressed', String(activeFilter?.type === type && activeFilter.value === value));
       button.addEventListener('click', () => {
         activeFilter = { type, value };
-        renderFilterButtons();
+        document.querySelectorAll('.filter-btn').forEach((filterButton) => {
+          filterButton.setAttribute('aria-pressed', String(filterButton === button));
+        });
         renderProducts();
       });
       return button;
     }
 
-    function renderFilterButtons() {
+    function buildFilterButtons() {
       brandFilters.replaceChildren(...brands.map((brand) => makeFilterButton('brand', brand)));
       categoryFilters.replaceChildren(...categories.map((cat) => makeFilterButton('cat', cat)));
     }
@@ -2297,7 +2501,7 @@
         : '請選擇廠牌或分類查看設備。';
     }
 
-    renderFilterButtons();
+    buildFilterButtons();
     renderProducts();
   </script>
 </body>
