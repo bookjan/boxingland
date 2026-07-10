@@ -193,6 +193,27 @@
       gap: 10px;
       flex-shrink: 0;
     }
+    .pdf-pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+    .pdf-pagination[hidden] { display: none; }
+    .pdf-pagination .btn { width: auto; min-height: 40px; padding: 0 12px; }
+    .pdf-page-status {
+      min-width: 92px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 900;
+      text-align: center;
+    }
+    .btn:disabled {
+      opacity: .45;
+      transform: none;
+      cursor: not-allowed;
+    }
 
     .empty {
       min-height: calc(100vh - 88px);
@@ -229,6 +250,7 @@
         flex-direction: column;
       }
       .dock-title { white-space: normal; }
+      .pdf-pagination { width: 100%; }
       .dock-actions { display: grid; grid-template-columns: 1fr 1fr; }
       .dock-actions .btn { min-width: 0; padding: 0 12px; }
       .dock-actions .btn-line { grid-column: 1 / -1; }
@@ -294,6 +316,11 @@
   <div class="inquiry-dock" id="inquiryDock" hidden>
     <div class="dock-inner">
       <div class="dock-title" id="dockTitle"></div>
+      <div class="pdf-pagination" id="pdfPagination" aria-label="型錄頁面導覽" hidden>
+        <button class="btn btn-ghost" id="previousPdf" type="button">上一頁</button>
+        <span class="pdf-page-status" id="pdfPageStatus" aria-live="polite"></span>
+        <button class="btn btn-ghost" id="nextPdf" type="button">下一頁</button>
+      </div>
       <div class="dock-actions">
         <a class="btn btn-light" id="openPdf" href="index.html#equipment" target="_blank" rel="noopener">另開 PDF</a>
         <a class="btn btn-ghost" href="index.html#equipment">返回設備型錄</a>
@@ -317,22 +344,44 @@
       document.title = `${product.title}｜設備型錄 PDF｜台北・永和拳擊天地 Boxing Land`;
       document.getElementById('productTitle').textContent = product.title;
       document.getElementById('dockTitle').textContent = product.title;
-      document.getElementById('openPdf').href = product.pdf;
       document.getElementById('mobilePdfTitle').textContent = product.title;
-      document.getElementById('mobilePdfLink').href = product.pdf;
+      const pdfPages = Array.isArray(product.pdfs) && product.pdfs.length ? product.pdfs : [product.pdf];
+      const openPdf = document.getElementById('openPdf');
+      const mobilePdfLink = document.getElementById('mobilePdfLink');
       const pdfFrame = document.getElementById('pdfFrame');
-      const pdfSrc = `${product.pdf}#view=Fit&zoom=page-fit&toolbar=1&navpanes=0`;
+      const pdfPagination = document.getElementById('pdfPagination');
+      const previousPdf = document.getElementById('previousPdf');
+      const nextPdf = document.getElementById('nextPdf');
+      const pdfPageStatus = document.getElementById('pdfPageStatus');
       const pdfMedia = matchMedia('(max-width: 900px)');
+      let pdfPageIndex = 0;
+
       const syncPdfFrame = () => {
-        if (!pdfMedia.matches && !pdfFrame.getAttribute('src')) pdfFrame.src = pdfSrc;
+        if (pdfMedia.matches) return;
+        const pdfSrc = `${pdfPages[pdfPageIndex]}#view=Fit&zoom=page-fit&toolbar=1&navpanes=0`;
+        if (pdfFrame.getAttribute('src') !== pdfSrc) pdfFrame.src = pdfSrc;
       };
-      syncPdfFrame();
+      const showPdfPage = (index) => {
+        pdfPageIndex = Math.max(0, Math.min(index, pdfPages.length - 1));
+        const pdf = pdfPages[pdfPageIndex];
+        openPdf.href = pdf;
+        mobilePdfLink.href = pdf;
+        pdfPageStatus.textContent = `第 ${pdfPageIndex + 1} / ${pdfPages.length} 頁`;
+        previousPdf.disabled = pdfPageIndex === 0;
+        nextPdf.disabled = pdfPageIndex === pdfPages.length - 1;
+        pdfFrame.title = `${product.title}，第 ${pdfPageIndex + 1} 頁`;
+        syncPdfFrame();
+      };
+
+      previousPdf.addEventListener('click', () => showPdfPage(pdfPageIndex - 1));
+      nextPdf.addEventListener('click', () => showPdfPage(pdfPageIndex + 1));
+      pdfPagination.hidden = pdfPages.length < 2;
+      showPdfPage(0);
       if (pdfMedia.addEventListener) {
         pdfMedia.addEventListener('change', syncPdfFrame);
       } else {
         pdfMedia.addListener(syncPdfFrame);
       }
-      pdfFrame.title = product.title;
       productPage.hidden = false;
       inquiryDock.hidden = false;
     }

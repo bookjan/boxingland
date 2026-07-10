@@ -70,11 +70,20 @@ for (const product of productList) {
   check(!slugs.has(product.slug), `${label} duplicates slug ${product.slug}`);
   slugs.add(product.slug);
 
-  for (const field of ['img', 'pdf']) {
-    const reference = product[field];
+  const imageTarget = typeof product.img === 'string' ? localTarget(product.img, deploy) : null;
+  check(Boolean(imageTarget) && existsSync(imageTarget), `${label} img is missing: ${product.img}`);
+
+  check(product.pdfs === undefined || Array.isArray(product.pdfs), `${label} pdfs must be an array`);
+  const pdfReferences = Array.isArray(product.pdfs) ? product.pdfs : [product.pdf];
+  check(pdfReferences.length > 0, `${label} must have at least one PDF`);
+  check(pdfReferences[0] === product.pdf, `${label} pdf must match the first pdfs entry`);
+  const productPdfs = new Set();
+  for (const reference of pdfReferences) {
     const target = typeof reference === 'string' ? localTarget(reference, deploy) : null;
-    check(Boolean(target) && existsSync(target), `${label} ${field} is missing: ${reference}`);
-    if (field === 'pdf' && target) referencedPdfs.add(target);
+    check(Boolean(target) && existsSync(target), `${label} pdf is missing: ${reference}`);
+    check(!productPdfs.has(reference), `${label} repeats PDF ${reference}`);
+    productPdfs.add(reference);
+    if (target) referencedPdfs.add(target);
   }
 }
 
