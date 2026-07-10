@@ -537,6 +537,7 @@
     }
     .btn-primary { background: var(--red); color: var(--white); }
     .btn-primary:hover { background: var(--red-dark); }
+    .btn-primary:focus-visible { outline-color: var(--red-dark); }
     .btn-secondary { border-color: rgba(255,255,255,.38); color: var(--white); background: rgba(255,255,255,.06); }
     .btn-line { background: var(--line-green); color: var(--white); }
     .btn-light { border-color: var(--line); background: var(--white); color: var(--ink); }
@@ -876,6 +877,7 @@
     .coach-card-summary,
     .coach-card-action { display: none; }
     .coach-dialog {
+      position: relative;
       width: min(520px, calc(100vw - 32px));
       max-height: calc(100dvh - 32px);
       margin: auto 0 auto auto;
@@ -889,9 +891,10 @@
     }
     .coach-dialog::backdrop { background: rgba(0,0,0,.52); }
     .coach-dialog-close {
-      position: sticky;
-      top: 10px;
-      left: calc(100% - 54px);
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      left: auto;
       z-index: 2;
       width: 44px;
       height: 44px;
@@ -909,6 +912,7 @@
     }
     .coach-dialog-body {
       display: grid;
+      align-content: start;
       gap: 16px;
       padding: 28px;
     }
@@ -917,7 +921,10 @@
       font-size: clamp(30px, 4vw, 42px);
       line-height: 1.08;
     }
-    .coach-dialog-body .eyebrow { color: var(--gold-readable); }
+    .coach-dialog-body .eyebrow {
+      margin-bottom: 0;
+      color: var(--gold-readable);
+    }
     .coach-dialog-detail {
       display: grid;
       gap: 12px;
@@ -932,9 +939,6 @@
     .coach-dialog-cta {
       justify-self: start;
       margin-top: 4px;
-      color: var(--red);
-      font-weight: 900;
-      text-decoration: none;
     }
     .coach-mobile-list { display: none; }
     .coach-mobile-item {
@@ -1434,20 +1438,77 @@
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
       }
+      .coach-card.photo-card .coach-tags { margin-bottom: 20px; }
       .coach-card-action {
         display: inline-flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         min-height: 44px;
         margin-top: auto;
-        border: 1px solid var(--line);
-        border-radius: 999px;
+        padding: 14px 0 0;
+        border: 0;
+        border-top: 1px solid var(--line);
+        border-radius: 0;
         background: transparent;
         color: var(--red);
         font-weight: 900;
+        text-align: left;
         cursor: pointer;
       }
-      .coach-card-action:hover { border-color: var(--red); }
+      .coach-card-action::after { content: "→" / ""; }
+      .coach-card-action:hover {
+        border-top-color: var(--red);
+        color: var(--red-dark);
+      }
+    }
+
+    @media (min-width: 641px) and (max-width: 980px) {
+      .coach-dialog {
+        height: calc(100dvh - 32px);
+        overflow: hidden;
+      }
+      .coach-dialog[open] {
+        display: grid;
+        grid-template-rows: auto minmax(0, 1fr);
+      }
+      .coach-dialog-media .coach-photo { max-height: 40dvh; }
+      .coach-dialog-body {
+        min-height: 0;
+        overflow-y: auto;
+      }
+    }
+
+    @media (min-width: 981px) {
+      .coach-dialog {
+        width: min(960px, calc(100vw - 64px));
+        height: min(700px, calc(100dvh - 64px));
+        max-height: none;
+        margin: auto;
+        border-radius: 8px;
+        box-shadow: 0 24px 80px rgba(0,0,0,.32);
+        overflow: hidden;
+      }
+      .coach-dialog[open] {
+        display: grid;
+        grid-template-columns: minmax(340px, 42%) minmax(0, 1fr);
+      }
+      .coach-dialog-media,
+      .coach-dialog-media .coach-photo {
+        min-height: 0;
+        height: 100%;
+      }
+      .coach-dialog-media .coach-photo {
+        aspect-ratio: auto;
+        border-right: 1px solid var(--line);
+        border-bottom: 0;
+      }
+      .coach-dialog-body {
+        align-content: safe center;
+        min-width: 0;
+        min-height: 0;
+        overflow-y: auto;
+        padding: 56px 48px 48px;
+      }
     }
 
     @media (max-width: 980px) {
@@ -2026,7 +2087,7 @@
             <h3 id="coachDialogTitle"></h3>
             <div class="coach-dialog-detail" id="coachDialogDetail"></div>
             <div class="coach-tags" id="coachDialogTags"></div>
-            <a class="coach-dialog-cta" href="https://line.me/R/ti/p/@jpe7785z" target="_blank" rel="noopener">LINE 諮詢課程</a>
+            <a class="coach-dialog-cta btn btn-primary" href="https://line.me/R/ti/p/@jpe7785z" target="_blank" rel="noopener">LINE 諮詢課程</a>
           </div>
         </dialog>
       </div>
