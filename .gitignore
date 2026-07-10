@@ -6,3 +6,4 @@ Thumbs.db
 /.playwright-mcp/
 /audits/
 .wrangler/
+output/
