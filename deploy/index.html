@@ -877,7 +877,7 @@
     .coach-card-summary,
     .coach-card-action { display: none; }
     .coach-dialog {
-      position: relative;
+      position: fixed;
       width: min(520px, calc(100vw - 32px));
       max-height: calc(100dvh - 32px);
       margin: auto 0 auto auto;
@@ -2455,12 +2455,15 @@
         button.textContent = '查看完整介紹';
 
         button.addEventListener('click', () => {
+          const scrollX = window.scrollX;
+          const scrollY = window.scrollY;
           dialogMedia.replaceChildren(card.querySelector('.coach-photo')?.cloneNode(true) || document.createElement('div'));
           dialogLabel.textContent = card.querySelector('.eyebrow')?.textContent || '教練';
           dialogTitle.textContent = card.querySelector('h3')?.textContent || '';
           dialogDetail.replaceChildren(...buildCoachDetail(card).childNodes);
           dialogTags.replaceChildren(...(card.querySelector('.coach-tags')?.cloneNode(true).childNodes || []));
           coachDialog.showModal();
+          window.scrollTo(scrollX, scrollY);
         });
 
         body?.insertBefore(summary, body.querySelector('.coach-tags'));
