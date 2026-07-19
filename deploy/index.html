@@ -666,6 +666,24 @@
       font-size: 16px;
     }
     .band-dark .section-head p { color: rgba(255,255,255,.68); }
+    .equipment-intro {
+      display: grid;
+      gap: 14px;
+      align-content: end;
+    }
+    .equipment-shop-link {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      max-width: 100%;
+      min-height: 44px;
+      color: var(--gold);
+      font-weight: 900;
+      text-decoration-line: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 6px;
+    }
+    .equipment-shop-link:hover { color: #ffe2a0; }
 
     .course-grid {
       display: grid;
@@ -1623,6 +1641,16 @@
         flex: 0 0 auto;
         white-space: nowrap;
       }
+      .equipment-shop-link {
+        width: 100%;
+        min-height: 48px;
+        padding: 0 16px;
+        justify-content: center;
+        border: 1px solid var(--gold);
+        border-radius: 4px;
+        text-align: center;
+        text-decoration: none;
+      }
       .service-wall,
       .course-grid,
       .course-info-grid,
@@ -2115,9 +2143,12 @@
         <div class="section-head">
           <div>
             <p class="eyebrow">Equipment</p>
-            <h2>設備依品牌與用途分類，先詢問再確認規格。</h2>
+            <h2>現貨直接選購，場館設備先確認規格。</h2>
           </div>
-          <p>器材規格會依場地尺寸、訓練用途與預算調整，因此不放購物車；先詢問，確認適合再報價。</p>
+          <div class="equipment-intro">
+            <p>拳套、拳鞋與護具等現貨可由奇摩拍賣直接下單；拳擊台、地墊、牆墊與場館器材，請先確認尺寸、用途與預算。</p>
+            <a class="equipment-shop-link" href="https://tw.bid.yahoo.com/booth/boxingland" target="_blank" rel="noopener" aria-label="前往拳擊天地奇摩拍賣選購現貨（另開新視窗）">前往奇摩拍賣選購現貨&nbsp;<span aria-hidden="true">→</span></a>
+          </div>
         </div>
 
         <div class="filter-panel">
@@ -2253,7 +2284,7 @@
         </div>
         <div class="faq-grid">
           <article class="faq-item"><h3>完全沒基礎可以上拳擊課嗎？</h3><p>可以。入門課會從站姿、步伐、出拳、防守與體能負荷開始調整。</p></article>
-          <article class="faq-item"><h3>設備商品可以直接下單嗎？</h3><p>目前不做線上結帳。請先傳場地尺寸、用途與預算，我們協助確認規格。</p></article>
+          <article class="faq-item"><h3>設備商品可以直接下單嗎？</h3><p>拳套、拳鞋與護具等現貨可於奇摩拍賣直接下單；拳擊台、地墊、牆墊與場館器材需先確認尺寸、用途與規格。</p></article>
           <article class="faq-item"><h3>可以協助規劃拳擊教室嗎？</h3><p>可以。可討論拳擊台、沙袋動線、地墊、牆墊、柱墊與基礎訓練器材。</p></article>
           <article class="faq-item"><h3>品牌型錄裡的商品都能詢問嗎？</h3><p>CROSSMAX、GYMXF、GYMPAC 等型錄商品可依分類詢問，實際規格以報價確認。</p></article>
         </div>
